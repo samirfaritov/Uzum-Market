@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.conteiner {
+  width: 100%;
+  height: 100%;
+}
+
+.conteiner .translator {
+  width: 100%;
+  height: 40px;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteiner .translator .location {
+  display: flex;
+  gap: 15px;
+}
+
+.conteiner .translator .location i {
+  font-size: 20px;
+  color: #5b5b5b;
+}
+
+.conteiner .translator .location .sam {
+  color: #000;
+}
+
+.conteiner .translator .location h3 {
+  color: #2f2f2f;
+  font-size: 16px;
+}
+
+.conteiner .translator .dos p {
+  color: #878787;
+  font-size: 20px;
+}
+
+.conteiner .translator .questions {
+  display: flex;
+  gap: 15px;
+}
+
+.conteiner .translator .questions select {
+  width: 100px;
+  border: none;
+  background-color: transparent;
+}
+
+.conteiner .navbar {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteiner .navbar .logo {
+  width: 200px;
+  height: 60px;
+}
+
+.conteiner .navbar .katalog .flex input {
+  width: 400px;
+  height: 40px;
+  border: 1px solid #666666;
+  border-right: none;
+  padding: 00 15px;
+  font-size: 17px;
+  border-radius: 2px;
+}
+
+.conteiner .navbar .katalog .flex {
+  display: flex;
+}
+
+.conteiner .navbar .katalog .flex button {
+  width: 60px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  border-top: 1px solid #666666;
+  border-bottom: 1px solid #666666;
+  border-right: 1px solid #666666;
+  border-top-right-radius: 2px;
+}
+
+.conteiner .navbar .katalog .flex button i {
+    font-size: 20px;
+}
+
