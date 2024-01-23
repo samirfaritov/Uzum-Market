@@ -6,6 +6,10 @@
   outline: none;
 }
 
+.AllWidth {
+  padding: 0 62px;
+}
+
 .conteiner {
   width: 100%;
   height: 100%;
@@ -55,19 +59,18 @@
   background-color: transparent;
 }
 
+/* Translator finish */
+
 .conteiner .navbar {
   width: 100%;
   height: 60px;
-  border: 1px solid #000;
+  border: 1px solid transparent;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 0 45px;
 }
 
-.conteiner .navbar .logo {
-  width: 200px;
-  height: 60px;
-}
 
 .conteiner .navbar .katalog .flex input {
   width: 400px;
@@ -77,6 +80,11 @@
   padding: 00 15px;
   font-size: 17px;
   border-radius: 2px;
+}
+
+.conteiner .navbar .katalog {
+  display: flex;
+  gap: 20px;
 }
 
 .conteiner .navbar .katalog .flex {
@@ -99,3 +107,160 @@
     font-size: 20px;
 }
 
+.conteiner .navbar .katalog .kat {
+  width: 150px;
+  height: 40px;
+  background-color: #EAEAF9;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: .3s all linear;
+}
+
+.conteiner .navbar .katalog .kat:hover {
+  background-color: #a7a7ff;
+}
+
+.conteiner .navbar .katalog .kat i {
+  font-size: 30px;
+}
+
+.conteiner .navbar .katalog .kat p {
+  font-size: 17px;
+  color: #3333CC;
+}
+
+.conteiner .navbar .btn {
+  display: flex;
+  gap: 20px;
+}
+
+.conteiner .navbar .btn .voyti {
+  width: 88px;
+  height: 43px;
+  border: 1px solid transparent;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: .3s all linear;
+}
+
+.conteiner .navbar .btn .voyti i{
+  font-size: 22px;
+}
+
+.conteiner .navbar .btn .izb i{
+  font-size: 22px;
+}
+
+.conteiner .navbar .btn .kar i{
+  font-size: 22px;
+}
+
+.conteiner .navbar .btn .izb {
+  width: 120px;
+  height: 43px;
+  display: flex;
+  gap: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: .3s all linear;
+}
+
+.conteiner .navbar .btn .kar {
+  width: 100px;
+  height: 43px;
+  display: flex;
+  gap: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: .3s all linear;
+}
+
+.conteiner .navbar .btn .voyti:hover {
+  background-color: #ccc;
+}
+
+.conteiner .navbar .btn .izb:hover {
+  background-color: #ccc;
+}
+
+.conteiner .navbar .btn .kar:hover {
+  background-color: #ccc;
+}
+
+/* Navbar Finish */
+
+.conteiner .rasrochka {
+  width: 100%;
+  height: 50px;
+  border: 1px solid transparent;
+  display: flex;
+  gap: 26px;
+  align-items: center;
+}
+
+.conteiner .rasrochka .flex  {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.conteiner .rasrochka .flex i {
+  font-size: 30px;
+}
+
+.conteiner .rasrochka .flex p {
+  color: #000;
+}
+
+.conteiner .rasrochka .flex .foiz {
+  width: 30px;
+  height: 30px;
+  background-color: #715ead;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.conteiner .rasrochka p {
+  font-size: 16px;
+  color: #969696;
+  cursor: pointer;
+}
+
+/* Rassrochka finish */
+
+
+/* .conteiner .AllWidth .swiper-container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+
+.conteiner .AllWidth .swiper-container .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.conteiner .AllWidth .swiper-container .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%; 
+  background-size: 100% 100%;
+} */
