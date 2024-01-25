@@ -71,7 +71,6 @@
   padding: 0 45px;
 }
 
-
 .conteiner .navbar .katalog .flex input {
   width: 400px;
   height: 40px;
@@ -104,13 +103,13 @@
 }
 
 .conteiner .navbar .katalog .flex button i {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .conteiner .navbar .katalog .kat {
   width: 150px;
   height: 40px;
-  background-color: #EAEAF9;
+  background-color: #eaeaf9;
   border: none;
   border-radius: 5px;
   display: flex;
@@ -118,7 +117,7 @@
   justify-content: center;
   gap: 8px;
   cursor: pointer;
-  transition: .3s all linear;
+  transition: 0.3s all linear;
 }
 
 .conteiner .navbar .katalog .kat:hover {
@@ -131,7 +130,7 @@
 
 .conteiner .navbar .katalog .kat p {
   font-size: 17px;
-  color: #3333CC;
+  color: #3333cc;
 }
 
 .conteiner .navbar .btn {
@@ -148,18 +147,18 @@
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  transition: .3s all linear;
+  transition: 0.3s all linear;
 }
 
-.conteiner .navbar .btn .voyti i{
+.conteiner .navbar .btn .voyti i {
   font-size: 22px;
 }
 
-.conteiner .navbar .btn .izb i{
+.conteiner .navbar .btn .izb i {
   font-size: 22px;
 }
 
-.conteiner .navbar .btn .kar i{
+.conteiner .navbar .btn .kar i {
   font-size: 22px;
 }
 
@@ -172,7 +171,7 @@
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  transition: .3s all linear;
+  transition: 0.3s all linear;
 }
 
 .conteiner .navbar .btn .kar {
@@ -184,7 +183,7 @@
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  transition: .3s all linear;
+  transition: 0.3s all linear;
 }
 
 .conteiner .navbar .btn .voyti:hover {
@@ -210,7 +209,7 @@
   align-items: center;
 }
 
-.conteiner .rasrochka .flex  {
+.conteiner .rasrochka .flex {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -244,23 +243,127 @@
 
 /* Rassrochka finish */
 
+.conteiner .AllWidth .reklama {
+  width: 100%;
+  height: 350px;
+  border: 1px solid #000;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-/* .conteiner .AllWidth .swiper-container {
+.conteiner .AllWidth .reklama .left {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #606060;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+.conteiner .AllWidth .reklama .right {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #606060;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+.conteiner .AllWidth .nizkie {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.conteiner .AllWidth .nizkie i {
+  font-size: 40px;
+}
+
+.conteiner .AllWidth .skidka {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.conteiner .AllWidth .skidka .item {
+  width: 280px;
+  height: 450px;
+  border: 1px solid #000;
+  position: relative;
+  border-radius: 10px;
+}
+
+
+.conteiner .AllWidth .skidka .item .heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.conteiner .AllWidth .skidka .item .basket {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+} 
+
+.conteiner .AllWidth .skidka .item img {
   width: 100%;
   height: 300px;
-  overflow: hidden;
+  border-radius: 10px;
 }
 
-
-.conteiner .AllWidth .swiper-container .swiper-wrapper .swiper-slide {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
+.conteiner .AllWidth .skidka .item .name {
+  font-size: 14px;
+  padding: 0 15px;
+}
+.conteiner .AllWidth .skidka .item .flex {
+  display: flex;
+  gap: 10px;
+  padding: 5px 15px;
+  align-items: center;
 }
 
-.conteiner .AllWidth .swiper-container .swiper-wrapper .swiper-slide {
-  width: 100%;
-  height: 100%; 
-  background-size: 100% 100%;
-} */
+.conteiner .AllWidth .skidka .item .flex .otziv {
+  color: #ababab;
+  font-size: 13px;
+}
+.conteiner .AllWidth .skidka .item .flex .otziv .otziv2 {
+  color: #ababab;
+  font-size: 13px;
+}
+
+.conteiner .AllWidth .skidka .item .flex .grade .grade2 {
+  color: #ababab;
+  font-size: 13px;
+}
+
+.conteiner .AllWidth .skidka .item .kredit {
+  
+}
