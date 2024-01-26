@@ -303,10 +303,10 @@
 
 .conteiner .AllWidth .skidka .item {
   width: 280px;
-  height: 450px;
-  border: 1px solid #000;
+  height: 480px;
+  border: 1px solid #e7e7e7;
   position: relative;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 
@@ -333,10 +333,18 @@
   border-radius: 50%;
 } 
 
+.conteiner .AllWidth .skidka .item .img {
+  padding: 10px 40px;
+  background-color: #ccc;
+  border-radius: 15px;
+}
+
 .conteiner .AllWidth .skidka .item img {
   width: 100%;
   height: 300px;
   border-radius: 10px;
+  background-color: #ccc;
+  object-fit: contain;
 }
 
 .conteiner .AllWidth .skidka .item .name {
@@ -364,6 +372,34 @@
   font-size: 13px;
 }
 
+.conteiner .AllWidth .skidka .item  .katta {
+  padding: 0 15px;
+}
+
 .conteiner .AllWidth .skidka .item .kredit {
-  
+  width: 105px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  font-size: 13px;
+  background-color: yellow;
+  border: none;
+  border-radius: 4px;
+}
+
+.conteiner .AllWidth .skidka .item .katta2 {
+  padding: 16px 15px 0;
+}
+
+.conteiner .AllWidth .skidka .item .price {
+  font-size: 12px;
+  color: #808080;
+}
+
+.conteiner .AllWidth .skidka .item .price2 {
+  font-size: 15px;
+  padding: 4px 15px;
+  font-weight: 600;
 }
