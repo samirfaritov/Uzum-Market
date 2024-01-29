@@ -68,7 +68,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0 45px;
+  padding: 0 48px;
 }
 
 .conteiner .navbar .logo svg {
@@ -308,24 +308,23 @@
 
 .conteiner .AllWidth .skidka .item {
   width: 280px;
-  height: 480px;
+  height: 520px;
   border: 1px solid #e7e7e7;
   position: relative;
   border-radius: 15px;
 }
 
-
 .conteiner .AllWidth .skidka .item .heart {
   position: absolute;
-  top: 10px;
+  top: 7px;
   right: -1px;
   font-size: 30px;
   cursor: pointer;
 }
 
 .conteiner .AllWidth .skidka .item .heart svg {
-  width: 50px;
-  height: 30px;
+  width: 40px;
+  height: 25px;
 }
 
 .conteiner .AllWidth .skidka .item .basket {
@@ -341,7 +340,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-} 
+}
 
 .conteiner .AllWidth .skidka .item .img {
   padding: 10px 40px;
@@ -382,7 +381,7 @@
   font-size: 13px;
 }
 
-.conteiner .AllWidth .skidka .item  .katta {
+.conteiner .AllWidth .skidka .item .katta {
   padding: 0 15px;
 }
 
@@ -414,3 +413,29 @@
   font-weight: 600;
 }
 
+.conteiner .AllWidth .pokaz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteiner .AllWidth .pokaz button {
+  width: 658px;
+  height: 60px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 8px;
+}
+
+.conteiner .AllWidth .reklama2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.conteiner .AllWidth .reklama2 img:hover {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}

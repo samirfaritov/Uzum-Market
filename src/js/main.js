@@ -21,9 +21,7 @@ interval = setInterval(() => {
     if ((item.length = 1)) {
       clearInterval(interval);
     }
-
     //   console.log(item);
-
     let todoHtml = `
         <div class="item">
           <div class="img">
