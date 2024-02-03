@@ -23,3 +23,11 @@ rek.getTodo()
 rek.interval
 rek.rekomenduyem
 rek.state
+
+import * as elekt from "./electronics"
+
+elekt.getProducts()
+elekt.getTodo()
+elekt.interval
+elekt.elektronika
+elekt.state
