@@ -39,9 +39,9 @@ export function getProducts() {
                 <p class="name">${item.name}</p>
                 <div class="flex">
                     <div class="grade">
-                        
+                        <i class='bx bxs-star' style='color: yellow'></i> <span class="grade2">${item.grade}</span>
                     </div>
-                    <p class="otziv"></p>
+                    <p class="otziv">(${item.review} <span class="otziv2">отзыв</span>)</p>
                 </div>
                 <div class="katta">
                     <p class="kredit">${item.kredit} сум/мес</p>

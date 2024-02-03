@@ -14,3 +14,12 @@ flo.state
 flo.flo
 flo.interval
 flo.getProducts()
+
+
+import * as rek from "./rekomenduyem"
+
+rek.getProducts()
+rek.getTodo()
+rek.interval
+rek.rekomenduyem
+rek.state

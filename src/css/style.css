@@ -450,7 +450,7 @@
 
 .conteiner .AllWidth .flo .item {
   width: 280px;
-  height: 49 0px;
+  height: 490px;
   border: 1px solid #e7e7e7;
   position: relative;
   border-radius: 15px;
@@ -550,6 +550,237 @@
 }
 
 .conteiner .AllWidth .flo .item .price2 {
+  font-size: 15px;
+  padding: 4px 15px;
+  font-weight: 600;
+}
+
+
+.conteiner .AllWidth .rekomenduyem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.conteiner .AllWidth .rekomenduyem .item {
+  width: 280px;
+  height: 520px;
+  border: 1px solid #e7e7e7;
+  position: relative;
+  border-radius: 15px;
+}
+
+.conteiner .AllWidth .rekomenduyem .item .heart {
+  position: absolute;
+  top: 7px;
+  right: -1px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.conteiner .AllWidth .rekomenduyem .item .heart svg {
+  width: 40px;
+  height: 25px;
+}
+
+.conteiner .AllWidth .rekomenduyem .item .basket {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.conteiner .AllWidth .rekomenduyem .item .img {
+  padding: 10px 40px;
+  background-color: #ccc;
+  border-radius: 15px;
+}
+
+.conteiner .AllWidth .rekomenduyem .item img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #ccc;
+  object-fit: contain;
+}
+
+.conteiner .AllWidth .rekomenduyem .item .name {
+  font-size: 14px;
+  padding: 0 15px;
+}
+.conteiner .AllWidth .rekomenduyem .item .flex {
+  display: flex;
+  gap: 10px;
+  padding: 5px 15px;
+  align-items: center;
+}
+
+.conteiner .AllWidth .rekomenduyem .item .flex .otziv {
+  color: #ababab;
+  font-size: 13px;
+}
+.conteiner .AllWidth .rekomenduyem .item .flex .otziv .otziv2 {
+  color: #ababab;
+  font-size: 13px;
+}
+
+.conteiner .AllWidth .rekomenduyem .item .flex .grade .grade2 {
+  color: #ababab;
+  font-size: 13px;
+}
+
+.conteiner .AllWidth .rekomenduyem .item .katta {
+  padding: 0 15px;
+}
+
+.conteiner .AllWidth .rekomenduyem .item .kredit {
+  width: 105px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  font-size: 13px;
+  background-color: yellow;
+  border: none;
+  border-radius: 4px;
+}
+
+.conteiner .AllWidth .rekomenduyem .item .katta2 {
+  padding: 16px 15px 0;
+}
+
+.conteiner .AllWidth .rekomenduyem .item .price {
+  font-size: 12px;
+  color: #808080;
+}
+
+.conteiner .AllWidth .rekomenduyem .item .price2 {
+  font-size: 15px;
+  padding: 4px 15px;
+  font-weight: 600;
+}
+
+.conteiner .AllWidth .elektronika {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.conteiner .AllWidth .elektronika .item {
+  width: 280px;
+  height: 520px;
+  border: 1px solid #e7e7e7;
+  position: relative;
+  border-radius: 15px;
+}
+
+.conteiner .AllWidth .elektronika .item .heart {
+  position: absolute;
+  top: 7px;
+  right: -1px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.conteiner .AllWidth .elektronika .item .heart svg {
+  width: 40px;
+  height: 25px;
+}
+
+.conteiner .AllWidth .elektronika .item .basket {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.conteiner .AllWidth .elektronika .item .img {
+  padding: 10px 40px;
+  background-color: #ccc;
+  border-radius: 15px;
+}
+
+.conteiner .AllWidth .elektronika .item img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #ccc;
+  object-fit: contain;
+}
+
+.conteiner .AllWidth .elektronika .item .name {
+  font-size: 14px;
+  padding: 0 15px;
+}
+.conteiner .AllWidth .elektronika .item .flex {
+  display: flex;
+  gap: 10px;
+  padding: 5px 15px;
+  align-items: center;
+}
+
+.conteiner .AllWidth .elektronika .item .flex .otziv {
+  color: #ababab;
+  font-size: 13px;
+}
+.conteiner .AllWidth .elektronika .item .flex .otziv .otziv2 {
+  color: #ababab;
+  font-size: 13px;
+}
+
+.conteiner .AllWidth .elektronika .item .flex .grade .grade2 {
+  color: #ababab;
+  font-size: 13px;
+}
+
+.conteiner .AllWidth .elektronika .item .katta {
+  padding: 0 15px;
+}
+
+.conteiner .AllWidth .elektronika .item .kredit {
+  width: 105px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  font-size: 13px;
+  background-color: yellow;
+  border: none;
+  border-radius: 4px;
+}
+
+.conteiner .AllWidth .elektronika .item .katta2 {
+  padding: 16px 15px 0;
+}
+
+.conteiner .AllWidth .elektronika .item .price {
+  font-size: 12px;
+  color: #808080;
+}
+
+.conteiner .AllWidth .elektronika .item .price2 {
   font-size: 15px;
   padding: 4px 15px;
   font-weight: 600;
