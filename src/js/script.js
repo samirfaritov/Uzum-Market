@@ -31,3 +31,19 @@ elekt.getTodo()
 elekt.interval
 elekt.elektronika
 elekt.state
+
+import * as Inst from "./Installment"
+
+Inst.getProducts()
+Inst.getTodo()
+Inst.interval
+Inst.rasrochka
+Inst.state
+
+import * as Tech from "./technique"
+
+Tech.getProducts()
+Tech.getTodo()
+Tech.interval
+Tech.texnika
+Tech.state
