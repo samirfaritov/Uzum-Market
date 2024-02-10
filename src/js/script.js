@@ -47,3 +47,20 @@ Tech.getTodo()
 Tech.interval
 Tech.texnika
 Tech.state
+
+import * as mar from "./market"
+
+mar.getProducts()
+mar.getTodo()
+mar.interval
+mar.bozor
+mar.state
+
+
+import * as air from "./air"
+
+air.getProducts()
+air.getTodo()
+air.interval
+air.bozor
+mar.state
