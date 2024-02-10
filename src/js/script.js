@@ -63,4 +63,29 @@ air.getProducts()
 air.getTodo()
 air.interval
 air.bozor
-mar.state
+air.state
+
+
+import * as bea from "./beauty"
+
+bea.getProducts()
+bea.getTodo()
+bea.interval
+bea.uxod
+bea.state
+
+import * as fam from "./family"
+
+fam.getProducts()
+fam.getTodo()
+fam.interval
+fam.family
+fam.state
+
+import * as rep from "./repair"
+
+rep.getProducts()
+rep.getTodo()
+rep.interval
+rep.beauty
+rep.state

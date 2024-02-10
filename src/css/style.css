@@ -1318,3 +1318,454 @@
   padding: 4px 15px;
   font-weight: 600;
 }
+
+
+.conteiner .AllWidth .uxod {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.conteiner .AllWidth .uxod .item {
+  width: 280px;
+  height: 520px;
+  border: 1px solid #e7e7e7;
+  position: relative;
+  border-radius: 15px;
+}
+
+.conteiner .AllWidth .uxod .item .heart {
+  position: absolute;
+  top: 7px;
+  right: -1px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.conteiner .AllWidth .uxod .item .heart svg {
+  width: 40px;
+  height: 25px;
+}
+
+.conteiner .AllWidth .uxod .item .basket {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.conteiner .AllWidth .uxod .item .img {
+  padding: 10px 40px;
+  background-color: #ccc;
+  border-radius: 15px;
+}
+
+.conteiner .AllWidth .uxod .item img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #ccc;
+  object-fit: contain;
+}
+
+.conteiner .AllWidth .uxod .item .name {
+  font-size: 14px;
+  padding: 0 15px;
+}
+.conteiner .AllWidth .uxod .item .flex {
+  display: flex;
+  gap: 10px;
+  padding: 5px 15px;
+  align-items: center;
+}
+
+.conteiner .AllWidth .uxod .item .flex .otziv {
+  color: #ababab;
+  font-size: 13px;
+}
+.conteiner .AllWidth .uxod .item .flex .otziv .otziv2 {
+  color: #ababab;
+  font-size: 13px;
+}
+
+.conteiner .AllWidth .uxod .item .flex .grade .grade2 {
+  color: #ababab;
+  font-size: 13px;
+}
+
+.conteiner .AllWidth .uxod .item .katta {
+  padding: 0 15px;
+}
+
+.conteiner .AllWidth .uxod .item .kredit {
+  width: 105px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  font-size: 13px;
+  background-color: yellow;
+  border: none;
+  border-radius: 4px;
+}
+
+.conteiner .AllWidth .uxod .item .katta2 {
+  padding: 16px 15px 0;
+}
+
+.conteiner .AllWidth .uxod .item .price {
+  font-size: 12px;
+  color: #808080;
+}
+
+.conteiner .AllWidth .uxod .item .price2 {
+  font-size: 15px;
+  padding: 4px 15px;
+  font-weight: 600;
+}
+
+
+.conteiner .AllWidth .family {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.conteiner .AllWidth .family .item {
+  width: 280px;
+  height: 520px;
+  border: 1px solid #e7e7e7;
+  position: relative;
+  border-radius: 15px;
+}
+
+.conteiner .AllWidth .family .item .heart {
+  position: absolute;
+  top: 7px;
+  right: -1px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.conteiner .AllWidth .family .item .heart svg {
+  width: 40px;
+  height: 25px;
+}
+
+.conteiner .AllWidth .family .item .basket {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.conteiner .AllWidth .family .item .img {
+  padding: 10px 40px;
+  background-color: #ccc;
+  border-radius: 15px;
+}
+
+.conteiner .AllWidth .family .item img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #ccc;
+  object-fit: contain;
+}
+
+.conteiner .AllWidth .family .item .name {
+  font-size: 14px;
+  padding: 0 15px;
+}
+.conteiner .AllWidth .family .item .flex {
+  display: flex;
+  gap: 10px;
+  padding: 5px 15px;
+  align-items: center;
+}
+
+.conteiner .AllWidth .family .item .flex .otziv {
+  color: #ababab;
+  font-size: 13px;
+}
+.conteiner .AllWidth .family .item .flex .otziv .otziv2 {
+  color: #ababab;
+  font-size: 13px;
+}
+
+.conteiner .AllWidth .family .item .flex .grade .grade2 {
+  color: #ababab;
+  font-size: 13px;
+}
+
+.conteiner .AllWidth .family .item .katta {
+  padding: 0 15px;
+}
+
+.conteiner .AllWidth .family .item .kredit {
+  width: 105px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  font-size: 13px;
+  background-color: yellow;
+  border: none;
+  border-radius: 4px;
+}
+
+.conteiner .AllWidth .family .item .katta2 {
+  padding: 16px 15px 0;
+}
+
+.conteiner .AllWidth .family .item .price {
+  font-size: 12px;
+  color: #808080;
+}
+
+.conteiner .AllWidth .family .item .price2 {
+  font-size: 15px;
+  padding: 4px 15px;
+  font-weight: 600;
+}
+
+
+.conteiner .AllWidth .beauty {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.conteiner .AllWidth .beauty .item {
+  width: 280px;
+  height: 520px;
+  border: 1px solid #e7e7e7;
+  position: relative;
+  border-radius: 15px;
+}
+
+.conteiner .AllWidth .beauty .item .heart {
+  position: absolute;
+  top: 7px;
+  right: -1px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.conteiner .AllWidth .beauty .item .heart svg {
+  width: 40px;
+  height: 25px;
+}
+
+.conteiner .AllWidth .beauty .item .basket {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.conteiner .AllWidth .beauty .item .img {
+  padding: 10px 40px;
+  background-color: #ccc;
+  border-radius: 15px;
+}
+
+.conteiner .AllWidth .beauty .item img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #ccc;
+  object-fit: contain;
+}
+
+.conteiner .AllWidth .beauty .item .name {
+  font-size: 14px;
+  padding: 0 15px;
+}
+.conteiner .AllWidth .beauty .item .flex {
+  display: flex;
+  gap: 10px;
+  padding: 5px 15px;
+  align-items: center;
+}
+
+.conteiner .AllWidth .beauty .item .flex .otziv {
+  color: #ababab;
+  font-size: 13px;
+}
+.conteiner .AllWidth .beauty .item .flex .otziv .otziv2 {
+  color: #ababab;
+  font-size: 13px;
+}
+
+.conteiner .AllWidth .beauty .item .flex .grade .grade2 {
+  color: #ababab;
+  font-size: 13px;
+}
+
+.conteiner .AllWidth .beauty .item .katta {
+  padding: 0 15px;
+}
+
+.conteiner .AllWidth .beauty .item .kredit {
+  width: 105px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  font-size: 13px;
+  background-color: yellow;
+  border: none;
+  border-radius: 4px;
+}
+
+.conteiner .AllWidth .beauty .item .katta2 {
+  padding: 16px 15px 0;
+}
+
+.conteiner .AllWidth .beauty .item .price {
+  font-size: 12px;
+  color: #808080;
+}
+
+.conteiner .AllWidth .beauty .item .price2 {
+  font-size: 15px;
+  padding: 4px 15px;
+  font-weight: 600;
+}
+
+
+.conteiner .AllWidth footer .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conteiner .AllWidth footer .footer .o {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conteiner .AllWidth footer .footer .pol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conteiner .AllWidth footer .footer .dlya {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conteiner .AllWidth footer .footer .katta_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conteiner .AllWidth footer .footer .katta_flex .app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.conteiner .AllWidth footer .footer .katta_flex .app .flex a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.conteiner .AllWidth footer .footer .katta_flex .app .flex {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.conteiner .AllWidth footer .footer .katta_flex .app .flex i {
+  font-size: 31px;
+}
+
+.conteiner .AllWidth footer .uzum p {
+  padding-right: 60px;
+}
+
+.conteiner .AllWidth footer .uzum {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  gap: 20px;
+  margin-right: 70px;
+}
+
+.conteiner .AllWidth footer .uzum .set {
+  display: flex;
+  gap: 15px;
+}
+
+.conteiner .AllWidth footer .uzum .set svg {
+  cursor: pointer;
+}
+
+.box {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.conteiner .AllWidth footer .sog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.conteiner .AllWidth footer .sog .flex {
+  display: flex;
+  gap: 15px;
+}
+
+.conteiner .AllWidth footer .sog b {
+  font-size: 15px;
+  color: #454545;
+}
+
+.conteiner .AllWidth footer .sog p {
+  color: #808080;
+  font-size: 13px;
+}
