@@ -5,6 +5,7 @@ data.interval
 data.skidka
 data.state
 data.getProducts()
+// data.clickGet()
 
 
 import * as flo from "./flo"
