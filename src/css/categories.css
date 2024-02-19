@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
+  /* list-style: none; */
   box-sizing: border-box;
   outline: none;
 }
@@ -13,48 +13,6 @@
 .conteiner {
   width: 100%;
   height: 100%;
-}
-
-.reklama5 img {
-  transition: 0.3s all linear;
-}
-
-.reklama5 img:hover {
-  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
-    20px -20px 40px rgba(255, 255, 255, 0.5);
-}
-.reklama4 img {
-  transition: 0.3s all linear;
-}
-
-.reklama4 img:hover {
-  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
-    20px -20px 40px rgba(255, 255, 255, 0.5);
-}
-.reklama3 img {
-  transition: 0.3s all linear;
-}
-
-.reklama3 img:hover {
-  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
-    20px -20px 40px rgba(255, 255, 255, 0.5);
-}
-.reklama2 img {
-  transition: 0.3s all linear;
-}
-
-.reklama2 img:hover {
-  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
-    20px -20px 40px rgba(255, 255, 255, 0.5);
-}
-
-.item:hover {
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
-
-.item {
-  transition: 0.2s all linear;
 }
 
 .conteiner .translator {
@@ -289,3 +247,241 @@
 }
 
 /* Rassrochka finish */
+
+.conteiner .AllWidth .glav p {
+  font-size: 14px;
+  color: #818181;
+  cursor: pointer;
+}
+
+.conteiner .AllWidth .kategori {
+  display: flex;
+  gap: 15px;
+}
+
+.conteiner .AllWidth .kategori .left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.conteiner .AllWidth .kategori .left .item {
+  width: 120px;
+  height: 150px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.conteiner .AllWidth .kategori .left .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.conteiner .AllWidth .kategori .right .item {
+  width: 500px;
+  height: 650px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.conteiner .AllWidth .kategori .right .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.conteiner .AllWidth .content {
+  display: flex;
+  gap: 70px;
+}
+
+.conteiner .AllWidth .content .kategori2 .flex {
+  display: flex;
+  gap: 80px;
+}
+
+.conteiner .AllWidth .content .kategori2 .box {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+
+.conteiner .AllWidth .content .kategori2 .kol {
+  display: flex;
+  width: 150px;
+  height: 43px;
+  border: 1px solid #ccc;
+}
+
+.conteiner .AllWidth .content .kategori2 .kol .minus {
+  width: 50px;
+  height: 40px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.conteiner .AllWidth .content .kategori2 .kol .plyus {
+  width: 50px;
+  height: 40px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.conteiner .AllWidth .content .kategori2 .kol .count {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteiner .AllWidth .content .kategori2 .kattta {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.conteiner .AllWidth .content .kategori2 .kattta .nal {
+  color: rgb(0, 183, 0);
+}
+
+.conteiner .AllWidth .content .kategori2 .katta2 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.conteiner .AllWidth .content .kategori2 .katta2 .price2 {
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.conteiner .AllWidth .content .kategori2 .katta2 .price {
+  font-size: 20px;
+  color: #9c9c9c;
+}
+
+.conteiner .AllWidth .content .kategori2 .katta {
+  width: 100%;
+  height: 65px;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0 20px;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.2s all linear;
+}
+
+.conteiner .AllWidth .content .kategori2 .katta:hover {
+  background-color: #ccc;
+}
+
+.conteiner .AllWidth .content .kategori2 .katta .kredit {
+  width: 170px;
+  height: 30px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+.conteiner .AllWidth .content .kategori2 .katta {
+  position: relative;
+}
+
+.conteiner .AllWidth .content .kategori2 .katta i {
+  font-size: 25px;
+  color: #adadad;
+  position: absolute;
+  right: 10px;
+}
+
+.conteiner .AllWidth .content .kategori2 .dob {
+  display: flex;
+  gap: 20px;
+}
+
+.conteiner .AllWidth .content .kategori2 .dob .korzina {
+  width: 270px;
+  height: 56px;
+  border-radius: 15px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: rgb(98, 0, 255);
+  font-size: 17px;
+  transition: 0.2s all linear;
+  cursor: pointer;
+}
+
+.conteiner .AllWidth .content .kategori2 .dob .korzina:hover {
+  background-color: rgb(118, 32, 255);
+}
+
+.conteiner .AllWidth .content .kategori2 .dob .klik {
+  width: 270px;
+  height: 56px;
+  border-radius: 15px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  transition: 0.2s all linear;
+  cursor: pointer;
+  color: rgb(58, 0, 151);
+  border: 2px solid rgb(58, 0, 151);
+  background-color: #fff;
+}
+
+.conteiner .AllWidth .content .kategori2 .dob .klik:hover {
+  background-color: rgb(219, 197, 255);
+}
+
+.conteiner .AllWidth .content .kategori2 .buy {
+  width: 100%;
+  height: 45px;
+  background-color: rgb(255, 218, 255);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+  border-radius: 10px;
+  padding: 0 30px;
+}
+
+.conteiner .AllWidth .content .kategori2 .tovar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.conteiner .AllWidth .content .kategori2 .tovar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.conteiner .AllWidth .content .kategori2 .tovar ul li p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #666666;
+}

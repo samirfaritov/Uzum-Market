@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/js/Installment.js":
@@ -8,6 +7,7 @@
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getProducts: () => (/* binding */ getProducts),
@@ -127,6 +127,7 @@ function getProducts() {
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getProducts: () => (/* binding */ getProducts),
@@ -243,6 +244,7 @@ function getProducts() {
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getProducts: () => (/* binding */ getProducts),
@@ -353,12 +355,60 @@ function getProducts() {
 
 /***/ }),
 
+/***/ "./src/js/categories.js":
+/*!******************************!*\
+  !*** ./src/js/categories.js ***!
+  \******************************/
+/***/ (() => {
+
+function totalCalc() {
+  const cartItem = document.querySelectorAll(".content");
+  const totalPrice = document.querySelector(".price2");
+
+  let total = 0;
+  cartItem.forEach((item) => {
+    let count = item.querySelector(".count").innerText;
+    let price = item.querySelector(".price2").innerText;
+    let totalP = parseInt(count) * parseInt(price);
+    total += totalP;
+  });
+  totalPrice.innerHTML = total;
+}
+
+totalCalc();
+
+function categories() {
+  const minus = document.querySelector(".minus");
+  const count = document.querySelector(".count");
+  const plyus = document.querySelector(".plyus");
+
+  plyus.addEventListener("click", () => {
+    count.innerHTML++;
+    totalCalc();
+  });
+
+  minus.addEventListener("click", () => {
+    count.innerHTML--;
+    totalCalc();
+
+    if (count.innerHTML <= 1) {
+      count.innerHTML = "1";
+    }
+  });
+}
+
+categories();
+
+
+/***/ }),
+
 /***/ "./src/js/electronics.js":
 /*!*******************************!*\
   !*** ./src/js/electronics.js ***!
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   elektronika: () => (/* binding */ elektronika),
@@ -475,6 +525,7 @@ function getProducts() {
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   family: () => (/* binding */ family),
@@ -591,6 +642,7 @@ function getProducts() {
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   flo: () => (/* binding */ flo),
@@ -706,6 +758,7 @@ function getProducts() {
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getProducts: () => (/* binding */ getProducts),
@@ -815,6 +868,7 @@ function getProducts() {
     window.addEventListener("click", (e) => {
       e.preventDefault();
       if (e.target.closest("[data-item]")) {
+        location.href = 'http://127.0.0.1:5500/src/html/categories.html'
         // let item = [];
         // item.push(state.products);
 
@@ -840,6 +894,7 @@ function getProducts() {
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   bozor: () => (/* binding */ bozor),
@@ -956,6 +1011,7 @@ function getProducts() {
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getProducts: () => (/* binding */ getProducts),
@@ -1072,6 +1128,7 @@ function getProducts() {
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   beauty: () => (/* binding */ beauty),
@@ -1188,6 +1245,7 @@ function getProducts() {
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getProducts: () => (/* binding */ getProducts),
@@ -1328,6 +1386,18 @@ function getProducts() {
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -1358,8 +1428,9 @@ function getProducts() {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!**************************!*\
   !*** ./src/js/script.js ***!
   \**************************/
@@ -1375,6 +1446,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _beauty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./beauty */ "./src/js/beauty.js");
 /* harmony import */ var _family__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./family */ "./src/js/family.js");
 /* harmony import */ var _repair__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./repair */ "./src/js/repair.js");
+/* harmony import */ var _categories__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./categories */ "./src/js/categories.js");
+/* harmony import */ var _categories__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_categories__WEBPACK_IMPORTED_MODULE_11__);
 
 
 _main__WEBPACK_IMPORTED_MODULE_0__.getTodo()
@@ -1467,6 +1540,10 @@ _repair__WEBPACK_IMPORTED_MODULE_10__.getTodo()
 _repair__WEBPACK_IMPORTED_MODULE_10__.interval
 _repair__WEBPACK_IMPORTED_MODULE_10__.beauty
 _repair__WEBPACK_IMPORTED_MODULE_10__.state
+
+;
+
+_categories__WEBPACK_IMPORTED_MODULE_11__
 })();
 
 /******/ })()
