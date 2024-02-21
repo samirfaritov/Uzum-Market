@@ -94,5 +94,18 @@ export function getProducts() {
 
       uxod.insertAdjacentHTML("beforeend", todoHtml);
     });
+
+    window.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (e.target.closest(".item")) {
+        location.href = 'http://127.0.0.1:5500/src/html/categories.html'
+        // let item = [];
+        // item.push(state.products);
+
+        // console.log(item);
+        // localStorage.setItem("item", JSON.stringify());
+        
+      }
+    });
   }, 1000);
 }

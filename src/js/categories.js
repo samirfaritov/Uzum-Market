@@ -44,7 +44,7 @@ window.addEventListener("click", (event) => {
       minus.style.color = "#ccc";
     }
     
-    if (counter.innerHTML <= 0) {
+    if (counter.innerHTML == 1) {
       price.innerHTML = price.innerHTML
     }
   }
