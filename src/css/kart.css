@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* list-style: none; */
+  box-sizing: border-box;
+  outline: none;
+}
+
+.AllWidth {
+  padding: 0 62px;
+}
+
+.conteiner {
+  width: 100%;
+  height: 100%;
+}
+
+.conteiner .translator {
+  width: 100%;
+  height: 40px;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteiner .translator .location {
+  display: flex;
+  gap: 15px;
+}
+
+.conteiner .translator .location i {
+  font-size: 20px;
+  color: #5b5b5b;
+}
+
+.conteiner .translator .location .sam {
+  color: #000;
+}
+
+.conteiner .translator .location h3 {
+  color: #2f2f2f;
+  font-size: 16px;
+}
+
+.conteiner .translator .dos p {
+  color: #878787;
+  font-size: 20px;
+}
+
+.conteiner .translator .questions {
+  display: flex;
+  gap: 15px;
+}
+
+.conteiner .translator .questions select {
+  width: 100px;
+  border: none;
+  background-color: transparent;
+}
+
+/* Translator finish */
+
+.conteiner .navbar {
+  width: 100%;
+  height: 60px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 48px;
+}
+
+.conteiner .navbar .logo svg {
+  width: 240px;
+  height: 200px;
+}
+
+.conteiner .navbar .katalog .flex input {
+  width: 400px;
+  height: 40px;
+  border: 1px solid #666666;
+  border-right: none;
+  padding: 00 15px;
+  font-size: 17px;
+  border-radius: 2px;
+}
+
+.conteiner .navbar .katalog {
+  display: flex;
+  gap: 20px;
+}
+
+.conteiner .navbar .katalog .flex {
+  display: flex;
+}
+
+.conteiner .navbar .katalog .flex button {
+  width: 60px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  border-top: 1px solid #666666;
+  border-bottom: 1px solid #666666;
+  border-right: 1px solid #666666;
+  border-top-right-radius: 2px;
+}
+
+.conteiner .navbar .katalog .flex button i {
+  font-size: 20px;
+}
+
+.conteiner .navbar .katalog .kat {
+  width: 150px;
+  height: 40px;
+  background-color: #eaeaf9;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+
+.conteiner .navbar .katalog .kat:hover {
+  background-color: #a7a7ff;
+}
+
+.conteiner .navbar .katalog .kat i {
+  font-size: 30px;
+}
+
+.conteiner .navbar .katalog .kat p {
+  font-size: 17px;
+  color: #3333cc;
+}
+
+.conteiner .navbar .btn {
+  display: flex;
+  gap: 20px;
+}
+
+.conteiner .navbar .btn .voyti {
+  width: 88px;
+  height: 43px;
+  border: 1px solid transparent;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s all linear;
+}
+
+.conteiner .navbar .btn .voyti i {
+  font-size: 22px;
+}
+
+.conteiner .navbar .btn .izb i {
+  font-size: 22px;
+}
+
+.conteiner .navbar .btn .kar i {
+  font-size: 22px;
+}
+
+.conteiner .navbar .btn .izb {
+  width: 120px;
+  height: 43px;
+  display: flex;
+  gap: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s all linear;
+}
+
+.conteiner .navbar .btn .kar {
+  width: 100px;
+  height: 43px;
+  display: flex;
+  gap: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s all linear;
+}
+
+.conteiner .navbar .btn .voyti:hover {
+  background-color: #ccc;
+}
+
+.conteiner .navbar .btn .izb:hover {
+  background-color: #ccc;
+}
+
+.conteiner .navbar .btn .kar:hover {
+  background-color: #ccc;
+}
+
+/* Navbar Finish */
+
+.conteiner .rasrochka {
+  width: 100%;
+  height: 50px;
+  border: 1px solid transparent;
+  display: flex;
+  gap: 26px;
+  align-items: center;
+}
+
+.conteiner .rasrochka .flex {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.conteiner .rasrochka .flex i {
+  font-size: 30px;
+}
+
+.conteiner .rasrochka .flex p {
+  color: #000;
+}
+
+.conteiner .rasrochka .flex .foiz {
+  width: 30px;
+  height: 30px;
+  background-color: #715ead;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.conteiner .rasrochka p {
+  font-size: 16px;
+  color: #969696;
+  cursor: pointer;
+}
+
+/* Rassrochka finish */
+
+.conteiner .AllWidth h1 {
+  font-size: 27px;
+  font-weight: 550;
+}
+
+.conteiner .AllWidth .content {
+  display: flex;
+  gap: 15px;
+}
+
+.conteiner .AllWidth .content .left {
+  width: 90%;
+  height: 100%;
+  border: 1px solid #a8a8a8;
+  padding: 20px;
+}
+
+.conteiner .AllWidth .content .right {
+  width: 35%;
+  height: 600px;
+  border: 1px solid #a8a8a8;
+}
+
+.conteiner .AllWidth .content .left .date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.conteiner .AllWidth .content .left .date .a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.conteiner .AllWidth .content .left .date .a input {
+  width: 25px;
+  height: 25px;
+}
+
+.conteiner .AllWidth .content .left .date p {
+  font-size: 15px;
+  color: #969696;
+}
+
+.conteiner .AllWidth .content .left .date p .tomorrow {
+  width: 120px;
+  height: 60px;
+  border: 1px solid rgb(89, 0, 255);
+  color: rgb(89, 0, 255);
+}
+
+.conteiner .AllWidth .content .left .box {
+  width: 100%;
+  height: 1px;
+  background: #dadada;
+}
+
+.conteiner .AllWidth .content .left .item .salesman .kol .minus {
+  width: 50px;
+  height: 40px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: #ccc;
+}
+
+.conteiner .AllWidth .content .left .item .salesman .kol .plyus {
+  width: 50px;
+  height: 40px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.conteiner .AllWidth .content .left .item .salesman .kol .count {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteiner .AllWidth .content .left .item .salesman .kol {
+  display: flex;
+  width: 150px;
+  height: 43px;
+  border: 1px solid #ccc;
+}
+
+.conteiner .AllWidth .content .left .item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.conteiner .AllWidth .content .left .item input {
+    width: 25px;
+    height: 25px;
+}
+
+.conteiner .AllWidth .content .left .item .salesman {
+    display: flex;
+    gap: 20px;
+}
+
+.conteiner .AllWidth .content .left .item .salesman img {
+    width: 110px;
+    height: 150px;
+}
+
+.conteiner .AllWidth .content .left .item .salesman .k {
+    position: relative;
+    top: 89px;
+    right: 100px
+}
+
+.conteiner .AllWidth .content .left .item .delete {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.conteiner .AllWidth .content .left .item .delete .flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* .conteiner .AllWidth .content .left .item .delete .flex svg {
+    background-color: #fff;    
+} */
+
+.conteiner .AllWidth .content .left .item .delete .price {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.conteiner .AllWidth .content .left .item .delete .discount {
+    font-size: 17px;
+    color: #969696;
+    padding-left: 17px;
+}
