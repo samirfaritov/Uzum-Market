@@ -23,9 +23,9 @@ export function getProducts() {
       if ((item.length = 1)) {
         clearInterval(interval);
       }
-        // console.log(item);
+      // console.log(item);
       let todoHtml = `
-            <div class="item">
+            <div class="item" id="${item.id}">
             <div class="img">
             <div class="heart">
               <svg
@@ -100,14 +100,23 @@ export function getProducts() {
 
     window.addEventListener("click", (e) => {
       e.preventDefault();
-      if (e.target.closest(".item")) {
-        location.href = 'http://127.0.0.1:5500/src/html/categories.html'
-        // let item = [];
-        // item.push(state.products);
 
-        // console.log(item);
-        // localStorage.setItem("item", JSON.stringify());
-        
+      if (e.target.closest(".item")) {
+        let item = e.target.closest(".item");
+
+        let obj = {
+          img: item.querySelector('img').getAttribute('src'),
+          name: item.querySelector('.name').innerHTML,
+          grade: item.querySelector('.grade').innerHTML,
+          kredit: item.querySelector('.kredit').innerHTML,
+          price: item.querySelector('.price').innerHTML,
+          review: item.querySelector('.otziv').innerHTML,
+          discount: item.querySelector('.price2').innerHTML
+        };
+
+        localStorage.setItem("item", JSON.stringify(obj));
+        console.log(obj);
+        location.href = 'http://127.0.0.1:5500/src/html/categories.html'
       }
     });
   }, 1000);

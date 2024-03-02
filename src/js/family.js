@@ -98,7 +98,7 @@ export function getProducts() {
     window.addEventListener("click", (e) => {
       e.preventDefault();
       if (e.target.closest(".item")) {
-        location.href = 'http://127.0.0.1:5500/src/html/categories.html'
+        // location.href = ''
         // let item = [];
         // item.push(state.products);
 

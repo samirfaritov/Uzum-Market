@@ -401,3 +401,63 @@
     color: #969696;
     padding-left: 17px;
 }
+
+.conteiner .AllWidth .content .right {
+  padding: 13px 17px;
+}
+
+.conteiner .AllWidth .content .right p {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.conteiner .AllWidth .content .right .tov {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conteiner .AllWidth .content .right .tov p {
+  font-size: 17px;
+  font-weight: 500;
+  color: #666666;
+}
+
+
+.conteiner .AllWidth .content .right .dos p {
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  height: 25px;
+  border: 1px solid rgb(89, 0, 255);
+  color: rgb(89, 0, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteiner .AllWidth .content .right .ek {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.conteiner .AllWidth .content .right .ek p {
+  font-size: 14px;
+  color: rgb(0, 183, 0);
+}
+
+.conteiner .AllWidth .content .right .of {
+  width: 100%;
+  height: 50px;
+  background-color: #e7e7e7;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteiner .AllWidth .content .right .of p {
+  color: #aeaeae;
+  font-weight: 400;
+}
