@@ -139,11 +139,14 @@ window.addEventListener("click", (event) => {
     counter.innerHTML++;
     // price.innerHTML *= 2;
     
-    var totalPrice = price * 2;
+    // var totalPrice = price * 2;
 
-    price + totalPrice
 
-    minus.style.color = "#000";
+    Number(price.innerHTML *= 2)
+
+    // price + totalPrice
+
+    // minus.style.color = "#000";
   }
 
   // if (event.target.dataset.action === "minus") {

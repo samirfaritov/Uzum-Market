@@ -403,6 +403,7 @@
 }
 
 .conteiner .AllWidth .content .right {
+  height: 420px;
   padding: 13px 17px;
 }
 
@@ -460,4 +461,72 @@
 .conteiner .AllWidth .content .right .of p {
   color: #aeaeae;
   font-weight: 400;
+}
+
+.box {
+  width: 100%;
+  height: 1px;
+  background: #e4e4e4;
+}
+
+.conteiner .AllWidth .content .right .tovar {
+  width: 100%;
+  height: 120px;
+  background-color: #eeeeee;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.conteiner .AllWidth .content .right .tovar .one .t {
+  font-size: 16px;
+}
+
+.conteiner .AllWidth .content .right .tovar .one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.conteiner .AllWidth .content .right .tovar .o {
+  font-size: 15px;
+  color: #878787;
+  font-weight: 400;
+}
+
+.conteiner .AllWidth .content .right .tovar .box2 {
+  width: 100%;
+  height: 5px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.conteiner .AllWidth .content .right .tovar .loc {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.conteiner .AllWidth .content .right .tovar .loc .price_total {
+  font-size: 16px;
+  color: #666666;
+  font-weight: 500;
+}
+
+.conteiner .AllWidth .content .right .tovar .home .price_total2 {
+  font-size: 16px;
+  color: #666666;
+  font-weight: 500;
+}
+
+.conteiner .AllWidth .content .right .tovar .home {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.conteiner .AllWidth .content .right .tovar .zakaz {
+  display: flex;
+  justify-content: space-between;
 }
