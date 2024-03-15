@@ -95,25 +95,5 @@ export function getProducts() {
             `;
       skidka.insertAdjacentHTML("beforeend", todoHtml);
     });
-
-    window.addEventListener("click", (e) => {
-      e.preventDefault();
-
-      console.log(e.target);
-      // if (e.target.closest(".item")) {
-
-      //   console.log('click');
-      //   let item = e.target.closest(".item")
-
-      //   console.log(item);
-      //   localStorage.setItem("item", JSON.stringify(item));
-
-      // location.href = "http://127.0.0.1:5500/src/html/categories.html";
-      //   // let item = [];
-      //   // item.push(state.products);
-
-      //   // console.log(item);
-      // }
-    });
   }, 1000);
 }

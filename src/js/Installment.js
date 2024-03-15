@@ -100,23 +100,38 @@ export function getProducts() {
 
     window.addEventListener("click", (e) => {
       e.preventDefault();
+      let a = false;
 
-      if (e.target.closest(".item")) {
+      // if (e.target.closest(".basket")) {
+      //   const korzina = document.querySelector('.korzina')
+      //   let kar;
+      //   a = false
+      //   console.log("click");
+      //   // location
+
+      //   // kar = JSON.parse(localStorage.getItem("item") || "{}");
+
+      //   // console.log(kar);
+
+      // }
+
+      if (e.target.closest(".item") && a == false) {
         let item = e.target.closest(".item");
 
-        let obj = {
-          img: item.querySelector('img').getAttribute('src'),
-          name: item.querySelector('.name').innerHTML,
-          grade: item.querySelector('.grade').innerHTML,
-          kredit: item.querySelector('.kredit').innerHTML,
-          price: item.querySelector('.price').innerHTML,
-          review: item.querySelector('.otziv').innerHTML,
-          discount: item.querySelector('.price2').innerHTML
-        };
+        console.log(item);
 
-        localStorage.setItem("item", JSON.stringify(obj));
+        let obj = {
+          img: item.querySelector("img").getAttribute("src"),
+          name: item.querySelector(".name").innerHTML,
+          grade: item.querySelector(".grade").innerHTML,
+          kredit: item.querySelector(".kredit").innerHTML,
+          price: item.querySelector(".price").innerHTML,
+          review: item.querySelector(".otziv").innerHTML,
+          discount: item.querySelector(".price2").innerHTML,
+        };
         console.log(obj);
-        location.href = 'http://127.0.0.1:5500/src/html/categories.html'
+        localStorage.setItem("item", JSON.stringify(obj));
+        location.href = "http://127.0.0.1:5500/src/html/categories.html";
       }
     });
   }, 1000);

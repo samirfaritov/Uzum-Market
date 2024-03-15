@@ -94,17 +94,5 @@ export function getProducts() {
       
           flo.insertAdjacentHTML("beforeend", todoHtml);
         });
-        
-        // window.addEventListener("click", (e) => {
-        //   e.preventDefault();
-        //   if (e.target.closest(".item")) {
-        //     // let item = [];
-        //     // item.push(state.products);
-    
-        //     // console.log(item);
-        //     // localStorage.setItem("item", JSON.stringify());
-            
-        //   }
-        // });
       });
 }

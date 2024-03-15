@@ -90,7 +90,3 @@ rep.getTodo()
 rep.interval
 rep.beauty
 rep.state
-
-import * as cat from "./categories"
-
-cat

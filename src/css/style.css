@@ -16,32 +16,36 @@
 }
 
 .reklama5 img {
-  transition: .3s all linear;
+  transition: 0.3s all linear;
 }
 
 .reklama5 img:hover {
-  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2), 20px -20px 40px rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
+    20px -20px 40px rgba(255, 255, 255, 0.5);
 }
 .reklama4 img {
-  transition: .3s all linear;
+  transition: 0.3s all linear;
 }
 
 .reklama4 img:hover {
-  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2), 20px -20px 40px rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
+    20px -20px 40px rgba(255, 255, 255, 0.5);
 }
 .reklama3 img {
-  transition: .3s all linear;
+  transition: 0.3s all linear;
 }
 
 .reklama3 img:hover {
-  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2), 20px -20px 40px rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
+    20px -20px 40px rgba(255, 255, 255, 0.5);
 }
 .reklama2 img {
-  transition: .3s all linear;
+  transition: 0.3s all linear;
 }
 
 .reklama2 img:hover {
-  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2), 20px -20px 40px rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
+    20px -20px 40px rgba(255, 255, 255, 0.5);
 }
 
 .item:hover {
@@ -50,7 +54,7 @@
 }
 
 .item {
-  transition: .2s all linear;
+  transition: 0.2s all linear;
 }
 
 .conteiner .translator {
@@ -341,12 +345,12 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .conteiner .AllWidth .skidka .item {
-  width: 280px;
-  height: 520px;
+  width: 230px;
+  height: 420px;
   border: 1px solid #e7e7e7;
   position: relative;
   border-radius: 15px;
@@ -378,6 +382,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  z-index: 1000;
 }
 
 .conteiner .AllWidth .skidka .item .img {
@@ -388,7 +393,7 @@
 
 .conteiner .AllWidth .skidka .item img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   border-radius: 10px;
   background-color: #ccc;
   object-fit: contain;
@@ -483,15 +488,17 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .conteiner .AllWidth .flo .item {
-  width: 280px;
-  height: 490px;
+  width: 230px;
+  height: 420px;
   border: 1px solid #e7e7e7;
   position: relative;
   border-radius: 15px;
+  z-index: 10000!important;
+  background-color: #fff;
 }
 
 .conteiner .AllWidth .flo .item .heart {
@@ -520,6 +527,8 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  z-index: -100!important;
+  background-color: red;
 }
 
 .conteiner .AllWidth .flo .item .img {
@@ -530,7 +539,7 @@
 
 .conteiner .AllWidth .flo .item img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   border-radius: 10px;
   background-color: #ccc;
   object-fit: contain;
@@ -598,12 +607,12 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .conteiner .AllWidth .rekomenduyem .item {
-  width: 280px;
-  height: 520px;
+  width: 230px;
+  height: 420px;
   border: 1px solid #e7e7e7;
   position: relative;
   border-radius: 15px;
@@ -645,7 +654,7 @@
 
 .conteiner .AllWidth .rekomenduyem .item img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   border-radius: 10px;
   background-color: #ccc;
   object-fit: contain;
@@ -713,12 +722,12 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .conteiner .AllWidth .elektronika .item {
-  width: 280px;
-  height: 520px;
+  width: 230px;
+  height: 420px;
   border: 1px solid #e7e7e7;
   position: relative;
   border-radius: 15px;
@@ -760,7 +769,7 @@
 
 .conteiner .AllWidth .elektronika .item img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   border-radius: 10px;
   background-color: #ccc;
   object-fit: contain;
@@ -839,12 +848,12 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .conteiner .AllWidth .rasrochka2 .item {
-  width: 280px;
-  height: 520px;
+  width: 230px;
+  height: 420px;
   border: 1px solid #e7e7e7;
   position: relative;
   border-radius: 15px;
@@ -886,7 +895,7 @@
 
 .conteiner .AllWidth .rasrochka2 .item img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   border-radius: 10px;
   background-color: #ccc;
   object-fit: contain;
@@ -956,12 +965,12 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .conteiner .AllWidth .texnika .item {
-  width: 280px;
-  height: 520px;
+  width: 230px;
+  height: 420px;
   border: 1px solid #e7e7e7;
   position: relative;
   border-radius: 15px;
@@ -1003,7 +1012,7 @@
 
 .conteiner .AllWidth .texnika .item img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   border-radius: 10px;
   background-color: #ccc;
   object-fit: contain;
@@ -1082,12 +1091,12 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .conteiner .AllWidth .bozor .item {
-  width: 280px;
-  height: 520px;
+  width: 230px;
+  height: 420px;
   border: 1px solid #e7e7e7;
   position: relative;
   border-radius: 15px;
@@ -1129,7 +1138,7 @@
 
 .conteiner .AllWidth .bozor .item img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   border-radius: 10px;
   background-color: #ccc;
   object-fit: contain;
@@ -1203,18 +1212,17 @@
   cursor: pointer;
 }
 
-
 .conteiner .AllWidth .vozdux {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .conteiner .AllWidth .vozdux .item {
-  width: 280px;
-  height: 520px;
+  width: 230px;
+  height: 420px;
   border: 1px solid #e7e7e7;
   position: relative;
   border-radius: 15px;
@@ -1256,7 +1264,7 @@
 
 .conteiner .AllWidth .vozdux .item img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   border-radius: 10px;
   background-color: #ccc;
   object-fit: contain;
@@ -1319,18 +1327,17 @@
   font-weight: 600;
 }
 
-
 .conteiner .AllWidth .uxod {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .conteiner .AllWidth .uxod .item {
-  width: 280px;
-  height: 520px;
+  width: 230px;
+  height: 420px;
   border: 1px solid #e7e7e7;
   position: relative;
   border-radius: 15px;
@@ -1372,7 +1379,7 @@
 
 .conteiner .AllWidth .uxod .item img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   border-radius: 10px;
   background-color: #ccc;
   object-fit: contain;
@@ -1435,18 +1442,17 @@
   font-weight: 600;
 }
 
-
 .conteiner .AllWidth .family {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .conteiner .AllWidth .family .item {
-  width: 280px;
-  height: 520px;
+  width: 230px;
+  height: 420px;
   border: 1px solid #e7e7e7;
   position: relative;
   border-radius: 15px;
@@ -1488,7 +1494,7 @@
 
 .conteiner .AllWidth .family .item img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   border-radius: 10px;
   background-color: #ccc;
   object-fit: contain;
@@ -1551,18 +1557,17 @@
   font-weight: 600;
 }
 
-
 .conteiner .AllWidth .beauty {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .conteiner .AllWidth .beauty .item {
-  width: 280px;
-  height: 520px;
+  width: 230px;
+  height: 420px;
   border: 1px solid #e7e7e7;
   position: relative;
   border-radius: 15px;
@@ -1604,7 +1609,7 @@
 
 .conteiner .AllWidth .beauty .item img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   border-radius: 10px;
   background-color: #ccc;
   object-fit: contain;
@@ -1666,7 +1671,6 @@
   padding: 4px 15px;
   font-weight: 600;
 }
-
 
 .conteiner .AllWidth footer .footer {
   display: flex;
@@ -1768,4 +1772,66 @@
 .conteiner .AllWidth footer .sog p {
   color: #808080;
   font-size: 13px;
+}
+
+.conteiner .korzina {
+  width: 50%;
+  height: 120px;
+  border: 1px solid transparent;
+  position: absolute;
+  top: 10px;
+  left: 380px;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
+  20px -20px 40px rgba(255, 255, 255, 0.5);
+}
+
+.conteiner .korzina .close {
+  font-size: 25px;
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+}
+
+.conteiner .korzina .img {
+  width: 75px;
+  height: 90px;
+  border: 1px solid transparent;
+}
+
+/* .conteiner .korzina .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+.conteiner .korzina .p {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.conteiner .korzina .p .tovar {
+  font-weight: 600;
+  font-size: 18px;
+  color: #494949;
+}
+
+.conteiner .korzina .p .name {
+  font-size: 14px;
+  color: #707070;
+}
+
+.conteiner .korzina .pere {
+  color: #715ead;
+  font-weight: 600;
+  position: absolute;
+  bottom: 17px;
+  right: 25px;
+  font-size: 15px;
+  cursor: pointer;
 }

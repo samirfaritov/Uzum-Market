@@ -81,7 +81,7 @@ interval = setInterval(() => {
   <div class="kol">
     <button class="minus"  data-action="minus">-</button>
     <p class="count"  data-counter>1</p>
-    <button class="plyus"  data-action="plus">+</button>
+    <button class="plyus"  data-action="plus" >+</button>
   </div>
   <p class="nal">В наличии 30</p>
 </div>
@@ -121,48 +121,46 @@ interval = setInterval(() => {
 </div>
 </div>
 `;
-  content.insertAdjacentHTML("beforeend", todoHtml);
+content.insertAdjacentHTML("beforeend", todoHtml);
 }, 100);
 
 window.addEventListener("click", (event) => {
-  let price = document.querySelector(".price2");
+  let minus = document.querySelector(".minus");
   event.preventDefault();
-
-  
+  const price = document.querySelector(".price2");
   if (event.target.dataset.action === "plus") {
-    console.log(price);
-
-    let minus = document.querySelector(".minus");
-
     const counterWrapper = event.target.closest(".kol");
     const counter = counterWrapper.querySelector(".count");
     counter.innerHTML++;
-    // price.innerHTML *= 2;
+    let a = JSON.parse(localStorage.getItem("item") || "{}" )
+
+    let p = parseInt(a.discount)
+
+    let total = p * parseInt(counter.innerHTML)
+
+    price.innerHTML = `${total} сум`
     
-    // var totalPrice = price * 2;
-
-
-    Number(price.innerHTML *= 2)
-
-    // price + totalPrice
-
-    // minus.style.color = "#000";
+    minus.style.color = "#000";
   }
+  if (event.target.dataset.action === "minus") {
+    const counterWrapper = event.target.closest(".kol");
+    const counter = counterWrapper.querySelector(".count");
+    counter.innerHTML--;
+    
+    let a = JSON.parse(localStorage.getItem("item") || "{}" )
+    
+    let p = parseInt(a.discount)
+    
+    let total = p * parseInt(counter.innerHTML)
+    price.innerHTML = `${total} сум`
 
-  // if (event.target.dataset.action === "minus") {
-  //   const counterWrapper = event.target.closest(".kol");
-  //   const counter = counterWrapper.querySelector(".count");
-  //   counter.innerHTML--;
-  //   price.innerHTML /= 2;
+    if (counter.innerHTML <= 1) {
+      counter.innerHTML = "1";
+      minus.style.color = "#ccc";
+    }
 
-  //   // totalCalc();
-  //   if (counter.innerHTML <= 1) {
-  //     counter.innerHTML = "1";
-  //     minus.style.color = "#ccc";
-  //   }
-
-  //   // if (counter.innerHTML == 0) {
-  //   //   price.innerHTML = price.innerHTML *2
-  //   // }
-  // }
+    // if (counter.innerHTML == 1) {
+    //   price.innerHTML = total
+    // }
+  }
 });

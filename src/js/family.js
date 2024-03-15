@@ -94,18 +94,5 @@ export function getProducts() {
 
       family.insertAdjacentHTML("beforeend", todoHtml);
     });
-
-    window.addEventListener("click", (e) => {
-      e.preventDefault();
-      if (e.target.closest(".item")) {
-        // location.href = ''
-        // let item = [];
-        // item.push(state.products);
-
-        // console.log(item);
-        // localStorage.setItem("item", JSON.stringify());
-        
-      }
-    });
   }, 1000);
 }
