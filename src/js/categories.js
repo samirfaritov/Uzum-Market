@@ -83,7 +83,7 @@ interval = setInterval(() => {
     <p class="count"  data-counter>1</p>
     <button class="plyus"  data-action="plus" >+</button>
   </div>
-  <p class="nal">В наличии 30</p>
+  <p class="nal">В наличии <span class="nalichie">10</span></p>
 </div>
 <br>              
 <p>Цена:</p>
@@ -125,6 +125,7 @@ content.insertAdjacentHTML("beforeend", todoHtml);
 }, 100);
 
 window.addEventListener("click", (event) => {
+  let nalichie = document.querySelector('.nalichie')
   let minus = document.querySelector(".minus");
   event.preventDefault();
   const price = document.querySelector(".price2");
@@ -141,6 +142,7 @@ window.addEventListener("click", (event) => {
     price.innerHTML = `${total} сум`
     
     minus.style.color = "#000";
+    
   }
   if (event.target.dataset.action === "minus") {
     const counterWrapper = event.target.closest(".kol");

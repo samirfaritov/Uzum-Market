@@ -49,7 +49,7 @@ export function getProducts() {
                 ></path>
               </svg>
             </div>
-            <img src="${item.img}" alt="" />
+            <img src="${item.img}" alt="" class="img2" />
             <div class="flex">
               <div class="aks"></div>
               <div class="aks2"></div>
@@ -100,26 +100,8 @@ export function getProducts() {
 
     window.addEventListener("click", (e) => {
       e.preventDefault();
-      let a = false;
-
-      // if (e.target.closest(".basket")) {
-      //   const korzina = document.querySelector('.korzina')
-      //   let kar;
-      //   a = false
-      //   console.log("click");
-      //   // location
-
-      //   // kar = JSON.parse(localStorage.getItem("item") || "{}");
-
-      //   // console.log(kar);
-
-      // }
-
-      if (e.target.closest(".item") && a == false) {
+      if (e.target.closest("img")) {
         let item = e.target.closest(".item");
-
-        console.log(item);
-
         let obj = {
           img: item.querySelector("img").getAttribute("src"),
           name: item.querySelector(".name").innerHTML,
@@ -129,10 +111,51 @@ export function getProducts() {
           review: item.querySelector(".otziv").innerHTML,
           discount: item.querySelector(".price2").innerHTML,
         };
-        console.log(obj);
         localStorage.setItem("item", JSON.stringify(obj));
         location.href = "http://127.0.0.1:5500/src/html/categories.html";
       }
+
+      if (e.target.closest(".basket")) {
+        let item = e.target.closest(".item");
+        let obj = {
+          img: item.querySelector("img").getAttribute("src"),
+          name: item.querySelector(".name").innerHTML,
+        };
+        localStorage.setItem("korzina", JSON.stringify(obj));
+      }
     });
+    let basket = document.querySelectorAll(".basket");
+
+    for (let i = 0; i < basket.length; i++) {
+      basket[i].onclick = function(){
+        korzina.style.display = "flex";
+        console.log('click');
+      };
+    }
+
+    interval = setInterval(() => {
+      korzina.style.display = 'none'
+    }, 4000)
+
   }, 1000);
 }
+
+let item;
+
+const korzina = document.querySelector(".korzina");
+
+item = JSON.parse(localStorage.getItem("korzina") || "{}");
+
+let todoHtml = `
+<i class='bx bx-x close' style='color:#6f6f6f' ></i>
+<div class="img">
+  <img src="${item.img}" alt="img">
+</div>
+<div class="p">
+  <p class="tovar">Товар добавлен в корзину</p>
+  <p class="name">${item.name}</p>
+</div>
+<p class="pere">ПЕРЕЙТИ В КОРЗИНУ</p>
+`;
+
+korzina.insertAdjacentHTML("beforeend", todoHtml);
