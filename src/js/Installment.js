@@ -135,7 +135,7 @@ export function getProducts() {
 
     interval = setInterval(() => {
       korzina.style.display = 'none'
-    }, 4000)
+    }, 6000)
 
   }, 1000);
 }
@@ -159,3 +159,15 @@ let todoHtml = `
 `;
 
 korzina.insertAdjacentHTML("beforeend", todoHtml);
+
+let close = document.querySelector('.close')
+
+close.addEventListener("click", () => {
+  korzina.style.display = 'none'
+})
+
+let pere = document.querySelector('.pere')
+
+pere.addEventListener('click', () => {
+  location.href = 'http://127.0.0.1:5500/src/html/cart.html'
+})
