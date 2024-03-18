@@ -98,7 +98,7 @@ export function getProducts() {
       rasrochka.insertAdjacentHTML("beforeend", todoHtml);
     });
 
-    window.addEventListener("click", (e) => {
+    window.addEventListener("click", async (e) => {
       e.preventDefault();
       if (e.target.closest("img")) {
         let item = e.target.closest(".item");
@@ -111,8 +111,19 @@ export function getProducts() {
           review: item.querySelector(".otziv").innerHTML,
           discount: item.querySelector(".price2").innerHTML,
         };
+        
         localStorage.setItem("item", JSON.stringify(obj));
         location.href = "http://127.0.0.1:5500/src/html/categories.html";
+
+        // let response = await axios.post(`http://localhost:5055/korzina`, {
+        //   img: item.querySelector("img").getAttribute("src"),
+        //   name: item.querySelector(".name").innerHTML,
+        //   discount: item.querySelector(".price2").innerHTML,
+        //   price:  item.querySelector(".price").innerHTML
+        // });
+
+        
+        
       }
 
       if (e.target.closest(".basket")) {
@@ -122,21 +133,38 @@ export function getProducts() {
           name: item.querySelector(".name").innerHTML,
         };
         localStorage.setItem("korzina", JSON.stringify(obj));
+
+        
+        let state = {
+          products: [],
+        };
+
+        interval = setInterval(() => {
+          const getTodo = async () => {
+            let response = await axios.get("http://localhost:5055/korzina");
+          
+            return (state.products = response.data);
+          };
+          
+          getTodo();
+
+          
+        })
+
+        console.log(state);
       }
     });
     let basket = document.querySelectorAll(".basket");
 
     for (let i = 0; i < basket.length; i++) {
-      basket[i].onclick = function(){
+      basket[i].onclick = function () {
         korzina.style.display = "flex";
-        console.log('click');
       };
     }
 
     interval = setInterval(() => {
-      korzina.style.display = 'none'
-    }, 6000)
-
+      korzina.style.display = "none";
+    }, 6000);
   }, 1000);
 }
 
@@ -160,14 +188,14 @@ let todoHtml = `
 
 korzina.insertAdjacentHTML("beforeend", todoHtml);
 
-let close = document.querySelector('.close')
+let close = document.querySelector(".close");
 
 close.addEventListener("click", () => {
-  korzina.style.display = 'none'
-})
+  korzina.style.display = "none";
+});
 
-let pere = document.querySelector('.pere')
+let pere = document.querySelector(".pere");
 
-pere.addEventListener('click', () => {
-  location.href = 'http://127.0.0.1:5500/src/html/cart.html'
-})
+pere.addEventListener("click", () => {
+  location.href = "http://127.0.0.1:5500/src/html/cart.html";
+});
