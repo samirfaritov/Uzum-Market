@@ -14,7 +14,7 @@ interval = setInterval(() => {
   let todoHtml = `
 <div class="kategori">
 <div class="left">
-  <div class="item">
+  <div class="item" id="">
     <img
       src="${item.img}"
       alt=""
@@ -121,11 +121,11 @@ interval = setInterval(() => {
 </div>
 </div>
 `;
-content.insertAdjacentHTML("beforeend", todoHtml);
-}, 100);
+  content.insertAdjacentHTML("beforeend", todoHtml);
+}, 1000);
 
 window.addEventListener("click", (event) => {
-  let nalichie = document.querySelector('.nalichie')
+  let nalichie = document.querySelector(".nalichie");
   let minus = document.querySelector(".minus");
   event.preventDefault();
   const price = document.querySelector(".price2");
@@ -133,28 +133,27 @@ window.addEventListener("click", (event) => {
     const counterWrapper = event.target.closest(".kol");
     const counter = counterWrapper.querySelector(".count");
     counter.innerHTML++;
-    let a = JSON.parse(localStorage.getItem("item") || "{}" )
+    let a = JSON.parse(localStorage.getItem("item") || "{}");
 
-    let p = parseInt(a.discount)
+    let p = parseInt(a.discount);
 
-    let total = p * parseInt(counter.innerHTML)
+    let total = p * parseInt(counter.innerHTML);
 
-    price.innerHTML = `${total} сум`
-    
+    price.innerHTML = `${total} сум`;
+
     minus.style.color = "#000";
-    
   }
   if (event.target.dataset.action === "minus") {
     const counterWrapper = event.target.closest(".kol");
     const counter = counterWrapper.querySelector(".count");
     counter.innerHTML--;
-    
-    let a = JSON.parse(localStorage.getItem("item") || "{}" )
-    
-    let p = parseInt(a.discount)
-    
-    let total = p * parseInt(counter.innerHTML)
-    price.innerHTML = `${total} сум`
+
+    let a = JSON.parse(localStorage.getItem("item") || "{}");
+
+    let p = parseInt(a.discount);
+
+    let total = p * parseInt(counter.innerHTML);
+    price.innerHTML = `${total} сум`;
 
     if (counter.innerHTML <= 1) {
       counter.innerHTML = "1";
@@ -164,5 +163,26 @@ window.addEventListener("click", (event) => {
     // if (counter.innerHTML == 1) {
     //   price.innerHTML = total
     // }
+  }
+
+  let arr =[]
+
+  if (event.target.closest(".korzina")) {
+    // location.href = 'http://127.0.0.1:5500/src/html/cart.html'
+
+    let local = {
+      // id: content.querySelector('#id').innerHTML,
+      img: content.querySelector("img").getAttribute("src"),
+      name: content.querySelector(".name").innerHTML,
+      grade: content.querySelector(".grade").innerHTML,
+      kredit: content.querySelector(".kredit").innerHTML,
+      price: content.querySelector(".price").innerHTML,
+      review: content.querySelector(".otziv").innerHTML,
+      discount: content.querySelector(".price2").innerHTML,
+    }
+    arr.push(local)
+
+    localStorage.setItem("korzina3", JSON.stringify(arr));
+
   }
 });

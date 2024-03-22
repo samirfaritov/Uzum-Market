@@ -94,5 +94,5 @@ export function getProducts() {
       
           flo.insertAdjacentHTML("beforeend", todoHtml);
         });
-      });
+      }, 1000);
 }

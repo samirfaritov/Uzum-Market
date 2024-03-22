@@ -99,10 +99,12 @@ export function getProducts() {
     });
 
     window.addEventListener("click", async (e) => {
+      JSON.parse(localStorage.getItem("korzina2") || "{}");
       e.preventDefault();
       if (e.target.closest("img")) {
         let item = e.target.closest(".item");
         let obj = {
+          // id: item.id,
           img: item.querySelector("img").getAttribute("src"),
           name: item.querySelector(".name").innerHTML,
           grade: item.querySelector(".grade").innerHTML,
@@ -111,6 +113,8 @@ export function getProducts() {
           review: item.querySelector(".otziv").innerHTML,
           discount: item.querySelector(".price2").innerHTML,
         };
+
+        console.log(item);
         
         localStorage.setItem("item", JSON.stringify(obj));
         location.href = "http://127.0.0.1:5500/src/html/categories.html";
@@ -129,29 +133,43 @@ export function getProducts() {
       if (e.target.closest(".basket")) {
         let item = e.target.closest(".item");
         let obj = {
+          // id: item.querySelector('#id').innerHTML,
           img: item.querySelector("img").getAttribute("src"),
           name: item.querySelector(".name").innerHTML,
         };
         localStorage.setItem("korzina", JSON.stringify(obj));
 
         
-        let state = {
-          products: [],
+        // let state = {
+        //   products: [],
+        // };
+
+        // interval = setInterval(() => {
+        //   const getTodo = async () => {
+        //     let response = await axios.get("http://localhost:5055/korzina");
+          
+        //     return (state.products = response.data);
+        //   };
+          
+        //   getTodo();
+
+          
+        // })
+
+        // console.log(state);
+
+        let item2 = e.target.closest(".item");
+        let obj2 = {
+          // id: item2.querySelector('#id').innerHTML,
+          img: item2.querySelector("img").getAttribute("src"),
+          name: item2.querySelector(".name").innerHTML,
+          price: item2.querySelector(".price").innerHTML,
+          discount: item2.querySelector(".price2").innerHTML,
         };
 
-        interval = setInterval(() => {
-          const getTodo = async () => {
-            let response = await axios.get("http://localhost:5055/korzina");
-          
-            return (state.products = response.data);
-          };
-          
-          getTodo();
 
-          
-        })
+        localStorage.setItem("korzina2", JSON.stringify(obj2));
 
-        console.log(state);
       }
     });
     let basket = document.querySelectorAll(".basket");
@@ -199,3 +217,25 @@ let pere = document.querySelector(".pere");
 pere.addEventListener("click", () => {
   location.href = "http://127.0.0.1:5500/src/html/cart.html";
 });
+
+
+let skroll = document.querySelector('.skroll')
+
+
+skroll.addEventListener("click", (e) => {
+  e.preventDefault()
+  location.href = ""
+})
+
+
+let skidka = document.querySelector('.skidka')
+
+skidka.addEventListener("mouseenter", () => {
+  skroll.style.display = 'flex'
+})
+
+let reklama = document.querySelector('.reklama')
+
+reklama.addEventListener("mouseenter", () => {
+  skroll.style.display = 'none'
+})
