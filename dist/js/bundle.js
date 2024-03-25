@@ -43,7 +43,7 @@ function getProducts() {
       }
       // console.log(item);
       let todoHtml = `
-            <div class="item" id="${item.id}">
+            <div class="item" data-id="${item.id}">
             <div class="img">
             <div class="heart">
               <svg
@@ -122,7 +122,7 @@ function getProducts() {
       if (e.target.closest("img")) {
         let item = e.target.closest(".item");
         let obj = {
-          // id: item.id,
+          id: item.dataset.id,
           img: item.querySelector("img").getAttribute("src"),
           name: item.querySelector(".name").innerHTML,
           grade: item.querySelector(".grade").innerHTML,
@@ -133,7 +133,8 @@ function getProducts() {
         };
 
         console.log(item);
-        
+        console.log(obj);
+
         localStorage.setItem("item", JSON.stringify(obj));
         location.href = "http://127.0.0.1:5500/src/html/categories.html";
 
@@ -143,21 +144,17 @@ function getProducts() {
         //   discount: item.querySelector(".price2").innerHTML,
         //   price:  item.querySelector(".price").innerHTML
         // });
-
-        
-        
       }
 
       if (e.target.closest(".basket")) {
         let item = e.target.closest(".item");
         let obj = {
-          // id: item.querySelector('#id').innerHTML,
+          id: item.dataset.id,
           img: item.querySelector("img").getAttribute("src"),
           name: item.querySelector(".name").innerHTML,
         };
         localStorage.setItem("korzina", JSON.stringify(obj));
 
-        
         // let state = {
         //   products: [],
         // };
@@ -165,29 +162,26 @@ function getProducts() {
         // interval = setInterval(() => {
         //   const getTodo = async () => {
         //     let response = await axios.get("http://localhost:5055/korzina");
-          
+
         //     return (state.products = response.data);
         //   };
-          
+
         //   getTodo();
 
-          
         // })
 
         // console.log(state);
 
         let item2 = e.target.closest(".item");
         let obj2 = {
-          // id: item2.querySelector('#id').innerHTML,
+          id: item2.dataset.id,
           img: item2.querySelector("img").getAttribute("src"),
           name: item2.querySelector(".name").innerHTML,
           price: item2.querySelector(".price").innerHTML,
           discount: item2.querySelector(".price2").innerHTML,
         };
 
-
         localStorage.setItem("korzina2", JSON.stringify(obj2));
-
       }
     });
     let basket = document.querySelectorAll(".basket");
@@ -236,27 +230,31 @@ pere.addEventListener("click", () => {
   location.href = "http://127.0.0.1:5500/src/html/cart.html";
 });
 
-
-let skroll = document.querySelector('.skroll')
-
+let skroll = document.querySelector(".skroll");
 
 skroll.addEventListener("click", (e) => {
-  e.preventDefault()
-  location.href = ""
-})
+  e.preventDefault();
+  location.href = "";
+});
 
-
-let skidka = document.querySelector('.skidka')
+let skidka = document.querySelector(".skidka");
 
 skidka.addEventListener("mouseenter", () => {
-  skroll.style.display = 'flex'
-})
+  skroll.style.display = "flex";
+});
 
-let reklama = document.querySelector('.reklama')
+let reklama = document.querySelector(".reklama");
 
 reklama.addEventListener("mouseenter", () => {
-  skroll.style.display = 'none'
-})
+  skroll.style.display = "none";
+});
+
+const kar = document.querySelector(".kar");
+
+kar.addEventListener("click", () => {
+  location.href = "http://127.0.0.1:5500/src/html/cart.html";
+});
+
 
 /***/ }),
 
@@ -298,7 +296,7 @@ function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-                    <div class="item">
+                    <div class="item" data-id="${item.id}">
                     <div class="img">
                     <div class="heart">
                       <svg
@@ -417,7 +415,7 @@ function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-                      <div class="item">
+                      <div class="item" data-id="${item.id}">
                       <div class="img">
                       <div class="heart">
                         <svg
@@ -533,7 +531,7 @@ function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-                  <div class="item">
+                  <div class="item" data-id="${item.id}">
                   <div class="img">
                   <div class="heart">
                     <svg
@@ -649,7 +647,7 @@ function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-                        <div class="item">
+                        <div class="item" data-id="${item.id}">
                         <div class="img">
                         <div class="heart">
                           <svg
@@ -765,7 +763,7 @@ function getProducts() {
           }
           //   console.log(item);
           let todoHtml = `
-              <div class="item">
+              <div class="item" data-id="${item.id}">
               <div class="img">
               <div class="heart">
                 <svg
@@ -882,7 +880,7 @@ function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-          <div class="item" data-item>
+          <div class="item" data-id="${item.id}">
           <div class="img">
           <div class="heart">
             <svg
@@ -997,7 +995,7 @@ function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-                  <div class="item">
+                  <div class="item" data-id="${item.id}">
                   <div class="img">
                   <div class="heart">
                     <svg
@@ -1113,7 +1111,7 @@ function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-                <div class="item">
+                <div class="item" data-id="${item.id}">
                 <div class="img">
                 <div class="heart">
                   <svg
@@ -1229,7 +1227,7 @@ function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-                        <div class="item">
+                        <div class="item" data-id="${item.id}">
                         <div class="img">
                         <div class="heart">
                           <svg
@@ -1348,7 +1346,7 @@ function getProducts() {
       }
       // console.log(item);
       let todoHtml = `
-              <div class="item">
+              <div class="item" data-id="${item.id}">
               <div class="img">
               <div class="heart">
                 <svg

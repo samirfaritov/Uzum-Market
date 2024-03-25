@@ -377,7 +377,7 @@
     width: 150px;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 60px;  
 }
 
 .conteiner .AllWidth .content .left .item .delete .flex {

@@ -24,7 +24,7 @@ export function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-          <div class="item" data-item>
+          <div class="item" data-id="${item.id}">
           <div class="img">
           <div class="heart">
             <svg

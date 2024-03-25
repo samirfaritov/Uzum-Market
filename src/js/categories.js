@@ -14,7 +14,7 @@ interval = setInterval(() => {
   let todoHtml = `
 <div class="kategori">
 <div class="left">
-  <div class="item" id="">
+  <div class="item" data-id="${item.id}">
     <img
       src="${item.img}"
       alt=""
@@ -165,13 +165,18 @@ window.addEventListener("click", (event) => {
     // }
   }
 
-  let arr =[]
+  let korzina = {
+    arr: []
+  }
 
   if (event.target.closest(".korzina")) {
-    // location.href = 'http://127.0.0.1:5500/src/html/cart.html'
+    location.href = 'http://127.0.0.1:5500/src/html/cart.html'
+
+    let item = document.querySelector('.item')
+    // console.log(item);
 
     let local = {
-      // id: content.querySelector('#id').innerHTML,
+      id: item.dataset.id,
       img: content.querySelector("img").getAttribute("src"),
       name: content.querySelector(".name").innerHTML,
       grade: content.querySelector(".grade").innerHTML,
@@ -180,9 +185,17 @@ window.addEventListener("click", (event) => {
       review: content.querySelector(".otziv").innerHTML,
       discount: content.querySelector(".price2").innerHTML,
     }
-    arr.push(local)
 
-    localStorage.setItem("korzina3", JSON.stringify(arr));
+    korzina.arr.push(local)
 
+    localStorage.setItem("korzina3", JSON.stringify(korzina.arr));
+
+    console.log(korzina.arr);
   }
 });
+
+const kar = document.querySelector('.kar')
+
+kar.addEventListener('click', () => {
+  location.href = 'http://127.0.0.1:5500/src/html/cart.html'
+})
