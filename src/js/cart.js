@@ -135,3 +135,12 @@ for (let i = 0; i < korzina3.arr.length; i++) {
   left.insertAdjacentHTML("beforeend", todoHtml2);
   
 }
+
+
+// const itemBox = document.querySelector(".item")
+
+// const tovar = document.querySelector('.tovar')
+
+// // tovar.innerHTML = itemBox.innerHTML.length
+
+// console.log(itemBox.length);

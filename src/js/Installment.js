@@ -236,3 +236,15 @@ const kar = document.querySelector(".kar");
 kar.addEventListener("click", () => {
   location.href = "http://127.0.0.1:5500/src/html/cart.html";
 });
+
+let katalog = document.querySelector('.kat')
+let k = document.querySelector('#k')
+let clear = document.querySelector('#clear')
+const katalog2 = document.querySelector('.katalog2')
+  
+katalog.addEventListener('click', () => {
+  katalog2.classList.toggle('none')
+  clear.classList.toggle('none')
+  k.classList.toggle('block')
+})
+
