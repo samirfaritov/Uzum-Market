@@ -188,7 +188,7 @@ window.addEventListener("click", (event) => {
 
     korzina.arr.push(local)
 
-    localStorage.setItem("korzina3", JSON.stringify(korzina.arr));
+    localStorage.setItem("korzina2", JSON.stringify(korzina.arr));
 
     console.log(korzina.arr);
   }
