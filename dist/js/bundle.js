@@ -119,6 +119,10 @@ function getProducts() {
     window.addEventListener("click", async (e) => {
       JSON.parse(localStorage.getItem("korzina2") || "{}");
       e.preventDefault();
+      let k = {
+        r: []
+      }
+
       if (e.target.closest("img")) {
         let item = e.target.closest(".item");
         let obj = {
@@ -181,7 +185,10 @@ function getProducts() {
           discount: item2.querySelector(".price2").innerHTML,
         };
 
-        localStorage.setItem("korzina2", JSON.stringify(obj2));
+        k.r.push(obj2)
+
+        console.log(k);
+        localStorage.setItem("korzina2", JSON.stringify(k.r));
       }
     });
     let basket = document.querySelectorAll(".basket");
