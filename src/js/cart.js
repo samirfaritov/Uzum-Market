@@ -112,3 +112,9 @@ window.addEventListener('click', (event) => {
     // }
   }
 })
+
+let date = document.querySelectorAll('.date2')
+
+for (let i = 0; i < date.length; i++) {
+  date[i].innerHTML = new Date().getDate() + 1
+}
