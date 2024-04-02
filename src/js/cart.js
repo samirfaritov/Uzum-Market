@@ -80,11 +80,11 @@ window.addEventListener('click', (event) => {
     const counter = counterWrapper.querySelector(".count");
     counter.innerHTML++;
     let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
-
+    
     let p = parseInt(a[0].discount);
-
+    
     let total = p * parseInt(counter.innerHTML);
-
+    
     price.innerHTML = `${total} сум`;
 
     minus.style.color = "#000";
@@ -94,27 +94,38 @@ window.addEventListener('click', (event) => {
     const counterWrapper = event.target.closest(".kol");
     const counter = counterWrapper.querySelector(".count");
     counter.innerHTML--;
-
+    
     let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
-
+    
     let p = parseInt(a[0].discount);
-
+    
     let total = p * parseInt(counter.innerHTML);
     price.innerHTML = `${total} сум`;
-
+    
     if (counter.innerHTML <= 1) {
       counter.innerHTML = "1";
       minus.style.color = "#ccc";
     }
-
+    
     // if (counter.innerHTML == 1) {
-    //   price.innerHTML = total
-    // }
-  }
-})
+      //   price.innerHTML = total
+      // }
+    }
+  })
 
 let date = document.querySelectorAll('.date2')
 
 for (let i = 0; i < date.length; i++) {
   date[i].innerHTML = new Date().getDate() + 1
 }
+
+const price = document.querySelector(".price");
+const itogo = document.querySelector('.itogo')
+
+// itogo.innerHTML += price.innerHTML
+
+let item = document.querySelectorAll('.item')
+let tovar = document.querySelector('.tovar')
+
+tovar.innerHTML = item.length
+
