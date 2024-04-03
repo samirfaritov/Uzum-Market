@@ -165,13 +165,11 @@ window.addEventListener("click", (event) => {
     // }
   }
 
-  let korzina = {
-    arr: []
-  }
 
   if (event.target.closest(".korzina")) {
     location.href = 'http://127.0.0.1:5500/src/html/cart.html'
 
+    let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
     let item = document.querySelector('.item')
     // console.log(item);
 
@@ -186,11 +184,17 @@ window.addEventListener("click", (event) => {
       discount: content.querySelector(".price2").innerHTML,
     }
 
-    korzina.arr.push(local)
+    a.push(local)
 
-    localStorage.setItem("korzina2", JSON.stringify(korzina.arr));
+    localStorage.setItem("korzina2", JSON.stringify(a));
 
-    console.log(korzina.arr);
+    // if () {
+      
+    // }
+    // id===id
+    // count++
+
+
   }
 });
 

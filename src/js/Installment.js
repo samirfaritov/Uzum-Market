@@ -97,14 +97,10 @@ export function getProducts() {
 
       rasrochka.insertAdjacentHTML("beforeend", todoHtml);
     });
-
     window.addEventListener("click", async (e) => {
       JSON.parse(localStorage.getItem("korzina2") || "{}");
-      e.preventDefault();
-      let k = {
-        r: []
-      }
 
+      e.preventDefault();
       if (e.target.closest("img")) {
         let item = e.target.closest(".item");
         let obj = {
@@ -158,6 +154,12 @@ export function getProducts() {
 
         // console.log(state);
 
+        let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
+
+        // let b =  a.filter(item => {
+        //   item.id !== id
+        // })
+
         let item2 = e.target.closest(".item");
         let obj2 = {
           id: item2.dataset.id,
@@ -167,10 +169,10 @@ export function getProducts() {
           discount: item2.querySelector(".price2").innerHTML,
         };
 
-        k.r.push(obj2)
+        a.push(obj2);
 
-        console.log(k);
-        localStorage.setItem("korzina2", JSON.stringify(k.r));
+        localStorage.setItem("korzina2", JSON.stringify(a));
+        console.log(a);
       }
     });
     let basket = document.querySelectorAll(".basket");
@@ -244,14 +246,13 @@ kar.addEventListener("click", () => {
   location.href = "http://127.0.0.1:5500/src/html/cart.html";
 });
 
-let katalog = document.querySelector('.kat')
-let k = document.querySelector('#k')
-let clear = document.querySelector('#clear')
-const katalog2 = document.querySelector('.katalog2')
-  
-katalog.addEventListener('click', () => {
-  katalog2.classList.toggle('none')
-  clear.classList.toggle('none')
-  k.classList.toggle('block')
-})
+let katalog = document.querySelector(".kat");
+let k = document.querySelector("#k");
+let clear = document.querySelector("#clear");
+const katalog2 = document.querySelector(".katalog2");
 
+katalog.addEventListener("click", () => {
+  katalog2.classList.toggle("none");
+  clear.classList.toggle("none");
+  k.classList.toggle("block");
+});
