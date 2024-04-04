@@ -350,6 +350,11 @@
     display: flex;
     align-items: center;
     gap: 25px;
+    position: relative;
+}
+
+.conteiner .AllWidth .content .left .item .name {
+  width: 200px;
 }
 
 .conteiner .AllWidth .content .left .item input {
@@ -370,7 +375,7 @@
 .conteiner .AllWidth .content .left .item .salesman .k {
     position: relative;
     top: 89px;
-    right: 100px
+    right: -50px
 }
 
 .conteiner .AllWidth .content .left .item .delete {
@@ -378,6 +383,12 @@
     display: flex;
     flex-direction: column;
     gap: 60px;  
+    position: absolute;
+    right: 0;
+}
+
+.conteiner .AllWidth .content .left .item .delete .delet {
+  color: #818181;
 }
 
 .conteiner .AllWidth .content .left .item .delete .flex {
@@ -387,9 +398,6 @@
     cursor: pointer;
 }
 
-/* .conteiner .AllWidth .content .left .item .delete .flex svg {
-    background-color: #fff;    
-} */
 
 .conteiner .AllWidth .content .left .item .delete .price {
     font-size: 25px;
