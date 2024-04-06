@@ -374,7 +374,8 @@
   cursor: pointer;
 }
 
-.conteiner .AllWidth .skidka .item .heart svg {
+.conteiner .AllWidth .skidka .item .heart i {
+  font-size: 5px;
   width: 40px;
   height: 25px;
 }
@@ -867,15 +868,16 @@
 
 .conteiner .AllWidth .rasrochka2 .item .heart {
   position: absolute;
-  top: 7px;
-  right: -1px;
+  top: 2px;
+  right: -10px;
   font-size: 30px;
   cursor: pointer;
 }
 
-.conteiner .AllWidth .rasrochka2 .item .heart svg {
+.conteiner .AllWidth .rasrochka2 .item .heart i {
   width: 40px;
   height: 25px;
+  font-size: 25px;
 }
 
 .conteiner .AllWidth .rasrochka2 .item .basket {
@@ -1587,7 +1589,7 @@
   cursor: pointer;
 }
 
-.conteiner .AllWidth .beauty .item .heart svg {
+.conteiner .AllWidth .beauty .item .heart i {
   width: 40px;
   height: 25px;
 }
@@ -1922,4 +1924,8 @@
 
 .block {
   display: none !important;
+}
+
+.added {
+  color: red !important;
 }
