@@ -388,7 +388,7 @@
 }
 
 .conteiner .AllWidth .content .left .item .delete .delet {
-  color: #818181;
+  color: #b5b5b5;
 }
 
 .conteiner .AllWidth .content .left .item .delete .flex {
@@ -398,6 +398,10 @@
     cursor: pointer;
 }
 
+.conteiner .AllWidth .content .left .item .delete .flex i {
+  font-size: 25px;
+  color: #989898;
+}
 
 .conteiner .AllWidth .content .left .item .delete .price {
     font-size: 25px;
