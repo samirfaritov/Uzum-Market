@@ -1,5 +1,6 @@
 export let state = {
   products: [],
+  add: []
 };
 
 export const getTodo = async () => {
@@ -25,7 +26,7 @@ export function getProducts() {
                         <div class="item" data-id="${item.id}">
                         <div class="img">
                         <div class="heart">
-                        <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>>
+                        <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
                         </div>
                         <img src="${item.img}" alt="" />
                         <div class="flex">
@@ -75,5 +76,26 @@ export function getProducts() {
 
       beauty.insertAdjacentHTML("beforeend", todoHtml);
     });
+    window.addEventListener('click', (e) =>{
+      e.preventDefault()
+    
+      if (e.target.closest(".heart")) {
+        const text = e.target.closest("#heart");
+        let item = e.target.closest(".item");
+        let obj = {
+          id: item.dataset.id,
+        };
+    
+        let clicked = state.products.filter((item) => item.id == obj.id);
+        if (text.classList.contains("added")) {
+          state.add.push(clicked[0]);
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        } else {
+          state.add = state.add.filter((item) => item.id !== clicked[0].id)
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        }
+      }
+    })
+    
   }, 1000);
 }

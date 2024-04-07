@@ -18,6 +18,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 let state = {
   products: [],
+  add: []
 };
 
 const getTodo = async () => {
@@ -175,17 +176,20 @@ function getProducts() {
 
       if (e.target.closest(".heart")) {
         const text = e.target.closest("#heart");
+        console.log(text);
+        let item = e.target.closest(".item");
+        let obj = {
+          id: item.dataset.id,
+        };
 
-        let clicked = state.products.filter((item) => item.id == e.target.id);
+        let clicked = state.products.filter((item) => item.id == obj.id);
         text.classList.toggle("added");
         if (text.classList.contains("added")) {
-          state.products.push(clicked);
-          localStorage.setItem("arr", JSON.stringify(state.products));
+          state.add.push(clicked[0]);
+          localStorage.setItem("arr", JSON.stringify(state.add));
         } else {
-          state.products = state.products.filter(
-            (item) => item.id !== clicked.id
-          );
-          localStorage.setItem("arr", JSON.stringify(state.products));
+          state.add = state.add.filter((item) => item.id !== clicked[0].id)
+          localStorage.setItem("arr", JSON.stringify(state.add));
         }
       }
     });
@@ -303,6 +307,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 let state = {
   products: [],
+  add: []
 };
 
 const getTodo = async () => {
@@ -379,9 +384,28 @@ function getProducts() {
       vozdux.insertAdjacentHTML("beforeend", todoHtml);
     });
     
+    window.addEventListener('click', (e) =>{
+      e.preventDefault()
+    
+      if (e.target.closest(".heart")) {
+        const text = e.target.closest("#heart");
+        let item = e.target.closest(".item");
+        let obj = {
+          id: item.dataset.id,
+        };
+    
+        let clicked = state.products.filter((item) => item.id == obj.id);
+        if (text.classList.contains("added")) {
+          state.add.push(clicked[0]);
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        } else {
+          state.add = state.add.filter((item) => item.id !== clicked[0].id)
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        }
+      }
+    })
   }, 1000);
 }
-
 
 
 
@@ -403,6 +427,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 let state = {
   products: [],
+  add: []
 };
 
 const getTodo = async () => {
@@ -478,6 +503,27 @@ function getProducts() {
 
       uxod.insertAdjacentHTML("beforeend", todoHtml);
     });
+    window.addEventListener('click', (e) =>{
+      e.preventDefault()
+    
+      if (e.target.closest(".heart")) {
+        const text = e.target.closest("#heart");
+        let item = e.target.closest(".item");
+        let obj = {
+          id: item.dataset.id,
+        };
+    
+        let clicked = state.products.filter((item) => item.id == obj.id);
+        if (text.classList.contains("added")) {
+          state.add.push(clicked[0]);
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        } else {
+          state.add = state.add.filter((item) => item.id !== clicked[0].id)
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        }
+      }
+    })
+    
   }, 1000);
 }
 
@@ -500,6 +546,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 let state = {
   products: [],
+  add: []
 };
 
 const getTodo = async () => {
@@ -515,7 +562,7 @@ let interval;
 const elektronika = document.querySelector(".elektronika");
 
 function getProducts() {
-  interval = setInterval(() => {
+  interval = setInterval(() => {             
     state.products.forEach((item) => {
       if ((item.length = 1)) {
         clearInterval(interval);
@@ -575,6 +622,27 @@ function getProducts() {
 
       elektronika.insertAdjacentHTML("beforeend", todoHtml);
     });
+    window.addEventListener('click', (e) =>{
+      e.preventDefault()
+    
+      if (e.target.closest(".heart")) {
+        const text = e.target.closest("#heart");
+        let item = e.target.closest(".item");
+        let obj = {
+          id: item.dataset.id,
+        };
+    
+        let clicked = state.products.filter((item) => item.id == obj.id);
+        if (text.classList.contains("added")) {
+          state.add.push(clicked[0]);
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        } else {
+          state.add = state.add.filter((item) => item.id !== clicked[0].id)
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        }
+      }
+    })
+    
   }, 1000);
 }
 
@@ -597,6 +665,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 let state = {
   products: [],
+  add: []
 };
 
 const getTodo = async () => {
@@ -672,6 +741,27 @@ function getProducts() {
 
       family.insertAdjacentHTML("beforeend", todoHtml);
     });
+    window.addEventListener('click', (e) =>{
+      e.preventDefault()
+    
+      if (e.target.closest(".heart")) {
+        const text = e.target.closest("#heart");
+        let item = e.target.closest(".item");
+        let obj = {
+          id: item.dataset.id,
+        };
+    
+        let clicked = state.products.filter((item) => item.id == obj.id);
+        if (text.classList.contains("added")) {
+          state.add.push(clicked[0]);
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        } else {
+          state.add = state.add.filter((item) => item.id !== clicked[0].id)
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        }
+      }
+    })
+    
   }, 1000);
 }
 
@@ -694,6 +784,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 let state = {
   products: [],
+  add: []
 };
 
 const getTodo = async () => {
@@ -769,6 +860,27 @@ function getProducts() {
       
           flo.insertAdjacentHTML("beforeend", todoHtml);
         });
+        window.addEventListener('click', (e) =>{
+          e.preventDefault()
+        
+          if (e.target.closest(".heart")) {
+            const text = e.target.closest("#heart");
+            let item = e.target.closest(".item");
+            let obj = {
+              id: item.dataset.id,
+            };
+        
+            let clicked = state.products.filter((item) => item.id == obj.id);
+            if (text.classList.contains("added")) {
+              state.add.push(clicked[0]);
+              localStorage.setItem("arr", JSON.stringify(state.add));
+            } else {
+              state.add = state.add.filter((item) => item.id !== clicked[0].id)
+              localStorage.setItem("arr", JSON.stringify(state.add));
+            }
+          }
+        })
+        
       }, 1000);
 }
 
@@ -790,6 +902,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 let state = {
   products: [],
+  add: []
 };
 
 const getTodo = async () => {
@@ -866,6 +979,28 @@ function getProducts() {
             `;
       skidka.insertAdjacentHTML("beforeend", todoHtml);
     });
+    window.addEventListener('click', (e) =>{
+      e.preventDefault()
+    
+      if (e.target.closest(".heart")) {
+        const text = e.target.closest("#heart");
+        let item = e.target.closest(".item");
+        let obj = {
+          id: item.dataset.id,
+        };
+    
+        let clicked = state.products.filter((item) => item.id == obj.id);
+
+        if (text.classList.contains("added")) {
+          state.add.push(clicked[0]);
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        } else {
+          state.add = state.add.filter((item) => item.id !== clicked[0].id)
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        }
+      }
+    })
+    
   }, 1000);
 }
 
@@ -888,6 +1023,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 let state = {
   products: [],
+  add: []
 };
 
 const getTodo = async () => {
@@ -963,6 +1099,27 @@ function getProducts() {
 
       bozor.insertAdjacentHTML("beforeend", todoHtml);
     });
+    window.addEventListener('click', (e) =>{
+      e.preventDefault()
+    
+      if (e.target.closest(".heart")) {
+        const text = e.target.closest("#heart");
+        let item = e.target.closest(".item");
+        let obj = {
+          id: item.dataset.id,
+        };
+    
+        let clicked = state.products.filter((item) => item.id == obj.id);
+        if (text.classList.contains("added")) {
+          state.add.push(clicked[0]);
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        } else {
+          state.add = state.add.filter((item) => item.id !== clicked[0].id)
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        }
+      }
+    })
+    
   }, 1000);
 }
 
@@ -985,6 +1142,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 let state = {
   products: [],
+  add: []
 };
 
 const getTodo = async () => {
@@ -1060,6 +1218,27 @@ function getProducts() {
 
       rekomenduyem.insertAdjacentHTML("beforeend", todoHtml);
     });
+    window.addEventListener('click', (e) =>{
+      e.preventDefault()
+    
+      if (e.target.closest(".heart")) {
+        const text = e.target.closest("#heart");
+        let item = e.target.closest(".item");
+        let obj = {
+          id: item.dataset.id,
+        };
+    
+        let clicked = state.products.filter((item) => item.id == obj.id);
+        if (text.classList.contains("added")) {
+          state.add.push(clicked[0]);
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        } else {
+          state.add = state.add.filter((item) => item.id !== clicked[0].id)
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        }
+      }
+    })
+    
   }, 1000);
 }
 
@@ -1082,6 +1261,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 let state = {
   products: [],
+  add: []
 };
 
 const getTodo = async () => {
@@ -1107,7 +1287,7 @@ function getProducts() {
                         <div class="item" data-id="${item.id}">
                         <div class="img">
                         <div class="heart">
-                        <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>>
+                        <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
                         </div>
                         <img src="${item.img}" alt="" />
                         <div class="flex">
@@ -1157,6 +1337,27 @@ function getProducts() {
 
       beauty.insertAdjacentHTML("beforeend", todoHtml);
     });
+    window.addEventListener('click', (e) =>{
+      e.preventDefault()
+    
+      if (e.target.closest(".heart")) {
+        const text = e.target.closest("#heart");
+        let item = e.target.closest(".item");
+        let obj = {
+          id: item.dataset.id,
+        };
+    
+        let clicked = state.products.filter((item) => item.id == obj.id);
+        if (text.classList.contains("added")) {
+          state.add.push(clicked[0]);
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        } else {
+          state.add = state.add.filter((item) => item.id !== clicked[0].id)
+          localStorage.setItem("arr", JSON.stringify(state.add));
+        }
+      }
+    })
+    
   }, 1000);
 }
 

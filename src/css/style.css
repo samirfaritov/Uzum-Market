@@ -368,16 +368,16 @@
 
 .conteiner .AllWidth .skidka .item .heart {
   position: absolute;
-  top: 7px;
-  right: -1px;
+  top: 2px;
+  right: -10px;
   font-size: 30px;
   cursor: pointer;
 }
 
 .conteiner .AllWidth .skidka .item .heart i {
-  font-size: 5px;
   width: 40px;
   height: 25px;
+  font-size: 25px;
 }
 
 .conteiner .AllWidth .skidka .item .basket {
@@ -512,15 +512,16 @@
 
 .conteiner .AllWidth .flo .item .heart {
   position: absolute;
-  top: 7px;
-  right: -1px;
+  top: 2px;
+  right: -10px;
   font-size: 30px;
   cursor: pointer;
 }
 
-.conteiner .AllWidth .flo .item .heart svg {
+.conteiner .AllWidth .flo .item .heart i {
   width: 40px;
   height: 25px;
+  font-size: 25px;
 }
 
 .conteiner .AllWidth .flo .item .basket {
@@ -627,15 +628,16 @@
 
 .conteiner .AllWidth .rekomenduyem .item .heart {
   position: absolute;
-  top: 7px;
-  right: -1px;
+  top: 2px;
+  right: -10px;
   font-size: 30px;
   cursor: pointer;
 }
 
-.conteiner .AllWidth .rekomenduyem .item .heart svg {
+.conteiner .AllWidth .rekomenduyem .item .heart i {
   width: 40px;
   height: 25px;
+  font-size: 25px;
 }
 
 .conteiner .AllWidth .rekomenduyem .item .basket {
@@ -742,15 +744,16 @@
 
 .conteiner .AllWidth .elektronika .item .heart {
   position: absolute;
-  top: 7px;
-  right: -1px;
+  top: 2px;
+  right: -10px;
   font-size: 30px;
   cursor: pointer;
 }
 
-.conteiner .AllWidth .elektronika .item .heart svg {
+.conteiner .AllWidth .elektronika .item .heart i {
   width: 40px;
   height: 25px;
+  font-size: 25px;
 }
 
 .conteiner .AllWidth .elektronika .item .basket {
@@ -986,15 +989,16 @@
 
 .conteiner .AllWidth .texnika .item .heart {
   position: absolute;
-  top: 7px;
-  right: -1px;
+  top: 2px;
+  right: -10px;
   font-size: 30px;
   cursor: pointer;
 }
 
-.conteiner .AllWidth .texnika .item .heart svg {
+.conteiner .AllWidth .texnika .item .heart i {
   width: 40px;
   height: 25px;
+  font-size: 25px;
 }
 
 .conteiner .AllWidth .texnika .item .basket {
@@ -1112,15 +1116,16 @@
 
 .conteiner .AllWidth .bozor .item .heart {
   position: absolute;
-  top: 7px;
-  right: -1px;
+  top: 2px;
+  right: -10px;
   font-size: 30px;
   cursor: pointer;
 }
 
-.conteiner .AllWidth .bozor .item .heart svg {
+.conteiner .AllWidth .bozor .item .heart i {
   width: 40px;
   height: 25px;
+  font-size: 25px;
 }
 
 .conteiner .AllWidth .bozor .item .basket {
@@ -1238,15 +1243,16 @@
 
 .conteiner .AllWidth .vozdux .item .heart {
   position: absolute;
-  top: 7px;
-  right: -1px;
+  top: 2px;
+  right: -10px;
   font-size: 30px;
   cursor: pointer;
 }
 
-.conteiner .AllWidth .vozdux .item .heart svg {
+.conteiner .AllWidth .vozdux .item .heart i {
   width: 40px;
   height: 25px;
+  font-size: 25px;
 }
 
 .conteiner .AllWidth .vozdux .item .basket {
@@ -1353,15 +1359,16 @@
 
 .conteiner .AllWidth .uxod .item .heart {
   position: absolute;
-  top: 7px;
-  right: -1px;
+  top: 2px;
+  right: -10px;
   font-size: 30px;
   cursor: pointer;
 }
 
-.conteiner .AllWidth .uxod .item .heart svg {
+.conteiner .AllWidth .uxod .item .heart i {
   width: 40px;
   height: 25px;
+  font-size: 25px;
 }
 
 .conteiner .AllWidth .uxod .item .basket {
@@ -1468,15 +1475,16 @@
 
 .conteiner .AllWidth .family .item .heart {
   position: absolute;
-  top: 7px;
-  right: -1px;
+  top: 2px;
+  right: -10px;
   font-size: 30px;
   cursor: pointer;
 }
 
-.conteiner .AllWidth .family .item .heart svg {
+.conteiner .AllWidth .family .item .heart i {
   width: 40px;
   height: 25px;
+  font-size: 25px;
 }
 
 .conteiner .AllWidth .family .item .basket {
@@ -1583,8 +1591,8 @@
 
 .conteiner .AllWidth .beauty .item .heart {
   position: absolute;
-  top: 7px;
-  right: -1px;
+  top: 2px;
+  right: -10px;
   font-size: 30px;
   cursor: pointer;
 }
@@ -1592,6 +1600,7 @@
 .conteiner .AllWidth .beauty .item .heart i {
   width: 40px;
   height: 25px;
+  font-size: 25px;
 }
 
 .conteiner .AllWidth .beauty .item .basket {

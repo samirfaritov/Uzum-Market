@@ -1,5 +1,6 @@
 export let state = {
   products: [],
+  add: []
 };
 
 export const getTodo = async () => {
@@ -157,17 +158,20 @@ export function getProducts() {
 
       if (e.target.closest(".heart")) {
         const text = e.target.closest("#heart");
+        console.log(text);
+        let item = e.target.closest(".item");
+        let obj = {
+          id: item.dataset.id,
+        };
 
-        let clicked = state.products.filter((item) => item.id == e.target.id);
+        let clicked = state.products.filter((item) => item.id == obj.id);
         text.classList.toggle("added");
         if (text.classList.contains("added")) {
-          state.products.push(clicked);
-          localStorage.setItem("arr", JSON.stringify(state.products));
+          state.add.push(clicked[0]);
+          localStorage.setItem("arr", JSON.stringify(state.add));
         } else {
-          state.products = state.products.filter(
-            (item) => item.id !== clicked.id
-          );
-          localStorage.setItem("arr", JSON.stringify(state.products));
+          state.add = state.add.filter((item) => item.id !== clicked[0].id)
+          localStorage.setItem("arr", JSON.stringify(state.add));
         }
       }
     });
