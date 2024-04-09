@@ -158,7 +158,6 @@ export function getProducts() {
 
       if (e.target.closest(".heart")) {
         const text = e.target.closest("#heart");
-        console.log(text);
         let item = e.target.closest(".item");
         let obj = {
           id: item.dataset.id,
@@ -173,6 +172,7 @@ export function getProducts() {
           state.add = state.add.filter((item) => item.id !== clicked[0].id)
           localStorage.setItem("arr", JSON.stringify(state.add));
         }
+        console.log(state.add);
       }
     });
     let basket = document.querySelectorAll(".basket");
