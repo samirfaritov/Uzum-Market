@@ -165,12 +165,11 @@ window.addEventListener("click", (event) => {
     // }
   }
 
-
   if (event.target.closest(".korzina")) {
-    location.href = 'http://127.0.0.1:5500/src/html/cart.html'
+    location.href = "http://127.0.0.1:5500/src/html/cart.html";
 
     let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
-    let item = document.querySelector('.item')
+    let item = document.querySelector(".item");
     // console.log(item);
 
     let local = {
@@ -182,24 +181,24 @@ window.addEventListener("click", (event) => {
       price: content.querySelector(".price").innerHTML,
       review: content.querySelector(".otziv").innerHTML,
       discount: content.querySelector(".price2").innerHTML,
-    }
+      count: content.querySelector(".count").innerHTML
+    };
 
-    a.push(local)
+
+    a.push(local);
 
     localStorage.setItem("korzina2", JSON.stringify(a));
 
     // if () {
-      
+
     // }
     // id===id
     // count++
-
-
   }
 });
 
-const kar = document.querySelector('.kar')
+const kar = document.querySelector(".kar");
 
-kar.addEventListener('click', () => {
-  location.href = 'http://127.0.0.1:5500/src/html/cart.html'
-})
+kar.addEventListener("click", () => {
+  location.href = "http://127.0.0.1:5500/src/html/cart.html";
+});
