@@ -166,14 +166,14 @@ window.addEventListener("click", (event) => {
   }
 
   if (event.target.closest(".korzina")) {
-    location.href = "http://127.0.0.1:5500/src/html/cart.html";
+    // location.href = "http://127.0.0.1:5500/src/html/cart.html";
 
     let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
     let item = document.querySelector(".item");
     // console.log(item);
 
     let local = {
-      id: item.dataset.id,
+      id: parseInt(item.dataset.id),
       img: content.querySelector("img").getAttribute("src"),
       name: content.querySelector(".name").innerHTML,
       grade: content.querySelector(".grade").innerHTML,
@@ -181,13 +181,27 @@ window.addEventListener("click", (event) => {
       price: content.querySelector(".price").innerHTML,
       review: content.querySelector(".otziv").innerHTML,
       discount: content.querySelector(".price2").innerHTML,
-      count: content.querySelector(".count").innerHTML
+      count: parseInt(content.querySelector(".count").innerHTML),
     };
 
 
-    a.push(local);
+
+    // for (let i = 0; i < a.length; i++) {
+    //   if (a[i].id == local.id) {
+    //     a[i].count + local.count
+    //     a.push(local);
+    //   } else {
+    //     a.push(local);
+
+    //   }
+    // }
+
+
+    console.log(a);
 
     localStorage.setItem("korzina2", JSON.stringify(a));
+    localStorage.setItem("id", JSON.stringify(local.id));
+    localStorage.setItem("count", JSON.stringify(local.count));
 
     // if () {
 

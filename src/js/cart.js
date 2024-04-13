@@ -1,12 +1,24 @@
 let korzina = {
   arr: [],
+  id: 0,
 };
 
 korzina.arr = JSON.parse(localStorage.getItem("korzina2") || "[]");
+korzina.id = JSON.parse(localStorage.getItem("id") || "0");
+let  count = JSON.parse(localStorage.getItem("count") || "0");
+
+
+
+
+let y = [];
 
 const left = document.querySelector(".left");
 
+
+
+
 for (let i = 0; i < korzina.arr.length; i++) {
+
   let todoHtml = `
   <br />
   <div class="box"></div>
@@ -45,7 +57,10 @@ for (let i = 0; i < korzina.arr.length; i++) {
   `;
 
   left.insertAdjacentHTML("beforeend", todoHtml);
+  
 }
+
+
 
 // const itemBox = document.querySelector(".item")
 
@@ -137,8 +152,6 @@ window.addEventListener("click", (event) => {
   //   counterElem.innerText = parseInt(counterElem.innerText) + parseInt(item.dataset.counter)
   // }
 
-  // if (event.target.closest(".item")) {
-  //   let item = event.target.closest(".item")
   // let local = {
   //   id: item.dataset.id,
   //   img: item.querySelector("img").getAttribute("src"),
@@ -148,12 +161,19 @@ window.addEventListener("click", (event) => {
   //   count: item.querySelector(".count").innerHTML
   // }
 
-  // }
+  if (event.target.closest(".item")) {
+    a = JSON.parse(localStorage.getItem("korzina2") || "[]");
 
+    for (let i = 0; i < a.length; i++) {
+      let locaId = a[i].id;
+      console.log(locaId, "localId");
+      let item = event.target.closest(".item");
 
+      let id = item.dataset.id;
 
-
-  
+      console.log(id, "id");
+    }
+  }
 });
 
 let date = document.querySelectorAll(".date2");
@@ -167,31 +187,31 @@ const itogo = document.querySelector(".itogo");
 
 // itogo.innerHTML += price.innerHTML
 
-let korzina2 = {
-  arr: [],
-};
+// let korzina2 = {
+//   arr: [],
+// };
 
 let item = document.querySelectorAll(".item");
 let tovar = document.querySelector(".tovar");
 
 tovar.innerHTML = item.length;
 
-a = JSON.parse(localStorage.getItem("korzina2") || "[]");
-
 for (let i = 0; i < item.length; i++) {
-  let local = {
-    id: item[i].dataset.id,
-    price: item[i].querySelector(".price").innerHTML,
-    discount: item[i].querySelector(".discount").innerHTML,
-    count: item[i].querySelector(".count").innerHTML,
-  };
+  let id = item[i].dataset.id;
 
-  a.push(local);
-  
-  localStorage.setItem("kor", JSON.stringify(a));
+  // let local = {
+  //   id: item[i].dataset.id,
+  //   price: item[i].querySelector(".price").innerHTML,
+  //   discount: item[i].querySelector(".discount").innerHTML,
+  //   count: item[i].querySelector(".count").innerHTML,
+  // };
+
+  // a.push(local);
+
+  // localStorage.setItem("kor", JSON.stringify(a));
 }
 
-korzina2.arr = JSON.parse(localStorage.getItem("kor") || "[]");
+// korzina2.arr = JSON.parse(localStorage.getItem("kor") || "[]");
 
 // for (let i = 0; i < korzina2.arr.length; i++) {
 //   let todoHtml = `
@@ -206,7 +226,7 @@ korzina2.arr = JSON.parse(localStorage.getItem("kor") || "[]");
 //             alt=""
 //             />
 //             <p class="name">
-            
+
 //             </p>
 //             <div class="k">
 //             <div class="kol">
@@ -229,7 +249,7 @@ korzina2.arr = JSON.parse(localStorage.getItem("kor") || "[]");
 //             </div>
 //             <br />
 //             <br />
-            
+
 //             `;
 
 //   left.insertAdjacentHTML("beforeend", todoHtml);

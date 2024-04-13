@@ -10,6 +10,29 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <style>
+      swiper-container {
+          width: 100%;
+          height: 100%;
+      }
+
+      swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+  </style>
+
   </head>
   <body>
     <div class="conteiner">
@@ -204,10 +227,23 @@
       </div>
       <div class="AllWidth">
         <div class="reklama">
-          <div class="left"><i class="bx bx-chevron-left"></i></div>
-          <div class="right">
-            <i class="bx bx-chevron-left bx-rotate-180"></i>
-          </div>
+          <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
+          space-between="30" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+          <swiper-slide><a alt="Акции, подборки товаров и новости Uzum"><img src="https://uzum.uz/ru/category/nizkie-ceny--349" class="slide"><img data-v-5288663b="" src="https://images.uzum.uz/cno42isu2hhlb05hn2vg/main_page_banner.jpg" alt=""></a></swiper-slide>
+          <swiper-slide><a alt="Акции, подборки товаров и новости Uzum"><img src="https://uzum.uz/ru/category/prazdnichnyj-stol--369" class="slide"><img data-v-5288663b="" src="https://images.uzum.uz/co0mgqepom4ma10qs4lg/main_page_banner.jpg" alt=""></a></swiper-slide>
+          <swiper-slide><a alt="Акции, подборки товаров и новости Uzum"><img src="https://uzum.uz/ru/category/yarmarka-tekhniki--358" class="slide"><img data-v-5288663b="" src="https://images.uzum.uz/co0o1j6pom4ma10qsn6g/main_page_banner.jpg" alt=""></a></swiper-slide>
+          <swiper-slide><a ><img data-v-5288663b="" src="https://images.uzum.uz/co0ro3tlqsilsr3kt6m0/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></a></swiper-slide>
+          <swiper-slide><a><img src="https://images.uzum.uz/co0rp86pom4ma10qtp30/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></a></swiper-slide>
+          <swiper-slide><a><img data-v-5288663b="" src="https://images.uzum.uz/co0o40v2u18gghclhur0/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></a></swiper-slide>
+          <swiper-slide><a><img data-v-5288663b="" src="https://images.uzum.uz/co0rkp5lqsilsr3kt5og/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></a></swiper-slide>
+          <swiper-slide><a><img data-v-5288663b="" src="https://images.uzum.uz/co0rm0dlqsilsr3kt680/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></a></swiper-slide>
+          <swiper-slide><a><img data-v-5288663b="" src="https://images.uzum.uz/co0nlrupom4ma10qsjl0/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></a></swiper-slide>
+          <swiper-slide><a><img data-v-5288663b="" src="https://images.uzum.uz/co0noptlqsilsr3ks1lg/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></a></swiper-slide>
+          <swiper-slide><a><img data-v-5288663b="" src="https://images.uzum.uz/co0nplepom4ma10qskrg/main_page_banner.jpg" alt="Акции, подборки товаров и новости Uzum"></a></swiper-slide>
+      </swiper-container>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
         </div>
         <br />
         <br />
