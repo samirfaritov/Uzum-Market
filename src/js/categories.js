@@ -166,7 +166,7 @@ window.addEventListener("click", (event) => {
   }
 
   if (event.target.closest(".korzina")) {
-    // location.href = "http://127.0.0.1:5500/src/html/cart.html";
+    location.href = "http://127.0.0.1:5500/src/html/cart.html";
 
     let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
     let item = document.querySelector(".item");
@@ -183,7 +183,6 @@ window.addEventListener("click", (event) => {
       discount: content.querySelector(".price2").innerHTML,
       count: parseInt(content.querySelector(".count").innerHTML),
     };
-
 
 
     // for (let i = 0; i < a.length; i++) {

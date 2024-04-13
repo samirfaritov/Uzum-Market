@@ -7,15 +7,9 @@ korzina.arr = JSON.parse(localStorage.getItem("korzina2") || "[]");
 korzina.id = JSON.parse(localStorage.getItem("id") || "0");
 let  count = JSON.parse(localStorage.getItem("count") || "0");
 
-
-
-
 let y = [];
 
 const left = document.querySelector(".left");
-
-
-
 
 for (let i = 0; i < korzina.arr.length; i++) {
 
