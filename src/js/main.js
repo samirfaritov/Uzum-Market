@@ -894,17 +894,22 @@ export function getProducts() {
 
         let clicked = state.products.filter((item) => item.id == obj.id);
         let clicked2 = floo.products.filter((item) => item.id == obj.id);
+        let clicked3 = rek.products.filter((item) => item.id == obj.id);
         text.classList.toggle("added");
         if (text.classList.contains("added")) {
           state.add.push(clicked[0]);
           floo.add.push(clicked2[0]);
+          rek.add.push(clicked3[0]);
           localStorage.setItem("arr", JSON.stringify(state.add));
           localStorage.setItem("arr", JSON.stringify(floo.add));
+          localStorage.setItem("arr", JSON.stringify(rek.add));
         } else {
           state.add = state.add.filter((item) => item.id !== clicked[0].id)
           floo.add = floo.add.filter((item) => item.id !== clicked2[0].id)
+          rek.add = rek.add.filter((item) => item.id !== clicked3[0].id)
           localStorage.setItem("arr", JSON.stringify(state.add));
           localStorage.setItem("arr", JSON.stringify(floo.add));
+          localStorage.setItem("arr", JSON.stringify(rek.add));
         }
       }
     });
