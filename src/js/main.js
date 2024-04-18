@@ -914,6 +914,7 @@ export function getProducts() {
       }
     });
     let basket = document.querySelectorAll(".basket");
+    let korzina = document.querySelector(".ui-icon")
 
     for (let i = 0; i < basket.length; i++) {
       basket[i].onclick = function () {
