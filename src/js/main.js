@@ -1,21 +1,21 @@
 export let state = {
   products: [],
-  add: []
+  add: [],
 };
 
 export let floo = {
   products: [],
-  add: []
+  add: [],
 };
 
 export let rek = {
   products: [],
-  add: []
+  add: [],
 };
 
 export let elec = {
   products: [],
-  add: []
+  add: [],
 };
 
 export let tech = {
@@ -24,31 +24,31 @@ export let tech = {
 
 export let mar = {
   products: [],
-  add: []
+  add: [],
 };
 
 export let air = {
   products: [],
-  add: []
+  add: [],
 };
 
 export let bea = {
   products: [],
-  add: []
+  add: [],
 };
 export let fam = {
   products: [],
-  add: []
+  add: [],
 };
 
 export let rep = {
   products: [],
-  add: []
+  add: [],
 };
 
 export let inst = {
   products: [],
-  add: []
+  add: [],
 };
 
 export const getTodo = async () => {
@@ -75,7 +75,6 @@ export const getTodo3 = async () => {
 
 getTodo3();
 
-
 export const getTodo4 = async () => {
   let response = await axios.get("http://localhost:5055/Electronics");
 
@@ -84,7 +83,7 @@ export const getTodo4 = async () => {
 
 getTodo4();
 
-export const getTodo5= async () => {
+export const getTodo5 = async () => {
   let response = await axios.get("http://localhost:5055/technique");
 
   return (tech.products = response.data);
@@ -107,7 +106,6 @@ export const getTodo7 = async () => {
 };
 
 getTodo7();
-
 
 export const getTodo8 = async () => {
   let response = await axios.get("http://localhost:5055/beauty");
@@ -273,7 +271,7 @@ export function getProducts() {
         </div>
         </div>
             `;
-  
+
       flo.insertAdjacentHTML("beforeend", todoHtml);
     });
     rek.products.forEach((item) => {
@@ -822,7 +820,7 @@ export function getProducts() {
           price: item.querySelector(".price").innerHTML,
           review: item.querySelector(".otziv").innerHTML,
           discount: item.querySelector(".price2").innerHTML,
-          count1: parseInt(item.dataset.count)
+          count1: parseInt(item.dataset.count),
         };
 
         console.log(obj);
@@ -904,9 +902,9 @@ export function getProducts() {
           localStorage.setItem("arr", JSON.stringify(floo.add));
           localStorage.setItem("arr", JSON.stringify(rek.add));
         } else {
-          state.add = state.add.filter((item) => item.id !== clicked[0].id)
-          floo.add = floo.add.filter((item) => item.id !== clicked2[0].id)
-          rek.add = rek.add.filter((item) => item.id !== clicked3[0].id)
+          state.add = state.add.filter((item) => item.id !== clicked[0].id);
+          floo.add = floo.add.filter((item) => item.id !== clicked2[0].id);
+          rek.add = rek.add.filter((item) => item.id !== clicked3[0].id);
           localStorage.setItem("arr", JSON.stringify(state.add));
           localStorage.setItem("arr", JSON.stringify(floo.add));
           localStorage.setItem("arr", JSON.stringify(rek.add));
@@ -914,7 +912,7 @@ export function getProducts() {
       }
     });
     let basket = document.querySelectorAll(".basket");
-    let korzina = document.querySelector(".ui-icon")
+    let korzina = document.querySelector(".ui-icon");
 
     for (let i = 0; i < basket.length; i++) {
       basket[i].onclick = function () {

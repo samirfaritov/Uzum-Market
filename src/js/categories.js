@@ -144,7 +144,7 @@ window.addEventListener("click", (event) => {
     minus.style.color = "#000";
 
     if (counter.innerHTML == nalichie.innerHTML) {
-      counter.innerHTML = nalichie.innerHTML
+      counter.innerHTML = nalichie.innerHTML;
     }
   }
   if (event.target.dataset.action === "minus") {
@@ -170,7 +170,7 @@ window.addEventListener("click", (event) => {
   }
 
   if (event.target.closest(".korzina")) {
-    location.href = "http://127.0.0.1:5500/src/html/cart.html";
+    // location.href = "http://127.0.0.1:5500/src/html/cart.html";
 
     let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
     let item = document.querySelector(".item");
@@ -184,25 +184,28 @@ window.addEventListener("click", (event) => {
       kredit: content.querySelector(".kredit").innerHTML,
       price: content.querySelector(".price").innerHTML,
       review: content.querySelector(".otziv").innerHTML,
-      discount: content.querySelector(".price2").innerHTML,
+      discount: parseInt(content.querySelector(".price2").innerHTML),
       count: parseInt(content.querySelector(".count").innerHTML),
     };
 
+    a.push(local);
 
-    // for (let i = 0; i < a.length; i++) {
-    //   if (a[i].id == local.id) {
-    //     a[i].count + local.count
-    //     a.push(local);
-    //   } else {
-    //     a.push(local);
+    for (let i = 0; i < a.length; i++) {
+      // if (a[i].id !== local.id) {
+      //     localStorage.setItem("korzina2", JSON.stringify("[]"));
+      //   }
+      let p = parseInt(local.discount);
+      if (a[i].id == local.id) {
+        local.count++;
+        p * parseInt(local.count);
+        localStorage.setItem("korzina2", JSON.stringify(a));
+      }
 
-    //   }
-    // }
+      // if (local.count > 2) {
+      //   localStorage.setItem("korzina2", JSON.stringify("[]"));
+      // }
+    }
 
-
-    console.log(a);
-
-    localStorage.setItem("korzina2", JSON.stringify(a));
     localStorage.setItem("id", JSON.stringify(local.id));
     localStorage.setItem("count", JSON.stringify(local.count));
 
@@ -212,7 +215,6 @@ window.addEventListener("click", (event) => {
     // id===id
     // count++
   }
-  
 });
 
 const kar = document.querySelector(".kar");

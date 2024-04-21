@@ -142,22 +142,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 let state = {
   products: [],
-  add: []
+  add: [],
 };
 
 let floo = {
   products: [],
-  add: []
+  add: [],
 };
 
 let rek = {
   products: [],
-  add: []
+  add: [],
 };
 
 let elec = {
   products: [],
-  add: []
+  add: [],
 };
 
 let tech = {
@@ -166,31 +166,31 @@ let tech = {
 
 let mar = {
   products: [],
-  add: []
+  add: [],
 };
 
 let air = {
   products: [],
-  add: []
+  add: [],
 };
 
 let bea = {
   products: [],
-  add: []
+  add: [],
 };
 let fam = {
   products: [],
-  add: []
+  add: [],
 };
 
 let rep = {
   products: [],
-  add: []
+  add: [],
 };
 
 let inst = {
   products: [],
-  add: []
+  add: [],
 };
 
 const getTodo = async () => {
@@ -217,7 +217,6 @@ const getTodo3 = async () => {
 
 getTodo3();
 
-
 const getTodo4 = async () => {
   let response = await axios.get("http://localhost:5055/Electronics");
 
@@ -226,7 +225,7 @@ const getTodo4 = async () => {
 
 getTodo4();
 
-const getTodo5= async () => {
+const getTodo5 = async () => {
   let response = await axios.get("http://localhost:5055/technique");
 
   return (tech.products = response.data);
@@ -249,7 +248,6 @@ const getTodo7 = async () => {
 };
 
 getTodo7();
-
 
 const getTodo8 = async () => {
   let response = await axios.get("http://localhost:5055/beauty");
@@ -415,7 +413,7 @@ function getProducts() {
         </div>
         </div>
             `;
-  
+
       flo.insertAdjacentHTML("beforeend", todoHtml);
     });
     rek.products.forEach((item) => {
@@ -964,7 +962,7 @@ function getProducts() {
           price: item.querySelector(".price").innerHTML,
           review: item.querySelector(".otziv").innerHTML,
           discount: item.querySelector(".price2").innerHTML,
-          count1: parseInt(item.dataset.count)
+          count1: parseInt(item.dataset.count),
         };
 
         console.log(obj);
@@ -1046,9 +1044,9 @@ function getProducts() {
           localStorage.setItem("arr", JSON.stringify(floo.add));
           localStorage.setItem("arr", JSON.stringify(rek.add));
         } else {
-          state.add = state.add.filter((item) => item.id !== clicked[0].id)
-          floo.add = floo.add.filter((item) => item.id !== clicked2[0].id)
-          rek.add = rek.add.filter((item) => item.id !== clicked3[0].id)
+          state.add = state.add.filter((item) => item.id !== clicked[0].id);
+          floo.add = floo.add.filter((item) => item.id !== clicked2[0].id);
+          rek.add = rek.add.filter((item) => item.id !== clicked3[0].id);
           localStorage.setItem("arr", JSON.stringify(state.add));
           localStorage.setItem("arr", JSON.stringify(floo.add));
           localStorage.setItem("arr", JSON.stringify(rek.add));
@@ -1056,7 +1054,7 @@ function getProducts() {
       }
     });
     let basket = document.querySelectorAll(".basket");
-    let korzina = document.querySelector(".ui-icon")
+    let korzina = document.querySelector(".ui-icon");
 
     for (let i = 0; i < basket.length; i++) {
       basket[i].onclick = function () {
