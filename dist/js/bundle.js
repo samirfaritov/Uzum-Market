@@ -307,7 +307,7 @@ function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-          <div class="item" data-id="${item.id}">
+          <div class="item" data-id="${item.id}" data-count="${item.count1}">
           <div class="img">
           <div class="heart">
           <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
@@ -956,7 +956,7 @@ function getProducts() {
       if (e.target.closest("img")) {
         let item = e.target.closest(".item");
         let obj = {
-          id: item.dataset.id,
+          id: parseInt(item.dataset.id),
           img: item.querySelector("img").getAttribute("src"),
           name: item.querySelector(".name").innerHTML,
           grade: item.querySelector(".grade").innerHTML,
@@ -964,9 +964,9 @@ function getProducts() {
           price: item.querySelector(".price").innerHTML,
           review: item.querySelector(".otziv").innerHTML,
           discount: item.querySelector(".price2").innerHTML,
+          count1: parseInt(item.dataset.count)
         };
 
-        console.log(item);
         console.log(obj);
 
         localStorage.setItem("item", JSON.stringify(obj));
