@@ -1,0 +1,113 @@
+@media screen and (max-width: 1024px) {
+    .conteiner .navbar .katalog {
+        display: flex;
+        gap: 13px;
+    }
+
+    .conteiner .navbar .btn {
+        display: flex;
+        gap: 5px;
+    }
+
+    .conteiner .rasrochka {
+        width: 100%;
+        height: 50px;
+        border: 1px solid transparent;
+        display: flex;
+        gap: 11px;
+        align-items: center;
+    }
+
+    .conteiner .rasrochka p {
+        font-size: 12px;
+    }
+
+    .conteiner .AllWidth .skidka .item {
+        width: 202px;
+        height: 405px;
+        border: 1px solid #e7e7e7;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .conteiner .AllWidth .flo .item {
+        width: 202px;
+        height: 405px;
+        border: 1px solid #e7e7e7;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .conteiner .AllWidth .rekomenduyem .item {
+        width: 202px;
+        height: 405px;
+        border: 1px solid #e7e7e7;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .conteiner .AllWidth .elektronika .item {
+        width: 202px;
+        height: 405px;
+        border: 1px solid #e7e7e7;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .conteiner .AllWidth .rasrochka2 .item {
+        width: 202px;
+        height: 420px;
+        border: 1px solid #e7e7e7;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .conteiner .AllWidth .texnika .item {
+        width: 202px;
+        height: 420px;
+        border: 1px solid #e7e7e7;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .conteiner .AllWidth .bozor .item {
+        width: 202px;
+        height: 410px;
+        border: 1px solid #e7e7e7;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .conteiner .AllWidth .vozdux .item {
+        width: 202px;
+        height: 410px;
+        border: 1px solid #e7e7e7;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .conteiner .AllWidth .uxod .item {
+        width: 202px;
+        height: 410px;
+        border: 1px solid #e7e7e7;
+        position: relative;
+        border-radius: 15px;
+    }
+    
+    .conteiner .AllWidth .family .item {
+        width: 202px;
+        height: 410px;
+        border: 1px solid #e7e7e7;
+        position: relative;
+        border-radius: 15px;
+    }
+    
+    .conteiner .AllWidth .beauty .item {
+        width: 202px;
+        height: 410px;
+        border: 1px solid #e7e7e7;
+        position: relative;
+        border-radius: 15px;
+    }
+    
+}
