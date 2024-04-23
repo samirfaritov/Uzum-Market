@@ -931,6 +931,7 @@ function getProducts() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               class="ui-icon add-cart-icon"
+              id="add-cart-icon"
             >
               <path
                 d="M8 10V8H6V12.5C6 12.7761 5.77614 13 5.5 13C5.22386 13 5 12.7761 5 12.5V7H8C8 4.59628 9.95227 3 12 3C14.0575 3 16 4.70556 16 7H19V19.5C19 20.3284 18.3284 21 17.5 21H12.5C12.2239 21 12 20.7761 12 20.5C12 20.2239 12.2239 20 12.5 20H17.5C17.7761 20 18 19.7761 18 19.5V8H16V10H15V8H9V10H8ZM12 4C10.4477 4 9 5.20372 9 7H15C15 5.29444 13.5425 4 12 4Z"
@@ -948,6 +949,19 @@ function getProducts() {
       rasrochka.insertAdjacentHTML("beforeend", todoHtml);
     });
     window.addEventListener("click", async (e) => {
+      let massive = state.products.concat(
+        floo.products,
+        rek.products,
+        elec.products,
+        tech.products,
+        mar.products,
+        air.products,
+        bea.products,
+        fam.products,
+        rep.products,
+        inst.products
+      );
+
       JSON.parse(localStorage.getItem("korzina2") || "{}");
 
       e.preventDefault();
@@ -965,10 +979,8 @@ function getProducts() {
           count1: parseInt(item.dataset.count),
         };
 
-        console.log(obj);
-
         localStorage.setItem("item", JSON.stringify(obj));
-        location.href = "http://127.0.0.1:5500/src/html/categories.html";
+        // location.href = "http://127.0.0.1:5500/src/html/categories.html";
 
         // let response = await axios.post(`http://localhost:5055/korzina`, {
         //   img: item.querySelector("img").getAttribute("src"),
@@ -1031,30 +1043,32 @@ function getProducts() {
         let obj = {
           id: item.dataset.id,
         };
-
-        let clicked = state.products.filter((item) => item.id == obj.id);
-        let clicked2 = floo.products.filter((item) => item.id == obj.id);
-        let clicked3 = rek.products.filter((item) => item.id == obj.id);
+        
+        let clicked = massive.filter((item) => item.id == obj.id);
         text.classList.toggle("added");
+        let h = {
+          heart: "#7000ff",
+          //  heart: item.querySelector(".heart")
+        };
+
+        localStorage.setItem("heart", JSON.stringify(h));
+        
         if (text.classList.contains("added")) {
           state.add.push(clicked[0]);
-          floo.add.push(clicked2[0]);
-          rek.add.push(clicked3[0]);
           localStorage.setItem("arr", JSON.stringify(state.add));
-          localStorage.setItem("arr", JSON.stringify(floo.add));
-          localStorage.setItem("arr", JSON.stringify(rek.add));
+          let getHeart = JSON.parse(localStorage.getItem("heart") || "{}");
+          text.style.color = getHeart.heart;
         } else {
           state.add = state.add.filter((item) => item.id !== clicked[0].id);
-          floo.add = floo.add.filter((item) => item.id !== clicked2[0].id);
-          rek.add = rek.add.filter((item) => item.id !== clicked3[0].id);
           localStorage.setItem("arr", JSON.stringify(state.add));
-          localStorage.setItem("arr", JSON.stringify(floo.add));
-          localStorage.setItem("arr", JSON.stringify(rek.add));
+          text.style.color = "#fff";
         }
+
+        // console.log(item.querySelector(".heart").style);
       }
     });
     let basket = document.querySelectorAll(".basket");
-    let korzina = document.querySelector(".ui-icon");
+    let korzina = document.querySelector("#add-cart-icon");
 
     for (let i = 0; i < basket.length; i++) {
       basket[i].onclick = function () {

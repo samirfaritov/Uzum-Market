@@ -170,7 +170,7 @@ window.addEventListener("click", (event) => {
   }
 
   if (event.target.closest(".korzina")) {
-    // location.href = "http://127.0.0.1:5500/src/html/cart.html";
+    location.href = "http://127.0.0.1:5500/src/html/cart.html";
 
     let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
     let item = document.querySelector(".item");
@@ -190,21 +190,30 @@ window.addEventListener("click", (event) => {
 
     a.push(local);
 
-    for (let i = 0; i < a.length; i++) {
-      // if (a[i].id !== local.id) {
-      //     localStorage.setItem("korzina2", JSON.stringify("[]"));
-      //   }
-      let p = parseInt(local.discount);
-      if (a[i].id == local.id) {
-        local.count++;
-        p * parseInt(local.count);
-        localStorage.setItem("korzina2", JSON.stringify(a));
-      }
+    console.log(a);
+    
+    let uniqueArray = a.filter(
+      (obj, index, self) => index === self.findIndex((t) => t.id === obj.id)
+      );
+      console.log(uniqueArray);
+      
+      localStorage.setItem("korzina2", JSON.stringify(uniqueArray));
+      local.count++
+    // for (let i = 0; i < a.length; i++) {
+    //   // if (a[i].id !== local.id) {
+    //   //     localStorage.setItem("korzina2", JSON.stringify("[]"));
+    //   //   }
+    //   if (a[i].id == local.id) {
+    //     local.count++;
+    //     a.splice(i, 1, local);
+    //   }
+    //   // local.count++;
 
-      // if (local.count > 2) {
-      //   localStorage.setItem("korzina2", JSON.stringify("[]"));
-      // }
-    }
+    //   // if (local.count > 2) {
+    //   //   localStorage.setItem("korzina2", JSON.stringify("[]"));
+    //   // }
+    // }
+    console.log(a);
 
     localStorage.setItem("id", JSON.stringify(local.id));
     localStorage.setItem("count", JSON.stringify(local.count));
