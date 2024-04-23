@@ -980,7 +980,7 @@ function getProducts() {
         };
 
         localStorage.setItem("item", JSON.stringify(obj));
-        // location.href = "http://127.0.0.1:5500/src/html/categories.html";
+        location.href = "http://127.0.0.1:5500/src/html/categories.html";
 
         // let response = await axios.post(`http://localhost:5055/korzina`, {
         //   img: item.querySelector("img").getAttribute("src"),

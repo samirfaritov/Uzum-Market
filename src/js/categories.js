@@ -191,28 +191,13 @@ window.addEventListener("click", (event) => {
     a.push(local);
 
     console.log(a);
-    
+
     let uniqueArray = a.filter(
       (obj, index, self) => index === self.findIndex((t) => t.id === obj.id)
       );
-      console.log(uniqueArray);
-      
-      localStorage.setItem("korzina2", JSON.stringify(uniqueArray));
-      local.count++
-    // for (let i = 0; i < a.length; i++) {
-    //   // if (a[i].id !== local.id) {
-    //   //     localStorage.setItem("korzina2", JSON.stringify("[]"));
-    //   //   }
-    //   if (a[i].id == local.id) {
-    //     local.count++;
-    //     a.splice(i, 1, local);
-    //   }
-    //   // local.count++;
+    console.log(uniqueArray);
 
-    //   // if (local.count > 2) {
-    //   //   localStorage.setItem("korzina2", JSON.stringify("[]"));
-    //   // }
-    // }
+    localStorage.setItem("korzina2", JSON.stringify(uniqueArray));
     console.log(a);
 
     localStorage.setItem("id", JSON.stringify(local.id));
