@@ -4,10 +4,151 @@ arr = JSON.parse(localStorage.getItem("arr") || "[]");
 
 console.log(arr);
 
-const wishes = document.querySelector('.skidka')
+let state = {
+  products: [],
+  add: [],
+};
+
+let floo = {
+  products: [],
+  add: [],
+};
+
+let rek = {
+  products: [],
+  add: [],
+};
+
+let elec = {
+  products: [],
+  add: [],
+};
+
+let tech = {
+  products: [],
+};
+
+let mar = {
+  products: [],
+  add: [],
+};
+
+let air = {
+  products: [],
+  add: [],
+};
+
+let bea = {
+  products: [],
+  add: [],
+};
+let fam = {
+  products: [],
+  add: [],
+};
+
+let rep = {
+  products: [],
+  add: [],
+};
+
+let inst = {
+  products: [],
+  add: [],
+};
+
+const getTodo = async () => {
+  let response = await axios.get("http://localhost:5055/products");
+
+  return (state.products = response.data);
+};
+
+getTodo();
+
+const getTodo2 = async () => {
+  let response = await axios.get("http://localhost:5055/Shoes");
+
+  return (floo.products = response.data);
+};
+
+getTodo2();
+
+const getTodo3 = async () => {
+  let response = await axios.get("http://localhost:5055/Recommendations");
+
+  return (rek.products = response.data);
+};
+
+getTodo3();
+
+const getTodo4 = async () => {
+  let response = await axios.get("http://localhost:5055/Electronics");
+
+  return (elec.products = response.data);
+};
+
+getTodo4();
+
+const getTodo5 = async () => {
+  let response = await axios.get("http://localhost:5055/technique");
+
+  return (tech.products = response.data);
+};
+
+getTodo5();
+
+const getTodo6 = async () => {
+  let response = await axios.get("http://localhost:5055/market");
+
+  return (mar.products = response.data);
+};
+
+getTodo6();
+
+const getTodo7 = async () => {
+  let response = await axios.get("http://localhost:5055/Air");
+
+  return (air.products = response.data);
+};
+
+getTodo7();
+
+const getTodo8 = async () => {
+  let response = await axios.get("http://localhost:5055/beauty");
+
+  return (bea.products = response.data);
+};
+
+getTodo8();
+
+const getTodo9 = async () => {
+  let response = await axios.get("http://localhost:5055/family");
+
+  return (fam.products = response.data);
+};
+
+getTodo9();
+
+const getTodo10 = async () => {
+  let response = await axios.get("http://localhost:5055/repair");
+
+  return (rep.products = response.data);
+};
+
+getTodo10();
+
+const getTodo11 = async () => {
+  let response = await axios.get("http://localhost:5055/Installment");
+
+  return (inst.products = response.data);
+};
+
+getTodo11();
+
+const wishes = document.querySelector(".skidka");
 
 for (let i = 0; i < arr.length; i++) {
-    let todoHtml = `
+  let todoHtml = `
     <div class="item" data-id="${arr[i].id}">
     <div class="img">
       <div class="heart">
@@ -27,7 +168,7 @@ for (let i = 0; i < arr.length; i++) {
           ></path>
         </svg>
       </div>
-      <img src="${arr[i].img}" alt="" class="img2" />
+      <img src="${arr[i].img[0]}" alt="" class="img2" />
       <div class="flex">
         <div class="aks"></div>
         <div class="aks2"></div>
@@ -71,6 +212,55 @@ for (let i = 0; i < arr.length; i++) {
       </svg>
     </div>
   </div>
-    `
-    wishes.insertAdjacentHTML("beforeend", todoHtml)
+    `;
+  wishes.insertAdjacentHTML("beforeend", todoHtml);
 }
+
+window.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  let massive = state.products.concat(
+    floo.products,
+    rek.products,
+    elec.products,
+    tech.products,
+    mar.products,
+    air.products,
+    bea.products,
+    fam.products,
+    rep.products,
+    inst.products
+  );
+
+  if (e.target.closest("img")) {
+    let item = e.target.closest(".item");
+
+    let a = massive.filter((item2) => {
+      if (item2.id == item.dataset.id) {
+        return item2.img;
+      }
+    });
+
+    let obj = {
+      id: parseInt(item.dataset.id),
+      img: a[0].img,
+      name: item.querySelector(".name").innerHTML,
+      grade: item.querySelector(".grade").innerHTML,
+      kredit: item.querySelector(".kredit").innerHTML,
+      price: item.querySelector(".price").innerHTML,
+      review: item.querySelector(".otziv").innerHTML,
+      discount: item.querySelector(".price2").innerHTML,
+      count1: parseInt(item.dataset.count),
+    };
+
+    localStorage.setItem("item", JSON.stringify(obj));
+    location.href = "http://127.0.0.1:5500/src/html/categories.html";
+
+    // let response = await axios.post(`http://localhost:5055/korzina`, {
+    //   img: item.querySelector("img").getAttribute("src"),
+    //   name: item.querySelector(".name").innerHTML,
+    //   discount: item.querySelector(".price2").innerHTML,
+    //   price:  item.querySelector(".price").innerHTML
+    // });
+  }
+});
