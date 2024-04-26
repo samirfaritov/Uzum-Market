@@ -310,7 +310,7 @@ function getProducts() {
           <div class="heart">
           <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
           </div>
-          <img src="${item.img}" alt="" />
+          <img src="${item.img[0]}" alt="" />
           <div class="flex">
           <div class="aks"></div>
             <div class="aks2"></div>
@@ -967,9 +967,15 @@ function getProducts() {
       e.preventDefault();
       if (e.target.closest("img")) {
         let item = e.target.closest(".item");
+
+        let a = massive.filter(item2 => {
+          if (item2.id == item.dataset.id) {
+            return item2.img
+          }
+        })
         let obj = {
           id: parseInt(item.dataset.id),
-          img: item.querySelector("img").getAttribute("src"),
+          img: a[0].img,
           name: item.querySelector(".name").innerHTML,
           grade: item.querySelector(".grade").innerHTML,
           kredit: item.querySelector(".kredit").innerHTML,
@@ -981,6 +987,8 @@ function getProducts() {
 
         localStorage.setItem("item", JSON.stringify(obj));
         location.href = "http://127.0.0.1:5500/src/html/categories.html";
+
+        console.log(obj);
 
         // let response = await axios.post(`http://localhost:5055/korzina`, {
         //   img: item.querySelector("img").getAttribute("src"),

@@ -14,35 +14,35 @@ interval = setInterval(() => {
   let todoHtml = `
 <div class="kategori">
 <div class="left">
-  <div class="item" data-id="${item.id}">
+  <div class="item Img1" data-id="${item.id}">
     <img
-      src="${item.img}"
+      src="${item.img[1]}"
       alt=""
     />
   </div>
-  <div class="item">
+  <div class="item Img2">
     <img
-      src="${item.img}"
+      src="${item.img[2]}"
       alt=""
     />
   </div>
-  <div class="item">
+  <div class="item Img3">
     <img
-      src="${item.img}"
+      src="${item.img[3]}"
       alt=""
     />
   </div>
-  <div class="item">
+  <div class="item img4">
     <img
-      src="${item.img}"
+      src="${item.img[4]}"
       alt=""
     />
   </div>
 </div>
 <div class="right">
-  <div class="item">
+  <div class="item activeImg">
     <img
-      src="${item.img}"
+      src="${item.img[0]}"
       alt=""
     />
   </div>
@@ -190,15 +190,12 @@ window.addEventListener("click", (event) => {
 
     a.push(local);
 
-    console.log(a);
 
     let uniqueArray = a.filter(
       (obj, index, self) => index === self.findIndex((t) => t.id === obj.id)
       );
-    console.log(uniqueArray);
 
     localStorage.setItem("korzina2", JSON.stringify(uniqueArray));
-    console.log(a);
 
     localStorage.setItem("id", JSON.stringify(local.id));
     localStorage.setItem("count", JSON.stringify(local.count));
@@ -208,6 +205,45 @@ window.addEventListener("click", (event) => {
     // }
     // id===id
     // count++
+  }
+
+  
+let Img1 = document.querySelector('.Img1')
+let Img2 = document.querySelector('.Img2')
+let Img3 = document.querySelector('.Img3')
+let Img4 = document.querySelector('.img4')
+
+let activeImg = document.querySelector('.activeImg')
+
+// console.log(activeImg);
+// console.log(Img1);
+// console.log(Img2);
+// console.log(Img3);
+// console.log(Img4);
+
+  if (event.target.closest(".Img1")) {
+    let src = activeImg.querySelector("img").getAttribute('src')
+    let src2 = Img1.querySelector("img").getAttribute('src')
+    activeImg.querySelector("img").setAttribute('src', src2)
+    Img1.querySelector("img").setAttribute('src', src)
+  }
+  if (event.target.closest(".Img2")) {
+    let src = activeImg.querySelector("img").getAttribute('src')
+    let src2 = Img2.querySelector("img").getAttribute('src')
+    activeImg.querySelector("img").setAttribute('src', src2)
+    Img2.querySelector("img").setAttribute('src', src)
+  }
+  if (event.target.closest(".Img3")) {
+    let src = activeImg.querySelector("img").getAttribute('src')
+    let src2 = Img3.querySelector("img").getAttribute('src')
+    activeImg.querySelector("img").setAttribute('src', src2)
+    Img3.querySelector("img").setAttribute('src', src)
+  }
+  if (event.target.closest(".Img4")) {
+    let src = activeImg.querySelector("img").getAttribute('src')
+    let src2 = Img4.querySelector("img").getAttribute('src')
+    activeImg.querySelector("img").setAttribute('src', src2)
+    Img4.querySelector("img").setAttribute('src', src)
   }
 });
 
