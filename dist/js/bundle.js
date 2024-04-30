@@ -74,6 +74,7 @@ function katalog() {
     katalog2.classList.toggle("none");
     clear.classList.toggle("none");
     k.classList.toggle("block");
+    reklama.classList.toggle("block")
   });
 
   var voyti = document.querySelector(".voyti");
@@ -368,7 +369,7 @@ function getProducts() {
           <div class="heart">
           <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
           </div>
-          <img src="${item.img}" alt="" />
+          <img src="${item.img[0]}" alt="" />
           <div class="flex">
             <div class="aks"></div>
             <div class="aks2"></div>
@@ -427,7 +428,7 @@ function getProducts() {
                 <div class="heart">
                 <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
                 </div>
-                <img src="${item.img}" alt="" />
+                <img src="${item.img[0]}" alt="" />
                 <div class="flex">
                   <div class="aks"></div>
                   <div class="aks2"></div>
@@ -486,7 +487,7 @@ function getProducts() {
                   <div class="heart">
                   <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
                   </div>
-                  <img src="${item.img}" alt="" />
+                  <img src="${item.img[0]}" alt="" />
                   <div class="flex">
                     <div class="aks"></div>
                     <div class="aks2"></div>
@@ -545,7 +546,7 @@ function getProducts() {
               <div class="heart">
               <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
               </div>
-              <img src="${item.img}" alt="" />
+              <img src="${item.img[0]}" alt="" />
               <div class="flex">
                 <div class="aks"></div>
                 <div class="aks2"></div>
@@ -604,7 +605,7 @@ function getProducts() {
                   <div class="heart">
                   <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
                   </div>
-                  <img src="${item.img}" alt="" />
+                  <img src="${item.img[0]}" alt="" />
                   <div class="flex">
                     <div class="aks"></div>
                     <div class="aks2"></div>
@@ -663,7 +664,7 @@ function getProducts() {
                     <div class="heart">
                     <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
                     </div>
-                    <img src="${item.img}" alt="" />
+                    <img src="${item.img[0]}" alt="" />
                     <div class="flex">
                       <div class="aks"></div>
                       <div class="aks2"></div>
@@ -722,7 +723,7 @@ function getProducts() {
                       <div class="heart">
                       <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
                       </div>
-                      <img src="${item.img}" alt="" />
+                      <img src="${item.img[0]}" alt="" />
                       <div class="flex">
                         <div class="aks"></div>
                         <div class="aks2"></div>
@@ -781,7 +782,7 @@ function getProducts() {
                         <div class="heart">
                         <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
                         </div>
-                        <img src="${item.img}" alt="" />
+                        <img src="${item.img[0]}" alt="" />
                         <div class="flex">
                           <div class="aks"></div>
                           <div class="aks2"></div>
@@ -840,7 +841,7 @@ function getProducts() {
                         <div class="heart">
                         <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
                         </div>
-                        <img src="${item.img}" alt="" />
+                        <img src="${item.img[0]}" alt="" />
                         <div class="flex">
                           <div class="aks"></div>
                           <div class="aks2"></div>
@@ -899,7 +900,7 @@ function getProducts() {
             <div class="heart">
             <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
             </div>
-            <img src="${item.img}" alt="" class="img2" />
+            <img src="${item.img[0]}" alt="" class="img2" />
             <div class="flex">
               <div class="aks"></div>
               <div class="aks2"></div>
@@ -1089,6 +1090,9 @@ function getProducts() {
     }, 6000);
   }, 1000);
 }
+
+
+
 
 
 /***/ })

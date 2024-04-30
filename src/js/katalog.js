@@ -65,6 +65,7 @@ function katalog() {
     katalog2.classList.toggle("none");
     clear.classList.toggle("none");
     k.classList.toggle("block");
+    reklama.classList.toggle("block")
   });
 
   var voyti = document.querySelector(".voyti");

@@ -143,8 +143,9 @@ window.addEventListener("click", (event) => {
 
     minus.style.color = "#000";
 
-    if (counter.innerHTML == nalichie.innerHTML) {
-      counter.innerHTML = nalichie.innerHTML;
+    if (counter.innerHTML !== nalichie.innerHTML) {
+      counter.innerHTML
+      counter.innerHTML = nalichie.innerHTML
     }
   }
   if (event.target.dataset.action === "minus") {

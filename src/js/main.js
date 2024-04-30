@@ -226,7 +226,7 @@ export function getProducts() {
           <div class="heart">
           <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
           </div>
-          <img src="${item.img}" alt="" />
+          <img src="${item.img[0]}" alt="" />
           <div class="flex">
             <div class="aks"></div>
             <div class="aks2"></div>
@@ -285,7 +285,7 @@ export function getProducts() {
                 <div class="heart">
                 <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
                 </div>
-                <img src="${item.img}" alt="" />
+                <img src="${item.img[0]}" alt="" />
                 <div class="flex">
                   <div class="aks"></div>
                   <div class="aks2"></div>
@@ -344,7 +344,7 @@ export function getProducts() {
                   <div class="heart">
                   <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
                   </div>
-                  <img src="${item.img}" alt="" />
+                  <img src="${item.img[0]}" alt="" />
                   <div class="flex">
                     <div class="aks"></div>
                     <div class="aks2"></div>
@@ -403,7 +403,7 @@ export function getProducts() {
               <div class="heart">
               <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
               </div>
-              <img src="${item.img}" alt="" />
+              <img src="${item.img[0]}" alt="" />
               <div class="flex">
                 <div class="aks"></div>
                 <div class="aks2"></div>
@@ -462,7 +462,7 @@ export function getProducts() {
                   <div class="heart">
                   <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
                   </div>
-                  <img src="${item.img}" alt="" />
+                  <img src="${item.img[0]}" alt="" />
                   <div class="flex">
                     <div class="aks"></div>
                     <div class="aks2"></div>
@@ -521,7 +521,7 @@ export function getProducts() {
                     <div class="heart">
                     <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
                     </div>
-                    <img src="${item.img}" alt="" />
+                    <img src="${item.img[0]}" alt="" />
                     <div class="flex">
                       <div class="aks"></div>
                       <div class="aks2"></div>
@@ -580,7 +580,7 @@ export function getProducts() {
                       <div class="heart">
                       <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
                       </div>
-                      <img src="${item.img}" alt="" />
+                      <img src="${item.img[0]}" alt="" />
                       <div class="flex">
                         <div class="aks"></div>
                         <div class="aks2"></div>
@@ -639,7 +639,7 @@ export function getProducts() {
                         <div class="heart">
                         <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
                         </div>
-                        <img src="${item.img}" alt="" />
+                        <img src="${item.img[0]}" alt="" />
                         <div class="flex">
                           <div class="aks"></div>
                           <div class="aks2"></div>
@@ -698,7 +698,7 @@ export function getProducts() {
                         <div class="heart">
                         <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
                         </div>
-                        <img src="${item.img}" alt="" />
+                        <img src="${item.img[0]}" alt="" />
                         <div class="flex">
                           <div class="aks"></div>
                           <div class="aks2"></div>
@@ -757,7 +757,7 @@ export function getProducts() {
             <div class="heart">
             <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
             </div>
-            <img src="${item.img}" alt="" class="img2" />
+            <img src="${item.img[0]}" alt="" class="img2" />
             <div class="flex">
               <div class="aks"></div>
               <div class="aks2"></div>
@@ -947,3 +947,6 @@ export function getProducts() {
     }, 6000);
   }, 1000);
 }
+
+
+
