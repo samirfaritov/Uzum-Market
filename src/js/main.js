@@ -826,11 +826,11 @@ export function getProducts() {
       if (e.target.closest("img")) {
         let item = e.target.closest(".item");
 
-        let a = massive.filter(item2 => {
+        let a = massive.filter((item2) => {
           if (item2.id == item.dataset.id) {
-            return item2.img
+            return item2.img;
           }
-        })
+        });
         let obj = {
           id: parseInt(item.dataset.id),
           img: a[0].img,
@@ -909,7 +909,7 @@ export function getProducts() {
         let obj = {
           id: item.dataset.id,
         };
-        
+
         let clicked = massive.filter((item) => item.id == obj.id);
         text.classList.toggle("added");
         let h = {
@@ -918,7 +918,7 @@ export function getProducts() {
         };
 
         localStorage.setItem("heart", JSON.stringify(h));
-        
+
         if (text.classList.contains("added")) {
           state.add.push(clicked[0]);
           localStorage.setItem("arr", JSON.stringify(state.add));
@@ -946,7 +946,72 @@ export function getProducts() {
       korzina.style.display = "none";
     }, 6000);
   }, 1000);
+
+  let elec2 = document.querySelector(".elec");
+  let bit = document.querySelector(".bit");
+  // let od = document.querySelector(".od");
+  // let ob = document.querySelector(".ob");
+  // let ak = document.querySelector(".ak");
+  // let kr = document.querySelector(".kr");
+  // let zd = document.querySelector(".zd");
+  // let tov = document.querySelector(".tov");
+
+  let rax = document.querySelector(".rax");
+  elec2.addEventListener("mouseenter", () => {
+    rax.style.positionAbsolute;
+
+    rax.style.width = "90px";
+  });
+
+
+  let rax2 = document.querySelector(".rax2");
+  bit.addEventListener("mouseenter", () => {
+    rax2.style.positionAbsolute;
+
+    rax2.style.width = "112px";
+  });
+
+
+  // let rax3 = document.querySelector(".rax3");
+  // od.addEventListener("mouseenter", () => {
+  //   rax3.style.positionAbsolute;
+
+  //   rax3.style.right = "-338px";
+  //   rax3.style.width = "90px";
+  // });
+  // let rax4 = document.querySelector(".rax4");
+  // ob.addEventListener("mouseenter", () => {
+  //   rax4.style.positionAbsolute;
+
+  //   rax4.style.right = "-338px";
+  //   rax4.style.width = "90px";
+  // });
+  // let rax5 = document.querySelector(".rax5");
+  // ak.addEventListener("mouseenter", () => {
+  //   rax5.style.positionAbsolute;
+
+  //   rax5.style.right = "-338px";
+  //   rax5.style.width = "90px";
+  // });
+  // let rax6 = document.querySelector(".rax6");
+  // kr.addEventListener("mouseenter", () => {
+  //   rax6.style.positionAbsolute;
+
+  //   rax6.style.right = "-338px";
+  //   rax6.style.width = "90px";
+  // });
+  // let rax7 = document.querySelector(".rax7");
+  // zd.addEventListener("mouseenter", () => {
+  //   rax7.style.positionAbsolute;
+
+  //   rax7.style.right = "-338px";
+  //   rax7.style.width = "90px";
+  // });
+  // let rax8 = document.querySelector(".rax8");
+  // tov.addEventListener("mouseenter", () => {
+  //   rax8.style.positionAbsolute;
+
+  //   rax8.style.right = "-338px";
+  //   rax8.style.width = "90px";
+  // });
 }
-
-
-

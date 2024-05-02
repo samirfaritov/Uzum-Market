@@ -41,8 +41,8 @@ for (let i = 0; i < korzina.arr.length; i++) {
   <p class="delet">Удалить</p>
   </div>
   <div class="katta">
-  <p class="price">${korzina.arr[i].discount}</p>
-  <del class="discount">${korzina.arr[i].price}</del>
+  <p class="price">${korzina.arr[i].discount} сум</p>
+  <del class="discount">${korzina.arr[i].price} сум</del>
   </div>
   </div>
   </div>
@@ -66,38 +66,29 @@ for (let i = 0; i < korzina.arr.length; i++) {
 
 window.addEventListener("click", (event) => {
   event.preventDefault();
-  let minus = document.querySelector(".minus");
-  // let price = document.querySelectorAll(".price");
-  if (event.target.dataset.action === "plus") {
-    const counterWrapper = event.target.closest(".kol");
+  if (event.target.closest(".plyus")) {
+    const counterWrapper = event.target.closest(".item");
     const counter = counterWrapper.querySelector(".count");
+    const price = counterWrapper.querySelector(".price");
+    const minus = counterWrapper.querySelector(".minus");
     counter.innerHTML++;
+
     let a = JSON.parse(localStorage.getItem("item") || "[]");
 
+    console.log(a);
+    
     let p = parseInt(a.discount);
-
     let total = p * counter.innerHTML;
-
-    // console.log(event.target.closest('.price'));
-
-    // let r = parseInt(event.target.contains('.price'))
-
-    // if (event.target.closest('.price')) {
-    //   console.log('click');
-    // }
-
-    // for (let i = 0; i < price.length; i++) {
-    //   price[i].innerHTML = `${total} сум`;
-    // }
-
+    
     price.innerHTML = `${total} сум`;
-
     minus.style.color = "#000";
   }
 
-  if (event.target.dataset.action === "minus") {
-    const counterWrapper = event.target.closest(".kol");
+  if (event.target.closest(".minus")) {
+    const counterWrapper = event.target.closest(".item");
     const counter = counterWrapper.querySelector(".count");
+    const price = counterWrapper.querySelector(".price");
+    const minus = counterWrapper.querySelector(".minus");
     counter.innerHTML--;
 
     let a = JSON.parse(localStorage.getItem("item") || "[]");
@@ -111,10 +102,6 @@ window.addEventListener("click", (event) => {
       counter.innerHTML = "1";
       minus.style.color = "#ccc";
     }
-
-    // if (counter.innerHTML == 1) {
-    //   price.innerHTML = total
-    // }
   }
 
   // const counterWrapper = event.target.closest(".kol");
@@ -155,19 +142,19 @@ window.addEventListener("click", (event) => {
   //   count: item.querySelector(".count").innerHTML
   // }
 
-  if (event.target.closest(".item")) {
-    a = JSON.parse(localStorage.getItem("korzina2") || "[]");
+  // if (event.target.closest(".item")) {
+  //   a = JSON.parse(localStorage.getItem("korzina2") || "[]");
 
-    for (let i = 0; i < a.length; i++) {
-      let locaId = a[i].id;
-      console.log(locaId, "localId");
-      let item = event.target.closest(".item");
+  //   for (let i = 0; i < a.length; i++) {
+  //     let locaId = a[i].id;
+  //     // console.log(locaId, "localId");
+  //     let item = event.target.closest(".item");
 
-      let id = item.dataset.id;
+  //     let id = item.dataset.id;
 
-      console.log(id, "id");
-    }
-  }
+  //     // console.log(id, "id");
+  //   }
+  // }
 });
 
 let date = document.querySelectorAll(".date2");
@@ -190,20 +177,20 @@ let tovar = document.querySelector(".tovar");
 
 tovar.innerHTML = item.length;
 
-for (let i = 0; i < item.length; i++) {
-  let id = item[i].dataset.id;
+// for (let i = 0; i < item.length; i++) {
+//   let id = item[i].dataset.id;
 
-  // let local = {
-  //   id: item[i].dataset.id,
-  //   price: item[i].querySelector(".price").innerHTML,
-  //   discount: item[i].querySelector(".discount").innerHTML,
-  //   count: item[i].querySelector(".count").innerHTML,
-  // };
+//   // let local = {
+//   //   id: item[i].dataset.id,
+//   //   price: item[i].querySelector(".price").innerHTML,
+//   //   discount: item[i].querySelector(".discount").innerHTML,
+//   //   count: item[i].querySelector(".count").innerHTML,
+//   // };
 
-  // a.push(local);
+//   // a.push(local);
 
-  // localStorage.setItem("kor", JSON.stringify(a));
-}
+//   // localStorage.setItem("kor", JSON.stringify(a));
+// }
 
 // korzina2.arr = JSON.parse(localStorage.getItem("kor") || "[]");
 

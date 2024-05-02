@@ -264,6 +264,7 @@
   display: flex;
   gap: 26px;
   align-items: center;
+  position: relative;
 }
 
 .conteiner .rasrochka .flex {
@@ -1910,3 +1911,94 @@
 .added {
   color: #7000ff !important;
 }
+
+.conteiner .rasrochka .boxRax {
+  display: flex;
+  gap: 26px;
+  position: absolute;
+}
+
+.conteiner .rasrochka .boxRax .r {
+  position: relative;
+  right: -338px;
+  top: 15px;
+}
+
+.conteiner .rasrochka .boxRax .r2 {
+  position: relative;
+  right: -338px;
+  top: 15px;
+}
+
+.conteiner .rasrochka .boxRax .rax {
+  width: 0;
+  height: 1px;
+  border: 1px solid #ccc;
+  animation: boxAnim 1s;
+  transition: .5s all linear;
+}
+
+.conteiner .rasrochka .boxRax .rax2 {
+  width: 0;
+  height: 1px;
+  border: 1px solid #ccc;
+  /* position: relative;
+  right: -338px;
+  top: 15px; */
+  animation: boxAnim 1s;
+  transition: .5s all linear;
+}
+
+/* .conteiner .rasrochka .rax3 {
+  width: 53px;
+  height: 1px;
+  border: 1px solid #ccc;
+  position: relative;
+  right: -338px;
+  top: 15px;
+}
+
+.conteiner .rasrochka .rax4 {
+  width: 40px;
+  height: 1px;
+  border: 1px solid #ccc;
+  position: relative;
+  right: -338px;
+  top: 15px;
+}
+
+.conteiner .rasrochka .rax5 {
+  width: 86px;
+  height: 1px;
+  border: 1px solid #ccc;
+  position: relative;
+  right: -338px;
+  top: 15px;
+}
+
+.conteiner .rasrochka .rax6 {
+  width: 100px;
+  height: 1px;
+  border: 1px solid #ccc;
+  position: relative;
+  right: -338px;
+  top: 15px;
+}
+
+.conteiner .rasrochka .rax7 {
+  width: 65px;
+  height: 1px;
+  border: 1px solid #ccc;
+  position: relative;
+  right: -338px;
+  top: 15px;
+}
+
+.conteiner .rasrochka .rax8 {
+  width: 112px;
+  height: 1px;
+  border: 1px solid #ccc;
+  position: relative;
+  right: -338px;
+  top: 15px;
+} */

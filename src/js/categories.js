@@ -125,14 +125,13 @@ interval = setInterval(() => {
 }, 1000);
 
 window.addEventListener("click", (event) => {
-  let nalichie = document.querySelector(".nalichie");
   let minus = document.querySelector(".minus");
   event.preventDefault();
   const price = document.querySelector(".price2");
   if (event.target.dataset.action === "plus") {
     const counterWrapper = event.target.closest(".kol");
     const counter = counterWrapper.querySelector(".count");
-    counter.innerHTML++;
+    // counter.innerHTML++;
     let a = JSON.parse(localStorage.getItem("item") || "{}");
 
     let p = parseInt(a.discount);
@@ -143,9 +142,10 @@ window.addEventListener("click", (event) => {
 
     minus.style.color = "#000";
 
-    if (counter.innerHTML !== nalichie.innerHTML) {
-      counter.innerHTML
-      counter.innerHTML = nalichie.innerHTML
+    if (parseInt(counter.innerHTML) >= item.count1) {
+      counter.innerHTML = item.count1
+    } else {
+      counter.innerHTML++
     }
   }
   if (event.target.dataset.action === "minus") {
