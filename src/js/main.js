@@ -221,7 +221,7 @@ export function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-          <div class="item" data-id="${item.id}">
+          <div class="item" data-id="${item.id}"  data-count="${item.count1}">
           <div class="img">
           <div class="heart">
           <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
@@ -280,7 +280,7 @@ export function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-                <div class="item" data-id="${item.id}">
+                <div class="item" data-id="${item.id}" data-count="${item.count1}">
                 <div class="img">
                 <div class="heart">
                 <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
@@ -339,7 +339,7 @@ export function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-                  <div class="item" data-id="${item.id}">
+                  <div class="item" data-id="${item.id}" data-count="${item.count1}">
                   <div class="img">
                   <div class="heart">
                   <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
@@ -398,7 +398,7 @@ export function getProducts() {
       }
       // console.log(item);
       let todoHtml = `
-              <div class="item" data-id="${item.id}">
+              <div class="item" data-id="${item.id}" data-count="${item.count1}">
               <div class="img">
               <div class="heart">
               <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
@@ -457,7 +457,7 @@ export function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-                  <div class="item" data-id="${item.id}">
+                  <div class="item" data-id="${item.id}" data-count="${item.count1}">
                   <div class="img">
                   <div class="heart">
                   <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
@@ -516,7 +516,7 @@ export function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-                    <div class="item" data-id="${item.id}">
+                    <div class="item" data-id="${item.id}" data-count="${item.count1}">
                     <div class="img">
                     <div class="heart">
                     <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
@@ -575,7 +575,7 @@ export function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-                      <div class="item" data-id="${item.id}">
+                      <div class="item" data-id="${item.id}" data-count="${item.count1}">
                       <div class="img">
                       <div class="heart">
                       <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
@@ -634,7 +634,7 @@ export function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-                        <div class="item" data-id="${item.id}">
+                        <div class="item" data-id="${item.id}" data-count="${item.count1}">
                         <div class="img">
                         <div class="heart">
                         <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
@@ -693,7 +693,7 @@ export function getProducts() {
       }
       //   console.log(item);
       let todoHtml = `
-                        <div class="item" data-id="${item.id}">
+                        <div class="item" data-id="${item.id}" data-count="${item.count1}">
                         <div class="img">
                         <div class="heart">
                         <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
@@ -752,7 +752,7 @@ export function getProducts() {
       }
       // console.log(item);
       let todoHtml = `
-            <div class="item" data-id="${item.id}">
+            <div class="item" data-id="${item.id}" data-count="${item.count1}">
             <div class="img">
             <div class="heart">
             <i class='bx bxs-heart' style='color:#fff' id="heart"  ></i>
@@ -840,7 +840,7 @@ export function getProducts() {
           price: item.querySelector(".price").innerHTML,
           review: item.querySelector(".otziv").innerHTML,
           discount: item.querySelector(".price2").innerHTML,
-          count1: parseInt(item.dataset.count),
+          count1: parseInt(item.dataset.count)
         };
 
         localStorage.setItem("item", JSON.stringify(obj));

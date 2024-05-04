@@ -4,16 +4,10 @@
   list-style: none;
   box-sizing: border-box;
   outline: none;
-  
 }
 
 .AllWidth {
   padding: 0 62px;
-}
-
-.conteiner {
-  width: 100%;
-  height: 100%;
 }
 
 .reklama5 img {
@@ -189,7 +183,6 @@
   display: none;
 }
 
-
 .conteiner .navbar .btn {
   display: flex;
   gap: 20px;
@@ -311,7 +304,6 @@
   justify-content: space-between;
   border-radius: 20px;
 }
-
 
 .conteiner .AllWidth .nizkie {
   display: flex;
@@ -1860,7 +1852,6 @@
   border-right: 1px solid #c2c2c2;
 }
 
-
 .conteiner .AllWidth .katalog a {
   text-decoration: none;
   color: #000;
@@ -1897,7 +1888,7 @@
 
 .conteiner .AllWidth .katalog .flex:hover {
   background-color: #e4e4e4;
-  transition: .2s all linear;
+  transition: 0.2s all linear;
 }
 
 .none {
@@ -1935,7 +1926,7 @@
   height: 1px;
   border: 1px solid #ccc;
   animation: boxAnim 1s;
-  transition: .5s all linear;
+  transition: 0.5s all linear;
 }
 
 .conteiner .rasrochka .boxRax .rax2 {
@@ -1946,7 +1937,7 @@
   right: -338px;
   top: 15px; */
   animation: boxAnim 1s;
-  transition: .5s all linear;
+  transition: 0.5s all linear;
 }
 
 /* .conteiner .rasrochka .rax3 {
@@ -2002,3 +1993,211 @@
   right: -338px;
   top: 15px;
 } */
+
+.conteiner .reg {
+  position: absolute;
+  width: 400px;
+  height: 480px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  top: 115px;
+  right: 500px;
+  border-radius: 10px;
+  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
+    20px -20px 40px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  display: none;
+}
+
+.conteiner .reg form input {
+  width: 100%;
+  height: 55px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 15px;
+  font-size: 22px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+.conteiner .reg form h1 {
+  text-align: center;
+  color: #000;
+  font-family: Gilroy;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.conteiner .btn2 {
+  width: 100%;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #0047ff;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.conteiner .reg form input::placeholder {
+  color: #000;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 2px;
+}
+
+.conteiner .reg #close {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.conteiner .reg form P {
+  text-align: center;
+}
+
+.conteiner .reg form a {
+  color: #0047ff;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+.conteiner .reg2 {
+  position: absolute;
+  width: 400px;
+  height: 480px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  top: 115px;
+  right: 500px;
+  border-radius: 10px;
+  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
+    20px -20px 40px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  display: none;
+}
+
+.conteiner .reg2 form input {
+  width: 100%;
+  height: 47px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 15px;
+  font-size: 22px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+.conteiner .reg2 form h1 {
+  text-align: center;
+  color: #000;
+  font-family: Gilroy;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.conteiner .btn2 {
+  width: 100%;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #0047ff;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.conteiner .reg2 form input::placeholder {
+  color: #000;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 2px;
+}
+
+.conteiner .reg2 #close {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.conteiner .reg2 form P {
+  text-align: center;
+}
+
+.conteiner .reg2 form a {
+  color: #0047ff;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+/* .required input {
+  border-color: blue;
+}
+
+.errorField {
+  color: red !important;
+}
+.errorField input {
+  border-color: red !important;
+}
+
+.errorField::after {
+  opacity: 1 !important;
+} */
+
+.conteiner .AllWidth .thank {
+  position: absolute;
+  width: 400px;
+  height: 480px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  top: 115px;
+  right: 500px;
+  border-radius: 10px;
+  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
+    20px -20px 40px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  display: none;
+}
+
+.conteiner .AllWidth .thank h1 {
+  color: red;
+  font-size: 30px;
+}

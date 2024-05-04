@@ -5,19 +5,18 @@ let korzina = {
 
 korzina.arr = JSON.parse(localStorage.getItem("korzina2") || "[]");
 korzina.id = JSON.parse(localStorage.getItem("id") || "0");
-let  count = JSON.parse(localStorage.getItem("count") || "0");
+let count = JSON.parse(localStorage.getItem("count") || "0");
 
 let y = [];
 
 const left = document.querySelector(".left");
 
 for (let i = 0; i < korzina.arr.length; i++) {
-
   let todoHtml = `
   <br />
   <div class="box"></div>
   <br />
-  <div class="item" data-id="${korzina.arr[i].id}">
+  <div class="item" id="${korzina.arr[i].id}">
   <input type="checkbox" />
   <div class="salesman">
   <img
@@ -51,10 +50,7 @@ for (let i = 0; i < korzina.arr.length; i++) {
   `;
 
   left.insertAdjacentHTML("beforeend", todoHtml);
-  
 }
-
-
 
 // const itemBox = document.querySelector(".item")
 
@@ -73,15 +69,18 @@ window.addEventListener("click", (event) => {
     const minus = counterWrapper.querySelector(".minus");
     counter.innerHTML++;
 
-    let a = JSON.parse(localStorage.getItem("item") || "[]");
+    let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
 
-    console.log(a);
-    
-    let p = parseInt(a.discount);
-    let total = p * counter.innerHTML;
-    
-    price.innerHTML = `${total} сум`;
-    minus.style.color = "#000";
+    for (let item of a) {
+      if (item.id == counterWrapper.id) {
+        let p = parseInt(item.discount);
+        let total = p * counter.innerHTML;
+        price.innerHTML = `${total} сум`;
+        minus.style.color = "#000";
+      }
+    }
+    let itogo = conteiner.querySelector(".itogo");
+    itogo.innerHTML = price.innerHTML;
   }
 
   if (event.target.closest(".minus")) {
@@ -91,12 +90,18 @@ window.addEventListener("click", (event) => {
     const minus = counterWrapper.querySelector(".minus");
     counter.innerHTML--;
 
-    let a = JSON.parse(localStorage.getItem("item") || "[]");
+    let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
 
-    let p = parseInt(a.discount);
-
-    let total = p * parseInt(counter.innerHTML);
-    price.innerHTML = `${total} сум`;
+    for (let item of a) {
+      if (item.id == counterWrapper.id) {
+        let p = parseInt(item.discount);
+        let total = p * counter.innerHTML;
+        price.innerHTML = `${total} сум`;
+        minus.style.color = "#000";
+      }
+    }
+    let itogo = conteiner.querySelector(".itogo");
+    itogo.innerHTML = price.innerHTML;
 
     if (counter.innerHTML <= 1) {
       counter.innerHTML = "1";
@@ -155,6 +160,15 @@ window.addEventListener("click", (event) => {
   //     // console.log(id, "id");
   //   }
   // }
+
+  // let item = event.target.closest(".")
+  // let price2 = item.querySelector(".price")
+
+  // let itogo = document.querySelector(".itogo")
+
+  // let price = price2.innerHTML += price2.innerHTML
+
+  // itogo.innerHTML = price.innerHTML
 });
 
 let date = document.querySelectorAll(".date2");
@@ -162,9 +176,6 @@ let date = document.querySelectorAll(".date2");
 for (let i = 0; i < date.length; i++) {
   date[i].innerHTML = new Date().getDate() + 1;
 }
-
-const price = document.querySelector(".price");
-const itogo = document.querySelector(".itogo");
 
 // itogo.innerHTML += price.innerHTML
 
@@ -237,3 +248,21 @@ tovar.innerHTML = item.length;
 
 //   console.log(korzina2.arr[i]);
 // }
+
+// conteiner.addEventListener('click', () => {
+//   remove(mass)
+// })
+
+let conteiner = document.querySelector(".conteiner");
+let price = conteiner.querySelectorAll(".price");
+let itogo = conteiner.querySelector(".itogo");
+
+price.forEach((item) => {
+  // console.log(item.innerHTML);
+
+  itogo.innerHTML = item.innerHTML;
+
+  // parseInt(itogo.innerHTML += item.innerHTML)
+
+  // itogo.innerHTML + itogo.innerHTML + parseInt(item.innerHTML)
+});

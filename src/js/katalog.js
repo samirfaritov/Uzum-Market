@@ -69,10 +69,22 @@ function katalog() {
   });
 
   var voyti = document.querySelector(".voyti");
+  let reg = document.querySelector(".reg")
+  let conteiner = document.querySelector(".conteiner")
+  const clearing = document.querySelector("#close")
+  let body = document.querySelector("body")
 
   voyti.addEventListener("click", () => {
-    console.log("click");
+    reg.style.display = "block"
+    reklama.style.display = "none"
+    body.style.overflow = "hidden"
   });
+  
+  clearing.addEventListener("click", () => {
+    reg.style.display = "none"
+    reklama.style.display = "flex"
+    body.style.overflow = ""
+  })
 
   var izb = document.querySelector(".izb");
 
