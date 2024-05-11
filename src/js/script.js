@@ -39,3 +39,13 @@ data.rasrochka
 import {katalog} from "./katalog"
 
 katalog
+
+import * as reg from "./registation"
+
+reg.registation()
+reg.myModule()
+reg.patterns
+reg.btn
+reg.form
+reg.inps
+reg.txt

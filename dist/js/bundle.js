@@ -88,11 +88,14 @@ function katalog() {
     reklama.style.display = "none"
     body.style.overflow = "hidden"
   });
+
+  const regis = document.querySelector(".reg2")
+  const reg2 = document.querySelector(".reg")
   
   clearing.addEventListener("click", () => {
     reg.style.display = "none"
     reklama.style.display = "flex"
-    body.style.overflow = ""
+    body.style.overflow = ""   
   })
 
   var izb = document.querySelector(".izb");
@@ -1172,6 +1175,144 @@ function getProducts() {
 }
 
 
+/***/ }),
+
+/***/ "./src/js/registation.js":
+/*!*******************************!*\
+  !*** ./src/js/registation.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   btn: () => (/* binding */ btn),
+/* harmony export */   form: () => (/* binding */ form),
+/* harmony export */   inps: () => (/* binding */ inps),
+/* harmony export */   myModule: () => (/* binding */ myModule),
+/* harmony export */   patterns: () => (/* binding */ patterns),
+/* harmony export */   registation: () => (/* binding */ registation),
+/* harmony export */   txt: () => (/* binding */ txt)
+/* harmony export */ });
+/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main */ "./src/js/main.js");
+
+
+function registation() {
+  let body = document.querySelector("body");
+  let clickBtn = document.querySelector("#btn2");
+  const regis = document.querySelector(".reg2");
+  const reg = document.querySelector(".reg");
+//   const btnBox = document.querySelector("#btnBox");
+  let reklama = document.querySelector(".reklama");
+  clickBtn.addEventListener("click", () => {
+    regis.style.display = "none";
+    regis.style.display = "none";
+    thankyou.style.display = "block";
+  });
+
+  let registation = document.querySelector(".registation");
+
+  let clear = document.querySelector(".close2");
+  let clear2 = document.querySelector(".close3");
+
+  let thankyou = document.querySelector(".thank");
+
+//   btnBox.addEventListener("click", () => {
+//     thankyou.style.display = "none";
+//     regis.style.display = "none";
+//     reg.style.display = "block";
+//   });
+
+  clear.addEventListener("click", () => {
+    thankyou.style.display = "none";
+    reklama.style.display = "block";
+    body.style.overflow = ""
+  });
+
+  clear2.addEventListener("click", () => {
+    regis.style.display = "none";
+    reklama.style.display = "block";
+    body.style.overflow = ""
+  });
+
+  registation.addEventListener("click", () => {
+    reg.style.display = "none";
+    regis.style.display = "block";
+  });
+
+  let voytiBtn = document.querySelector(".voytiBtn");
+
+  voytiBtn.addEventListener("click", () => {
+    reg.style.display = "block";
+    regis.style.display = "none";
+  });
+}
+
+registation();
+
+let patterns = {
+  name: /^[a-z ,.'-]+$/i,
+  surname: /^[a-z ,.'-]+$/i,
+  password: /^[a-z ,.'-]+$/i,
+  email: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/gi,
+};
+
+const inps = document.querySelectorAll("input");
+const btn = document.querySelector("#btnBox");
+const form = document.forms.login;
+
+let txt = "";
+
+function myModule() {
+  for (let i = 0; i < inps.length; i++) {
+    inps[i].addEventListener("keyup", (e) => {
+      txt = e.target.value;
+    });
+  }
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let user = {};
+
+    let fm = new FormData(form);
+
+    fm.forEach((value, key) => {
+      user[key] = value;
+    });
+
+    console.log(user);
+
+    // localStorage.setItem("user", JSON.stringify(user));
+    // location.href = "/html/login.html";
+
+    const regis = document.querySelector(".reg2");
+    const reg = document.querySelector(".reg");
+    const btnBox = document.querySelector("#btnBox");
+    let thankyou = document.querySelector(".thank");
+
+    btnBox.addEventListener("click", () => {
+        thankyou.style.display = "none";
+        regis.style.display = "none";
+        reg.style.display = "block";
+      });
+    
+  });
+
+  inps.forEach((inp) => {
+    inp.onkeyup = () => {
+      console.log(patterns[inp.name].test(inp.value));
+      if (patterns[inp.name].test(inp.value)) {
+        inp.parentElement.classList.remove("errorField");
+      } else {
+        inp.parentElement.classList.add("errorField");
+      }
+    };
+  });
+}
+
+myModule()
+
 /***/ })
 
 /******/ 	});
@@ -1253,6 +1394,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main */ "./src/js/main.js");
 /* harmony import */ var _katalog__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./katalog */ "./src/js/katalog.js");
 /* harmony import */ var _katalog__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_katalog__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _registation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./registation */ "./src/js/registation.js");
 
 
 _main__WEBPACK_IMPORTED_MODULE_0__.getTodo()
@@ -1294,6 +1436,16 @@ _main__WEBPACK_IMPORTED_MODULE_0__.rasrochka
 ;
 
 _katalog__WEBPACK_IMPORTED_MODULE_1__.katalog
+
+;
+
+_registation__WEBPACK_IMPORTED_MODULE_2__.registation()
+_registation__WEBPACK_IMPORTED_MODULE_2__.myModule()
+_registation__WEBPACK_IMPORTED_MODULE_2__.patterns
+_registation__WEBPACK_IMPORTED_MODULE_2__.btn
+_registation__WEBPACK_IMPORTED_MODULE_2__.form
+_registation__WEBPACK_IMPORTED_MODULE_2__.inps
+_registation__WEBPACK_IMPORTED_MODULE_2__.txt
 })();
 
 /******/ })()

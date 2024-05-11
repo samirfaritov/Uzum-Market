@@ -79,11 +79,14 @@ function katalog() {
     reklama.style.display = "none"
     body.style.overflow = "hidden"
   });
+
+  const regis = document.querySelector(".reg2")
+  const reg2 = document.querySelector(".reg")
   
   clearing.addEventListener("click", () => {
     reg.style.display = "none"
     reklama.style.display = "flex"
-    body.style.overflow = ""
+    body.style.overflow = ""   
   })
 
   var izb = document.querySelector(".izb");

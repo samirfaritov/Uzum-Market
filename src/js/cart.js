@@ -79,8 +79,10 @@ window.addEventListener("click", (event) => {
         minus.style.color = "#000";
       }
     }
-    let itogo = conteiner.querySelector(".itogo");
-    itogo.innerHTML = price.innerHTML;
+    // let itogo = conteiner.querySelector(".itogo");
+    // itogo.innerHTML = price.innerHTML;
+
+    totalCalc();
   }
 
   if (event.target.closest(".minus")) {
@@ -100,13 +102,15 @@ window.addEventListener("click", (event) => {
         minus.style.color = "#000";
       }
     }
-    let itogo = conteiner.querySelector(".itogo");
-    itogo.innerHTML = price.innerHTML;
+    // let itogo = conteiner.querySelector(".itogo");
+    // itogo.innerHTML = price.innerHTML;
 
     if (counter.innerHTML <= 1) {
       counter.innerHTML = "1";
       minus.style.color = "#ccc";
     }
+
+    totalCalc();
   }
 
   // const counterWrapper = event.target.closest(".kol");
@@ -170,6 +174,26 @@ window.addEventListener("click", (event) => {
 
   // itogo.innerHTML = price.innerHTML
 });
+
+function totalCalc() {
+  let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
+  let prices = [];
+
+  for (let item of a) {
+    prices.push(parseInt(item.discount));
+  }
+
+  let t = prices.reduce((item, prev) => {
+    return item += prev;
+  });
+
+  let total_price = document.querySelector(".itogo");
+  total_price.innerHTML = t;
+
+  console.log(total_price);
+}
+
+totalCalc();
 
 let date = document.querySelectorAll(".date2");
 

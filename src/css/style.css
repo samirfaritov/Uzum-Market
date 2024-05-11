@@ -303,6 +303,7 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 20px;
+  /* display: none; */
 }
 
 .conteiner .AllWidth .nizkie {
@@ -2200,4 +2201,22 @@ form {
 .conteiner .AllWidth .thank h1 {
   color: red;
   font-size: 30px;
+}
+
+.conteiner .thank #close {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  top: 15px;
+}
+
+.errorField {
+  color: red !important;
+}
+.errorField input {
+  border-color: red !important;
+}
+
+.errorField::after {
+  opacity: 1 !important;
 }
