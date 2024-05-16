@@ -1225,6 +1225,8 @@ function registation() {
 
   clear.addEventListener("click", () => {
     thankyou.style.display = "none";
+    regis.style.display = "none";
+    reg.style.display = "none";
     reklama.style.display = "block";
     body.style.overflow = ""
   });
@@ -1279,24 +1281,24 @@ function myModule() {
 
     fm.forEach((value, key) => {
       user[key] = value;
+      console.log(user);
     });
 
-    console.log(user);
 
-    // localStorage.setItem("user", JSON.stringify(user));
     // location.href = "/html/login.html";
-
+    
     const regis = document.querySelector(".reg2");
     const reg = document.querySelector(".reg");
     const btnBox = document.querySelector("#btnBox");
     let thankyou = document.querySelector(".thank");
-
+    
     btnBox.addEventListener("click", () => {
-        thankyou.style.display = "none";
+      thankyou.style.display = "none";
         regis.style.display = "none";
         reg.style.display = "block";
       });
-    
+      
+      // localStorage.setItem("user", JSON.stringify(user));
   });
 
   inps.forEach((inp) => {
