@@ -113,7 +113,11 @@
   height: 200px;
 }
 
-.conteiner .navbar .logo #uzum {
+.conteiner #uzum {
+  display: none;
+}
+
+.conteiner .poisk {
   display: none;
 }
 

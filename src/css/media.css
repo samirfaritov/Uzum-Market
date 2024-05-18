@@ -391,12 +391,12 @@
     top: 30px;
   }
 
-  .conteiner .navbar {
+  /* .conteiner .navbar {
     /* position: absolute;
     bottom: 0; */
-    /* position: fixed; */
-    /* position: fixed; */
-  }
+  /* position: fixed; */
+  /* position: fixed; */
+  /* } */
 
   .conteiner .rasrochka {
     display: none;
@@ -430,19 +430,97 @@
     display: none;
   }
 
-  .conteiner .navbar .logo #uzum {
+  .conteiner #uzum {
     display: block;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 82px;
+    left: 14px;
+    width: 35px; */
+    /* position: absolute;
+    top: 0; */
   }
 
   .conteiner .navbar .katalog .kat {
     position: absolute;
     bottom: 0;
+    display: none;
   }
 
   .conteiner .navbar .btn {
     position: absolute;
     bottom: 0;
+  }
+
+  .conteiner .poisk {
+    display: block;
+  }
+
+  .conteiner .menu {
+    position: absolute;
+  }
+
+  .conteiner .navbar .btn .voyti {
+    display: block;
+  }
+  .conteiner .navbar .btn .izb {
+    display: block;
+  }
+  .conteiner .navbar .btn .kar {
+    display: block;
+  }
+
+  .conteiner .navbar .btn .voyti svg {
+    display: none;
+  }
+
+  .conteiner .navbar .btn .voyti .p {
+    display: block;
+  }
+
+  .conteiner .navbar .btn .izb .p {
+    display: block;
+  }
+
+  .conteiner .navbar .btn .kar .p {
+    display: block;
+  }
+
+  .conteiner .navbar .btn .voyti p {
+    display: none;
+  }
+  .conteiner .navbar .btn .izb i {
+    display: none;
+  }
+
+  .conteiner .navbar .btn .izb p {
+    display: none;
+  }
+
+  .conteiner .navbar .btn .kar i {
+    display: none;
+  }
+
+  .conteiner .navbar .btn .kar p {
+    display: none;
+  }
+
+  .conteiner .menu {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    position: absolute;
+    position: fixed;
+    bottom: 10px;
+    margin-bottom: 157px;
+    margin-left: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
+      20px -20px 40px rgba(255, 255, 255, 0.5);
+  }
+
+  .conteiner .item {
+    position: relative;
   }
 }
