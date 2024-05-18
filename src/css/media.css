@@ -378,3 +378,71 @@
     /* display: none; */
   }
 }
+
+@media screen and (max-width: 426px) {
+  .conteiner .translator {
+    display: none;
+  }
+
+  .conteiner .navbar .katalog #flex {
+    display: flex;
+    position: absolute;
+    left: 14px;
+    top: 30px;
+  }
+
+  .conteiner .navbar {
+    /* position: absolute;
+    bottom: 0; */
+    /* position: fixed; */
+    /* position: fixed; */
+  }
+
+  .conteiner .rasrochka {
+    display: none;
+  }
+
+  .conteiner .AllWidth .reklama {
+    width: 100%;
+    height: 160px;
+    position: relative;
+  }
+
+  .conteiner .navbar .katalog .flex input {
+    width: 339px;
+    font-size: 14px;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .conteiner .navbar .katalog .flex button {
+    border-radius: 13px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  /* swiper-slide {
+    border-radius: 10px;
+} */
+
+  .conteiner .navbar .logo svg {
+    display: none;
+  }
+
+  .conteiner .navbar .logo #uzum {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .conteiner .navbar .katalog .kat {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .conteiner .navbar .btn {
+    position: absolute;
+    bottom: 0;
+  }
+}

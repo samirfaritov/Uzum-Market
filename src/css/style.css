@@ -113,6 +113,10 @@
   height: 200px;
 }
 
+.conteiner .navbar .logo #uzum {
+  display: none;
+}
+
 .conteiner .navbar .katalog .flex input {
   width: 400px;
   height: 40px;
