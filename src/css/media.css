@@ -471,7 +471,7 @@
   .conteiner .navbar .btn .kar {
     display: block;
     position: relative;
-        right: 43px;
+    right: 43px;
   }
 
   .conteiner .navbar .btn .voyti svg {
@@ -521,14 +521,13 @@
     justify-content: center;
     box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
       20px -20px 40px rgba(255, 255, 255, 0.5);
-      margin-bottom: -6px;
+    margin-bottom: -6px;
   }
 
-  
   .conteiner #kar {
     display: block;
   }
-  
+
   .conteiner .navbar .btn .voyti p {
     position: relative;
     right: 8px;
@@ -548,40 +547,51 @@
     height: 53px;
   }
 
-  .conteiner .AllWidth .skidka .item  {
+  .conteiner .AllWidth .skidka .item {
     width: 180px;
+    height: 350px;
   }
 
-  .conteiner .AllWidth .flo .item  {
+  .conteiner .AllWidth .flo .item {
     width: 180px;
+    height: 380px;
   }
-  .conteiner .AllWidth .rekomenduyem .item  {
-    width: 180px;
+  .conteiner .AllWidth .rekomenduyem .item {
+    width: 180px;    height: 400px;
   }
-  .conteiner .AllWidth .elektronika .item  {
-    width: 180px;
+  .conteiner .AllWidth .elektronika .item {
+    width: 180px;    height: 420px;
   }
-  .conteiner .AllWidth .rasrochka2 .item  {
-    width: 180px;
+  .conteiner .AllWidth .rasrochka2 .item {
+    width: 180px;    height: 400px;
   }
-  .conteiner .AllWidth .texnika .item  {
-    width: 180px;
+  .conteiner .AllWidth .texnika .item {
+    width: 180px;    height: 350px;
   }
-  .conteiner .AllWidth .vozdux .item  {
-    width: 180px;
+  .conteiner .AllWidth .vozdux .item {
+    width: 180px;    height: 350px;
   }
-  .conteiner .AllWidth .uxod .item  {
-    width: 180px;
-  }
-  .conteiner .AllWidth .family .item  {
-    width: 180px;
-  }
-  .conteiner .AllWidth .beauty .item  {
-    width: 180px;
+  .conteiner .AllWidth .uxod .item {
+    width: 180px;    height: 420px;
   }
 
-  .conteiner .AllWidth .bozor .item  {
+  .conteiner .AllWidth .skidka .item .name {
+    font-size: 12px;
+  }
+
+  .conteiner .AllWidth .rasrochka2 .item .name {
+    font-size: 12px;
+  }
+  .conteiner .AllWidth .family .item {
+    width: 180px;    height: 350px;
+  }
+  .conteiner .AllWidth .beauty .item {
     width: 180px;
+    height: 350px;
+  }
+
+  .conteiner .AllWidth .bozor .item {
+    width: 180px;    height: 350px;
   }
 
   .conteiner .AllWidth footer .footer {
@@ -612,11 +622,166 @@
     gap: 20px;
     margin-right: -15px;
     justify-content: center;
+  }
+
+  .conteiner .AllWidth footer .sog {
+    display: none;
+  }
+
+  .conteiner .AllWidth .skidka .item img {
+    width: 100%;
+    height: 142px;
+  }
 }
 
-.conteiner .AllWidth footer .sog {
-  display: none;
-}
+@media screen and (max-width: 376px) {
+  .conteiner .navbar .katalog .flex input {
+    width: 288px;
+  }
 
+  .conteiner .navbar .btn {
+    gap: 12px;
+  }
+
+  .conteiner .AllWidth .skidka .item {
+    width: 164px;
+    height: 350px;
+  }
+
+
+  .conteiner .AllWidth .flo .item img {
+    width: 100%;
+    height: 142px;
+  }
+  .conteiner .AllWidth .flo .item {
+    width: 164px;
+    height: 350px;
+  }
+
+
+  .conteiner .AllWidth .flo .item img {
+    width: 100%;
+    height: 142px;
+  }
+  .conteiner .AllWidth .rekomenduyem .item {
+    width: 164px;
+    height: 350px;
+  }
+
+
+  .conteiner .AllWidth .rekomenduyem .item img {
+    width: 100%;
+    height: 142px;
+  }
+  .conteiner .AllWidth .rekomenduyem .item {
+    width: 164px;
+    height: 350px;
+  }
+
+
+  .conteiner .AllWidth .elektronika .item img {
+    width: 100%;
+    height: 142px;
+  }
+  .conteiner .AllWidth .elektronika .item {
+    width: 164px;
+    height: 350px;
+  }
+
+
+  .conteiner .AllWidth .elektronika .item img {
+    width: 100%;
+    height: 142px;
+  }
+  .conteiner .AllWidth .rasrochka2 .item {
+    width: 164px;
+    height: 350px;
+  }
+
+
+  .conteiner .AllWidth .rasrochka2 .item img {
+    width: 100%;
+    height: 142px;
+  }
+  .conteiner .AllWidth .rasrochka2 .item {
+    width: 164px;
+    height: 350px;
+  }
+
+
+  .conteiner .AllWidth .texnika .item img {
+    width: 100%;
+    height: 142px;
+  }
+  .conteiner .AllWidth .texnika .item {
+    width: 164px;
+    height: 350px;
+  }
+
+
+  .conteiner .AllWidth .texnika .item img {
+    width: 100%;
+    height: 142px;
+  }
+  .conteiner .AllWidth .vozdux .item {
+    width: 164px;
+    height: 350px;
+  }
+
+
+  .conteiner .AllWidth .vozdux .item img {
+    width: 100%;
+    height: 142px;
+  }
+  .conteiner .AllWidth .vozdux .item {
+    width: 164px;
+    height: 350px;
+  }
+
+
+  .conteiner .AllWidth .uxod .item img {
+    width: 100%;
+    height: 142px;
+  }
+  .conteiner .AllWidth .uxod .item {
+    width: 164px;
+    height: 350px;
+  }
+
+
+  .conteiner .AllWidth .family .item img {
+    width: 100%;
+    height: 142px;
+  }
+  .conteiner .AllWidth .family .item img {
+    width: 100%;
+    height: 142px;
+  }
+  .conteiner .AllWidth .beauty .item {
+    width: 164px;
+    height: 350px;
+  }
+  .conteiner .AllWidth .family .item {
+    width: 164px;
+    height: 350px;
+  }
+
+
+  .conteiner .AllWidth .beauty .item img {
+    width: 100%;
+    height: 142px;
+  }
+  .conteiner .AllWidth .bozor .item img {
+    width: 100%;
+    height: 142px;
+  }
+  .conteiner .AllWidth .bozor .item {
+    width: 164px;
+    height: 350px;
+  }
+
+  .conteiner h1 {
+    font-size: 27px;
+  }
 
 }
