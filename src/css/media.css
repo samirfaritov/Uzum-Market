@@ -785,3 +785,125 @@
   }
 
 }
+
+
+@media screen and (max-width: 321px) {
+  .conteiner .navbar .katalog .flex input {
+    width: 237px;
+}
+
+.conteiner .AllWidth .skidka .item {
+  width: 137px;
+  height: 350px;
+}
+
+.conteiner .AllWidth .skidka .item .flex .otziv {
+  color: #ababab;
+  font-size: 7px;
+}
+.conteiner .AllWidth .flo .item {
+  width: 137px;
+  height: 350px;
+}
+
+.conteiner .AllWidth .flo .item .flex .otziv {
+  color: #ababab;
+  font-size: 7px;
+}
+.conteiner .AllWidth .rekomenduyem .item {
+  width: 137px;
+  height: 350px;
+}
+
+.conteiner .AllWidth .rekomenduyem .item .flex .otziv {
+  color: #ababab;
+  font-size: 7px;
+}
+.conteiner .AllWidth .elektronika .item {
+  width: 137px;
+  height: 350px;
+}
+
+.conteiner .AllWidth .elektronika .item .flex .otziv {
+  color: #ababab;
+  font-size: 7px;
+}
+.conteiner .AllWidth .rasrochka2 .item {
+  width: 137px;
+  height: 350px;
+}
+
+.conteiner .AllWidth .rasrochka2 .item .flex .otziv {
+  color: #ababab;
+  font-size: 7px;
+}
+.conteiner .AllWidth .texnika .item {
+  width: 137px;
+  height: 350px;
+}
+
+.conteiner .AllWidth .texnika .item .flex .otziv {
+  color: #ababab;
+  font-size: 7px;
+}
+.conteiner .AllWidth .vozdux .item {
+  width: 137px;
+  height: 350px;
+}
+
+.conteiner .AllWidth .vozdux .item .flex .otziv {
+  color: #ababab;
+  font-size: 7px;
+}
+.conteiner .AllWidth .uxod .item {
+  width: 137px;
+  height: 350px;
+}
+
+.conteiner .AllWidth .uxod .item .flex .otziv {
+  color: #ababab;
+  font-size: 7px;
+}
+.conteiner .AllWidth .family .item {
+  width: 137px;
+  height: 350px;
+}
+
+.conteiner .AllWidth .family .item .flex .otziv {
+  color: #ababab;
+  font-size: 7px;
+}
+.conteiner .AllWidth .beauty .item {
+  width: 137px;
+  height: 350px;
+}
+
+.conteiner .AllWidth .beauty .item .flex .otziv {
+  color: #ababab;
+  font-size: 7px;
+}
+.conteiner .AllWidth .bozor .item {
+  width: 137px;
+  height: 350px;
+}
+
+.conteiner .AllWidth .bozor .item .flex .otziv {
+  color: #ababab;
+  font-size: 7px;
+}
+
+.conteiner .navbar .btn {
+  gap: 0px;
+}
+
+.conteiner #kar {
+  display: block;
+  font-size: 13px;
+}
+
+.conteiner .AllWidth .kategori .left .item {
+  width: 95px;
+}
+
+
+}
