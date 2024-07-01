@@ -201,7 +201,30 @@
     color: #878787;
     font-size: 17px;
   }
+
+  .conteiner .AllWidth .kategori .left .item {
+    width: 95px;
+  }
+
+  .conteiner .AllWidth .kategori .right .item {
+    width: 362px;
+    height: 650px;
 }
+
+.conteiner .AllWidth .content .kategori2 {
+  width: 46%;
+}
+
+.conteiner .AllWidth .content .right {
+  width: 96%;
+  height: 430px;
+  border: 1px solid #a8a8a8;
+  position: absolute;
+  top: 4139px;
+}
+
+}
+
 
 @media screen and (max-width: 768px) {
   .AllWidth {
@@ -377,6 +400,93 @@
     border-radius: 20px;
     /* display: none; */
   }
+
+  .conteiner .AllWidth .kategori .right .item {
+    width: 248px;
+    height: 584px;
+} 
+
+.conteiner .AllWidth .content .kategori2 .dob .korzina {
+  font-size: 18px;
+}
+
+.conteiner .AllWidth .content .kategori2 .dob .klik {
+  width: 270px;
+  height: 56px;
+  border-radius: 15px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  transition: 0.2s all linear;
+  cursor: pointer;
+  color: rgb(58, 0, 151);
+  border: 2px solid rgb(58, 0, 151);
+  background-color: #fff;
+  padding: 10px;
+}
+
+.conteiner .AllWidth .content .kategori2 {
+  width: 43%;
+}
+
+.conteiner .AllWidth .content .kategori2 .katta2 .price2 {
+  font-size: 22px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.conteiner .AllWidth .content .left {
+  width: 101%;
+  height: 100%;
+  border: 1px solid #a8a8a8;
+  padding: 20px;
+}
+
+
+.conteiner .AllWidth .content .right {
+  width: 96%;
+  height: 420px;
+  border: 1px solid #a8a8a8;
+  position: absolute;
+  top: 548%;
+}
+
+/* .conteiner .translator {
+  display: none;
+}
+
+.conteiner .navbar {
+  display: none;
+}
+
+.conteiner .rasrochka {
+  display: none;
+} */
+
+.conteiner .AllWidth .content .left .item {
+  gap: 0; 
+}
+
+.conteiner .AllWidth .content .left .item .salesman img {
+  width: 92px;
+  height: 109px;
+}
+
+.conteiner .AllWidth .content .left .item .salesman {
+  display: flex;
+  gap: 8px;
+}
+
+.conteiner .AllWidth .content .left .item .name {
+  width: 123px;
+  font-size: 15px;
+}
+
+.conteiner .AllWidth .content .left .item .delete {
+  gap: 22px;
+  width: 186px;
+}
 }
 
 @media screen and (max-width: 426px) {
@@ -632,6 +742,125 @@
     width: 100%;
     height: 142px;
   }
+
+  .conteiner .AllWidth .content {
+    display: grid;
+    gap: 70px;
+}
+
+.conteiner .AllWidth .content .kategori2 {
+  width: 101%;
+}
+
+.conteiner .AllWidth .content .kategori2 .katta2 {
+  width: 100%;
+  height: 65px;
+  /* border: 3px solid #000; */
+  border-top: 1px solid #000;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
+  20px -20px 40px rgba(255, 255, 255, 0.5);
+}
+
+.content .kategori2 .katta2 .price {
+  display: none;
+}
+
+.conteiner .AllWidth .content .kategori2 .dob .klik {
+  display: none;
+}
+
+.conteiner .AllWidth .content .kategori2 .dob .korzina {
+  font-size: 18px;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  width: 200px;
+  font-size: 17px;
+}
+
+.conteiner .AllWidth .content .kategori2 .katta2 .price2 {
+  padding-left: 10px;
+}
+.conteiner .AllWidth .content .right .tovar {
+  width: 104%;
+  height: 148px;
+  background-color: #eeeeee;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  /* top: 0; */
+  right: -25px;
+  bottom: 1134%;
+}
+
+.conteiner .AllWidth .content .left .item .salesman img {
+  width: 67px;
+  height: 85px;
+}
+
+
+.conteiner .AllWidth .content {
+  display: grid;
+  gap: 70px;
+  position: absolute;
+  top: 363px;
+}
+
+
+.conteiner .AllWidth h1 {
+  font-size: 27px;
+  font-weight: 550;
+  position: relative;
+  top: 210px;
+}
+
+.conteiner .AllWidth .content .right {
+  width: 96%;
+  height: 279px;
+  border: 1px solid #a8a8a8;
+  position: absolute;
+  top: 101%;
+}
+
+
+.conteiner .AllWidth .content .left .item input {
+  width: 17px;
+  height: 69px;
+}
+
+
+.conteiner .AllWidth .content .left {
+  width: 101%;
+  height: 100%;
+  border: 1px solid #a8a8a8;
+  padding: 0px;
+}
+
+
+.conteiner .AllWidth .content .left .item .name {
+  width: 127px;
+  font-size: 13px;
+}
+
+.conteiner .AllWidth .content .left .item .salesman .k {
+  position: relative;
+  top: 92px;
+  right: 210px;
+}
+
+.conteiner .AllWidth .content .left .item .delete {
+  gap: 22px;
+  width: 186px;
+  top: 27px;
+  right: -13px;
+}
 }
 
 @media screen and (max-width: 376px) {
@@ -784,8 +1013,16 @@
     font-size: 27px;
   }
 
+  .conteiner .AllWidth .content .kategori2 .dob .korzina {
+    font-size: 18px;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 169px;
+    font-size: 15px;
 }
 
+}
 
 @media screen and (max-width: 321px) {
   .conteiner .navbar .katalog .flex input {
@@ -901,9 +1138,41 @@
   font-size: 13px;
 }
 
-.conteiner .AllWidth .kategori .left .item {
-  width: 95px;
+.conteiner .AllWidth .kategori .right .item {
+  width: 194px;
+  height: 584px;
 }
 
+.conteiner .AllWidth .kategori .left {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
 
+.conteiner .AllWidth .kategori .left .item {
+  width: 83px;
+}
+
+.conteiner .AllWidth .content .kategori2 .dob .korzina {
+  font-size: 18px;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  width: 136px;
+  font-size: 15px;
+}
+
+.conteiner .AllWidth .content .right .tovar {
+  width: 96%;
+  height: 128px;
+  background-color: #eeeeee;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  top: 91px;
+  right: 5px;
+}
 }
