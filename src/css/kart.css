@@ -6,6 +6,23 @@
   outline: none;
 }
 
+.conteiner #clear {
+  display: none;
+}
+
+.conteiner #uzum {
+  display: none;
+}
+
+.conteiner #kar {
+  display: none;
+}
+
+.conteiner .poisk {
+  display: none;
+}
+
+
 .AllWidth {
   padding: 0 62px;
 }
