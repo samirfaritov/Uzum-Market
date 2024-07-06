@@ -1,4 +1,9 @@
 @media screen and (max-width: 1024px) {
+  .conteiner .AllWidth .content {
+    display: flex;
+    gap: 440px;
+  }
+
   .conteiner .navbar .katalog {
     display: flex;
     gap: 13px;
@@ -229,6 +234,15 @@
     border: 1px solid #a8a8a8;
     position: absolute;
     top: 783px;
+  }
+
+  .conteiner .AllWidth .content .right {
+    width: 0%;
+    height: 430px;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 214px;
+    left: 155px;
   }
 }
 
@@ -500,6 +514,30 @@
     position: absolute;
     top: 109%;
   }
+
+  .conteiner .AllWidth .content .right {
+    width: 0;
+    height: 310px;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 40%;
+  }
+
+  .conteiner .AllWidth .content .left {
+    border: none;
+  }
+
+  /* .conteiner .AllWidth .content .kategori2 {
+    width: 43%;
+    position: absolute;
+    right: 0;
+  } */
+
+  .conteiner .AllWidth .content .kategori2 {
+    width: 43%;
+    position: relative;
+    right: 156px;
+}
 }
 
 @media screen and (max-width: 426px) {
@@ -898,6 +936,39 @@
     top: 83px;
     right: 210px;
   }
+
+
+  .conteiner .AllWidth .content .right {
+    width: 0;
+    height: 279px;
+    border: 1px solid transparent;
+}
+
+.conteiner .AllWidth .content .right {
+  width: 0;
+  height: 279px;
+  border: 1px solid transparent;
+  position: absolute;
+  top: 0;
+}
+
+
+.conteiner .AllWidth .content .kategori2 {
+  width: 101%;
+  position: relative;
+  left: -6px;
+}
+
+.conteiner .AllWidth .content {
+  display: grid;
+  gap: 70px;
+  position: absolute;
+  top: 139px;
+}
+
+.conteiner .AllWidth .content .left {
+  border: none;
+}
 }
 
 @media screen and (max-width: 376px) {
@@ -1108,22 +1179,35 @@
     /* top: 0; */
     right: 6px;
     bottom: 271%;
+  }
+
+  .conteiner .menu {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 10px;
+    margin-left: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 20px 40px,
+      rgba(255, 255, 255, 0.5) 20px -20px 40px;
+    margin-bottom: -6px;
+  }
+
+  .conteiner .AllWidth .content .right {
+    width: 0%;
+    height: 279px;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 107px;
 }
 
-.conteiner .menu {
-  width: 100%;
-  height: 70px;
-  background-color: rgb(255, 255, 255);
-  position: fixed;
-  bottom: 10px;
-  margin-left: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 20px 40px, rgba(255, 255, 255, 0.5) 20px -20px 40px;
-  margin-bottom: -6px;
+.conteiner .AllWidth .content .left {
+  border: none;
 }
-
 }
 
 @media screen and (max-width: 321px) {
@@ -1278,7 +1362,6 @@
     right: 5px;
   }
 
-
   .conteiner .AllWidth .content .right .tovar {
     width: 87%;
     height: 128px;
@@ -1291,138 +1374,154 @@
     position: absolute;
     top: -454px;
     right: 53px;
+  }
+
+  .conteiner .AllWidth .content {
+    display: grid;
+    gap: 70px;
+    position: absolute;
+    top: 255px;
+  }
+
+  .conteiner .AllWidth .content .right .tovar {
+    width: 87%;
+    height: 128px;
+    background-color: #eeeeee;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: -558px;
+    right: 53px;
+  }
+
+  .conteiner .AllWidth h1 {
+    font-size: 23px;
+    font-weight: 550;
+    position: relative;
+    top: 128px;
+  }
+
+  .conteiner .AllWidth .content .left .date .a input {
+    width: 15px;
+    height: 31px;
+  }
+
+  /* .conteiner .AllWidth .content .left .date .a label {
+  font-size: 8px;
+} */
+
+  .conteiner .AllWidth .content .left .date p {
+    font-size: 13px;
+    color: #969696;
+  }
+
+  .conteiner .AllWidth .content .left .date p .tomorrow {
+    width: 120px;
+    height: 60px;
+    border: 1px solid rgb(89, 0, 255);
+    color: rgb(89, 0, 255);
+    margin-right: 69px;
+  }
+
+  .conteiner .AllWidth .content .left {
+    width: 87%;
+    height: 104%;
+    border: 1px solid #a8a8a8;
+    padding: 0px;
+  }
+
+  .conteiner .AllWidth .content .left .item .salesman .kol {
+    display: flex;
+    width: 118px;
+    height: 43px;
+    border: 1px solid #ccc;
+  }
+
+  .conteiner .AllWidth .content .left .item .salesman .k {
+    position: relative;
+    top: 92px;
+    right: 210px;
+  }
+
+  .conteiner .AllWidth .content .left .item .delete .price {
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .conteiner .AllWidth .content .left .item .delete .flex i {
+    font-size: 21px;
+    color: #989898;
+  }
+
+  .conteiner .AllWidth .content .left .item .delete .discount {
+    font-size: 13px;
+    color: #969696;
+    padding-left: 17px;
+  }
+
+  .conteiner .AllWidth .content .right {
+    width: 87%;
+    height: 279px;
+    border: 1px solid #a8a8a8;
+    position: absolute;
+    top: 107%;
+  }
+
+  .conteiner .AllWidth .content .right .tovar {
+    width: 100%;
+    height: 128px;
+    background-color: #eeeeee;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: -558px;
+    right: 3px;
+  }
+
+  .conteiner .AllWidth .content .left .item .delete {
+    gap: 22px;
+    width: 186px;
+    top: 27px;
+    right: -62px;
+  }
+
+  .conteiner .menu {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 10px;
+    margin-left: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 20px 40px,
+      rgba(255, 255, 255, 0.5) 20px -20px 40px;
+    margin-bottom: -6px;
+  }
+
+  .conteiner .AllWidth .content .right {
+    width: 0;
+    height: 279px;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 0;
 }
 
 .conteiner .AllWidth .content {
   display: grid;
   gap: 70px;
   position: absolute;
-  top: 255px;
-}
-
-.conteiner .AllWidth .content .right .tovar {
-  width: 87%;
-  height: 128px;
-  background-color: #eeeeee;
-  border-radius: 15px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  position: absolute;
-  top: -558px;
-  right: 53px;
-}
-
-.conteiner .AllWidth h1 {
-  font-size: 23px;
-  font-weight: 550;
-  position: relative;
-  top: 128px;
-}
-
-
-.conteiner .AllWidth .content .left .date .a input {
-  width: 15px;
-  height: 31px;
-}
-
-
-/* .conteiner .AllWidth .content .left .date .a label {
-  font-size: 8px;
-} */
-
-.conteiner .AllWidth .content .left .date p {
-  font-size: 13px;
-  color: #969696;
-}
-
-.conteiner .AllWidth .content .left .date p .tomorrow {
-  width: 120px;
-  height: 60px;
-  border: 1px solid rgb(89, 0, 255);
-  color: rgb(89, 0, 255);
-  margin-right: 69px;
+  top: 138px;
 }
 
 .conteiner .AllWidth .content .left {
-  width: 87%;
-  height: 104%;
-  border: 1px solid #a8a8a8;
-  padding: 0px;
+  border: none;
 }
-
-.conteiner .AllWidth .content .left .item .salesman .kol {
-  display: flex;
-  width: 118px;
-  height: 43px;
-  border: 1px solid #ccc;
-}
-
-.conteiner .AllWidth .content .left .item .salesman .k {
-  position: relative;
-  top: 92px;
-  right: 210px;
-}
-
-.conteiner .AllWidth .content .left .item .delete .price {
-  font-size: 19px;
-  font-weight: 600;
-}
-
-.conteiner .AllWidth .content .left .item .delete .flex i {
-  font-size: 21px;
-  color: #989898;
-}
-
-.conteiner .AllWidth .content .left .item .delete .discount {
-  font-size: 13px;
-  color: #969696;
-  padding-left: 17px;
-}
-
-.conteiner .AllWidth .content .right {
-  width: 87%;
-  height: 279px;
-  border: 1px solid #a8a8a8;
-  position: absolute;
-  top: 107%;
-}
-
-.conteiner .AllWidth .content .right .tovar {
-  width: 100%;
-  height: 128px;
-  background-color: #eeeeee;
-  border-radius: 15px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  position: absolute;
-  top: -558px;
-  right: 3px;
-}
-
-
-.conteiner .AllWidth .content .left .item .delete {
-  gap: 22px;
-  width: 186px;
-  top: 27px;
-  right: -62px;
-}
-
-.conteiner .menu {
-  width: 100%;
-  height: 70px;
-  background-color: rgb(255, 255, 255);
-  position: fixed;
-  bottom: 10px;
-  margin-left: 65px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 20px 40px, rgba(255, 255, 255, 0.5) 20px -20px 40px;
-  margin-bottom: -6px;
-}
-
 }

@@ -1,0 +1,1426 @@
+@media screen and (max-width: 1024px) {
+    
+  .conteiner .navbar .katalog {
+    display: flex;
+    gap: 13px;
+  }
+
+  .conteiner .navbar .btn {
+    display: flex;
+    gap: 0px;
+  }
+
+  .conteiner .rasrochka {
+    width: 100%;
+    height: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    gap: 11px;
+    align-items: center;
+  }
+
+  .conteiner .rasrochka p {
+    font-size: 14px;
+  }
+
+  .conteiner .AllWidth .skidka .item {
+    width: 202px;
+    height: 405px;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    border-radius: 15px;
+  }
+
+  .conteiner .AllWidth .flo .item {
+    width: 202px;
+    height: 405px;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    border-radius: 15px;
+  }
+
+  .conteiner .AllWidth .rekomenduyem .item {
+    width: 202px;
+    height: 405px;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    border-radius: 15px;
+  }
+
+  .conteiner .AllWidth .elektronika .item {
+    width: 202px;
+    height: 405px;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    border-radius: 15px;
+  }
+
+  .conteiner .AllWidth .rasrochka2 .item {
+    width: 202px;
+    height: 420px;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    border-radius: 15px;
+  }
+
+  .conteiner .AllWidth .texnika .item {
+    width: 202px;
+    height: 420px;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    border-radius: 15px;
+  }
+
+  .conteiner .AllWidth .bozor .item {
+    width: 202px;
+    height: 410px;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    border-radius: 15px;
+  }
+
+  .conteiner .AllWidth .vozdux .item {
+    width: 202px;
+    height: 410px;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    border-radius: 15px;
+  }
+
+  .conteiner .AllWidth .uxod .item {
+    width: 202px;
+    height: 410px;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    border-radius: 15px;
+  }
+
+  .conteiner .AllWidth .family .item {
+    width: 202px;
+    height: 410px;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    border-radius: 15px;
+  }
+
+  .conteiner .AllWidth .beauty .item {
+    width: 202px;
+    height: 410px;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    border-radius: 15px;
+  }
+
+  .conteiner .navbar .btn .voyti {
+    width: 72px;
+  }
+
+  .conteiner .navbar .btn .izb i {
+    font-size: 15px;
+  }
+
+  .conteiner .navbar .btn .kar i {
+    font-size: 16px;
+  }
+
+  .conteiner .navbar .btn .izb {
+    width: 84px;
+  }
+
+  .conteiner .navbar .btn .voyti {
+    width: 65px;
+    height: 43px;
+    border: 1px solid transparent;
+    display: flex;
+    gap: 2px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all linear;
+  }
+
+  .conteiner .navbar .btn .izb {
+    width: 120px;
+    height: 43px;
+    display: flex;
+    gap: 4px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all linear;
+  }
+
+  .conteiner .navbar .btn .kar {
+    width: 65px;
+    height: 43px;
+    display: flex;
+    gap: 1px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all linear;
+  }
+
+  .AllWidth {
+    padding: 0 25px;
+  }
+
+  .conteiner .navbar {
+    width: 100%;
+    height: 60px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 25px;
+  }
+
+  .conteiner .translator {
+    padding: 0 25px;
+  }
+
+  .conteiner .navbar .logo svg {
+    width: 172px;
+    height: 200px;
+  }
+
+  .conteiner .navbar .katalog .kat {
+    width: 114px;
+  }
+
+  .conteiner .navbar .katalog .flex input {
+    width: 345px;
+  }
+
+  .conteiner .translator .location p {
+    font-size: 12px;
+  }
+
+  .conteiner .translator .dos p {
+    color: #878787;
+    font-size: 17px;
+  }
+
+  .conteiner .AllWidth .kategori .left .item {
+    width: 95px;
+  }
+
+  .conteiner .AllWidth .kategori .right .item {
+    width: 362px;
+    height: 650px;
+  }
+
+  .conteiner .AllWidth .content .kategori2 {
+    width: 46%;
+  }
+
+  .conteiner .AllWidth .content .right {
+    width: 96%;
+    height: 430px;
+    border: 1px solid #a8a8a8;
+    position: absolute;
+    top: 4139px;
+  }
+
+  .conteiner .AllWidth .content .right {
+    width: 96%;
+    height: 430px;
+    border: 1px solid #a8a8a8;
+    position: absolute;
+    top: 783px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .AllWidth {
+      padding: 0 13px;
+    }
+  
+    .conteiner .translator .location h3 {
+      color: #2f2f2f;
+      font-size: 11px;
+    }
+  
+    .conteiner .translator .dos p {
+      color: #878787;
+      font-size: 14px;
+    }
+  
+    .conteiner .translator .questions p {
+      font-size: 12px;
+    }
+  
+    .conteiner .translator .questions select {
+      width: 74px;
+      border: none;
+      background-color: transparent;
+    }
+  
+    .conteiner .translator .questions {
+      display: flex;
+      gap: 0px;
+    }
+  
+    .conteiner .translator .location {
+      display: flex;
+      gap: 5px;
+    }
+  
+    .conteiner .translator .questions {
+      display: flex;
+      gap: 7px;
+    }
+  
+    .conteiner .translator {
+      padding: 0 13px;
+    }
+  
+    .conteiner .navbar .logo svg {
+      width: 137px;
+      height: 200px;
+    }
+  
+    .conteiner .navbar {
+      width: 100%;
+      height: 60px;
+      border: 1px solid transparent;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0 13px;
+    }
+  
+    .conteiner .navbar .katalog .kat i {
+      font-size: 20px;
+    }
+  
+    .conteiner .navbar .katalog .kat {
+      width: 74px;
+      gap: 3px;
+    }
+  
+    .conteiner .navbar .katalog .kat p {
+      font-size: 13px;
+      color: #3333cc;
+    }
+  
+    .conteiner .navbar .katalog .flex input {
+      width: 223px;
+      font-size: 14px;
+    }
+  
+    .conteiner .navbar .katalog {
+      display: flex;
+      gap: 8px;
+    }
+  
+    .conteiner .navbar {
+      width: 100%;
+      height: 60px;
+      border: 1px solid transparent;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0 13px;
+      gap: 7px;
+    }
+  
+    .conteiner .navbar .btn .voyti p {
+      font-size: 14px;
+    }
+  
+    .conteiner .navbar .btn .voyti {
+      width: 58px;
+      height: 43px;
+      border: 1px solid transparent;
+      display: flex;
+      gap: 2px;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s all linear;
+    }
+  
+    .conteiner .navbar .btn .izb p {
+      font-size: 14px;
+    }
+  
+    .conteiner .navbar .btn .kar p {
+      font-size: 14px;
+    }
+  
+    .conteiner .navbar .btn .izb {
+      width: 109px;
+      height: 43px;
+      display: flex;
+      gap: 4px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s all linear;
+    }
+  
+    .conteiner .rasrochka .flex i {
+      font-size: 22px;
+    }
+  
+    .conteiner .rasrochka .flex {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      cursor: pointer;
+    }
+  
+    .conteiner .rasrochka .flex .foiz {
+      width: 29px;
+      height: 24px;
+    }
+  
+    .conteiner .rasrochka p {
+      font-size: 12px;
+    }
+  
+    .conteiner .rasrochka {
+      width: 100%;
+      height: 50px;
+      border: 1px solid transparent;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+  
+    .conteiner .rasrochka .kr {
+      display: none;
+    }
+  
+    .conteiner .AllWidth .reklama {
+      width: 100%;
+      height: 309px;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 20px;
+      /* display: none; */
+    }
+  
+    .conteiner .AllWidth .kategori .right .item {
+      width: 248px;
+      height: 584px;
+    }
+  
+    .conteiner .AllWidth .content .kategori2 .dob .korzina {
+      font-size: 18px;
+    }
+  
+    .conteiner .AllWidth .content .kategori2 .dob .klik {
+      width: 270px;
+      height: 56px;
+      border-radius: 15px;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      transition: 0.2s all linear;
+      cursor: pointer;
+      color: rgb(58, 0, 151);
+      border: 2px solid rgb(58, 0, 151);
+      background-color: #fff;
+      padding: 10px;
+    }
+  
+    .conteiner .AllWidth .content .kategori2 {
+      width: 43%;
+    }
+  
+    .conteiner .AllWidth .content .kategori2 .katta2 .price2 {
+      font-size: 22px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+  
+    .conteiner .AllWidth .content .left {
+      width: 101%;
+      height: 100%;
+      border: 1px solid #a8a8a8;
+      padding: 20px;
+    }
+  
+    .conteiner .AllWidth .content .right {
+      width: 96%;
+      height: 420px;
+      border: 1px solid #a8a8a8;
+      position: absolute;
+      top: 548%;
+    }
+  
+    /* .conteiner .translator {
+    display: none;
+  }
+  
+  .conteiner .navbar {
+    display: none;
+  }
+  
+  .conteiner .rasrochka {
+    display: none;
+  } */
+  
+    .conteiner .AllWidth .content .left .item {
+      gap: 0;
+    }
+  
+    .conteiner .AllWidth .content .left .item .salesman img {
+      width: 92px;
+      height: 109px;
+    }
+  
+    .conteiner .AllWidth .content .left .item .salesman {
+      display: flex;
+      gap: 8px;
+    }
+  
+    .conteiner .AllWidth .content .left .item .name {
+      width: 123px;
+      font-size: 15px;
+    }
+  
+    .conteiner .AllWidth .content .left .item .delete {
+      gap: 22px;
+      width: 186px;
+    }
+  
+    .conteiner .AllWidth .content .right {
+      width: 96%;
+      height: 420px;
+      border: 1px solid #a8a8a8;
+      position: absolute;
+      top: 109%;
+    }
+}
+
+
+@media screen and (max-width: 426px) {
+    .conteiner .translator {
+      display: none;
+    }
+  
+    .conteiner .navbar .katalog #flex {
+      display: flex;
+      position: absolute;
+      left: 14px;
+      top: 30px;
+    }
+  
+    /* .conteiner .navbar {
+      /* position: absolute;
+      bottom: 0; */
+    /* position: fixed; */
+    /* position: fixed; */
+    /* } */
+  
+    .conteiner .rasrochka {
+      display: none;
+    }
+  
+    .conteiner .AllWidth .reklama {
+      width: 100%;
+      height: 160px;
+      position: relative;
+    }
+  
+    .conteiner .navbar .katalog .flex input {
+      width: 339px;
+      font-size: 14px;
+      border-radius: 15px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  
+    .conteiner .navbar .katalog .flex button {
+      border-radius: 13px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  
+    /* swiper-slide {
+      border-radius: 10px;
+  } */
+  
+    .conteiner .navbar .logo svg {
+      display: none;
+    }
+  
+    .conteiner #uzum {
+      display: block;
+      /* position: absolute;
+      bottom: 82px;
+      left: 14px;
+      width: 35px; */
+      /* position: absolute;
+      top: 0; */
+    }
+  
+    .conteiner .navbar .katalog .kat {
+      position: absolute;
+      bottom: 0;
+      display: none;
+    }
+  
+    .conteiner .navbar .btn {
+      position: absolute;
+      bottom: 0;
+      gap: 27px;
+      left: 16px;
+      height: 58px;
+    }
+  
+    .conteiner .poisk {
+      display: block;
+    }
+  
+    .conteiner .menu {
+      position: absolute;
+    }
+  
+    .conteiner .navbar .btn .voyti {
+      display: block;
+    }
+    .conteiner .navbar .btn .izb {
+      display: block;
+    }
+    .conteiner .navbar .btn .kar {
+      display: block;
+      position: relative;
+      right: 43px;
+    }
+  
+    .conteiner .navbar .btn .voyti svg {
+      display: none;
+    }
+  
+    .conteiner .navbar .btn .voyti .p {
+      display: block;
+    }
+  
+    .conteiner .navbar .btn .izb .p {
+      display: block;
+    }
+  
+    .conteiner .navbar .btn .kar .p {
+      display: block;
+    }
+  
+    .conteiner .navbar .btn .voyti p {
+      display: none;
+    }
+    .conteiner .navbar .btn .izb i {
+      display: none;
+    }
+  
+    .conteiner .navbar .btn .izb p {
+      display: none;
+    }
+  
+    .conteiner .navbar .btn .kar i {
+      display: none;
+    }
+  
+    .conteiner .navbar .btn .kar p {
+      display: none;
+    }
+  
+    .conteiner .menu {
+      width: 100%;
+      height: 70px;
+      background-color: #fff;
+      position: fixed;
+      bottom: 10px;
+      margin-left: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
+        20px -20px 40px rgba(255, 255, 255, 0.5);
+      margin-bottom: -6px;
+    }
+  
+    .conteiner #kar {
+      display: block;
+    }
+  
+    .conteiner .navbar .btn .voyti p {
+      position: relative;
+      right: 8px;
+    }
+  
+    .conteiner .navbar .btn .izb p {
+      position: relative;
+      right: 8px;
+    }
+  
+    .conteiner .navbar .btn .kar p {
+      position: relative;
+      right: 10px;
+    }
+  
+    .conteiner .navbar .btn .kar {
+      height: 53px;
+    }
+  
+    .conteiner .AllWidth .skidka .item {
+      width: 180px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .flo .item {
+      width: 180px;
+      height: 380px;
+    }
+    .conteiner .AllWidth .rekomenduyem .item {
+      width: 180px;
+      height: 400px;
+    }
+    .conteiner .AllWidth .elektronika .item {
+      width: 180px;
+      height: 420px;
+    }
+    .conteiner .AllWidth .rasrochka2 .item {
+      width: 180px;
+      height: 400px;
+    }
+    .conteiner .AllWidth .texnika .item {
+      width: 180px;
+      height: 350px;
+    }
+    .conteiner .AllWidth .vozdux .item {
+      width: 180px;
+      height: 350px;
+    }
+    .conteiner .AllWidth .uxod .item {
+      width: 180px;
+      height: 420px;
+    }
+  
+    .conteiner .AllWidth .skidka .item .name {
+      font-size: 12px;
+    }
+  
+    .conteiner .AllWidth .rasrochka2 .item .name {
+      font-size: 12px;
+    }
+    .conteiner .AllWidth .family .item {
+      width: 180px;
+      height: 350px;
+    }
+    .conteiner .AllWidth .beauty .item {
+      width: 180px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .bozor .item {
+      width: 180px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth footer .footer {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .conteiner .AllWidth footer .footer .o p {
+      display: none;
+    }
+  
+    .conteiner .AllWidth footer .footer .pol p {
+      display: none;
+    }
+  
+    .conteiner .AllWidth footer .footer .dlya p {
+      display: none;
+    }
+  
+    .conteiner .AllWidth footer .footer .katta_flex {
+      text-align: center;
+    }
+  
+    .conteiner .AllWidth footer .uzum {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      margin-right: -15px;
+      justify-content: center;
+    }
+  
+    .conteiner .AllWidth footer .sog {
+      display: none;
+    }
+  
+    .conteiner .AllWidth .skidka .item img {
+      width: 100%;
+      height: 142px;
+    }
+  
+    .conteiner .AllWidth .content {
+      display: grid;
+      gap: 70px;
+    }
+  
+    .conteiner .AllWidth .content .kategori2 {
+      width: 101%;
+    }
+  
+    .conteiner .AllWidth .content .kategori2 .katta2 {
+      width: 100%;
+      height: 65px;
+      /* border: 3px solid #000; */
+      border-top: 1px solid #000;
+      position: fixed;
+      bottom: 0px;
+      left: 0;
+      background-color: #fff;
+      box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
+        20px -20px 40px rgba(255, 255, 255, 0.5);
+    }
+  
+    .content .kategori2 .katta2 .price {
+      display: none;
+    }
+  
+    .conteiner .AllWidth .content .kategori2 .dob .klik {
+      display: none;
+    }
+  
+    .conteiner .AllWidth .content .kategori2 .dob .korzina {
+      font-size: 18px;
+      position: fixed;
+      bottom: 0;
+      right: 20px;
+      width: 200px;
+      font-size: 17px;
+    }
+  
+    .conteiner .AllWidth .content .kategori2 .katta2 .price2 {
+      padding-left: 10px;
+    }
+    .conteiner .AllWidth .content .right .tovar {
+      width: 104%;
+      height: 148px;
+      background-color: #eeeeee;
+      border-radius: 15px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      position: absolute;
+      /* top: 0; */
+      right: -25px;
+      bottom: 1134%;
+    }
+  
+    .conteiner .AllWidth .content .left .item .salesman img {
+      width: 67px;
+      height: 85px;
+    }
+  
+    .conteiner .AllWidth .content {
+      display: grid;
+      gap: 70px;
+      position: absolute;
+      top: 363px;
+    }
+  
+    .conteiner .AllWidth h1 {
+      font-size: 27px;
+      font-weight: 550;
+      position: relative;
+      top: 210px;
+    }
+  
+    .conteiner .AllWidth .content .right {
+      width: 96%;
+      height: 279px;
+      border: 1px solid #a8a8a8;
+      position: absolute;
+      top: 101%;
+    }
+  
+    .conteiner .AllWidth .content .left .item input {
+      width: 17px;
+      height: 69px;
+    }
+  
+    .conteiner .AllWidth .content .left {
+      width: 101%;
+      height: 100%;
+      border: 1px solid #a8a8a8;
+      padding: 0px;
+    }
+  
+    .conteiner .AllWidth .content .left .item .name {
+      width: 127px;
+      font-size: 13px;
+    }
+  
+    .conteiner .AllWidth .content .left .item .salesman .k {
+      position: relative;
+      top: 92px;
+      right: 210px;
+    }
+  
+    .conteiner .AllWidth .content .left .item .delete {
+      gap: 22px;
+      width: 186px;
+      top: 27px;
+      right: -13px;
+    }
+  
+    .conteiner .AllWidth .content .right .tovar {
+      width: 104%;
+      height: 148px;
+      background-color: #eeeeee;
+      border-radius: 15px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      position: absolute;
+      /* top: 0; */
+      right: -25px;
+      bottom: 264%;
+    }
+  
+    .conteiner .AllWidth .content .left .item .salesman .k {
+      position: relative;
+      top: 83px;
+      right: 210px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .conteiner .navbar .katalog .flex input {
+      width: 288px;
+    }
+  
+    .conteiner .navbar .btn {
+      gap: 12px;
+    }
+  
+    .conteiner .AllWidth .skidka .item {
+      width: 164px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .flo .item img {
+      width: 100%;
+      height: 142px;
+    }
+    .conteiner .AllWidth .flo .item {
+      width: 164px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .flo .item img {
+      width: 100%;
+      height: 142px;
+    }
+    .conteiner .AllWidth .rekomenduyem .item {
+      width: 164px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .rekomenduyem .item img {
+      width: 100%;
+      height: 142px;
+    }
+    .conteiner .AllWidth .rekomenduyem .item {
+      width: 164px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .elektronika .item img {
+      width: 100%;
+      height: 142px;
+    }
+    .conteiner .AllWidth .elektronika .item {
+      width: 164px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .elektronika .item img {
+      width: 100%;
+      height: 142px;
+    }
+    .conteiner .AllWidth .rasrochka2 .item {
+      width: 164px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .rasrochka2 .item img {
+      width: 100%;
+      height: 142px;
+    }
+    .conteiner .AllWidth .rasrochka2 .item {
+      width: 164px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .texnika .item img {
+      width: 100%;
+      height: 142px;
+    }
+    .conteiner .AllWidth .texnika .item {
+      width: 164px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .texnika .item img {
+      width: 100%;
+      height: 142px;
+    }
+    .conteiner .AllWidth .vozdux .item {
+      width: 164px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .vozdux .item img {
+      width: 100%;
+      height: 142px;
+    }
+    .conteiner .AllWidth .vozdux .item {
+      width: 164px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .uxod .item img {
+      width: 100%;
+      height: 142px;
+    }
+    .conteiner .AllWidth .uxod .item {
+      width: 164px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .family .item img {
+      width: 100%;
+      height: 142px;
+    }
+    .conteiner .AllWidth .family .item img {
+      width: 100%;
+      height: 142px;
+    }
+    .conteiner .AllWidth .beauty .item {
+      width: 164px;
+      height: 350px;
+    }
+    .conteiner .AllWidth .family .item {
+      width: 164px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .beauty .item img {
+      width: 100%;
+      height: 142px;
+    }
+    .conteiner .AllWidth .bozor .item img {
+      width: 100%;
+      height: 142px;
+    }
+    .conteiner .AllWidth .bozor .item {
+      width: 164px;
+      height: 350px;
+    }
+  
+    .conteiner h1 {
+      font-size: 27px;
+    }
+  
+    .conteiner .AllWidth .content .kategori2 .dob .korzina {
+      font-size: 18px;
+      position: fixed;
+      bottom: 0;
+      right: 20px;
+      width: 169px;
+      font-size: 15px;
+    }
+  
+    .conteiner .AllWidth .content .right .tovar {
+      width: 100%;
+      height: 148px;
+      background-color: #eeeeee;
+      border-radius: 15px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      position: absolute;
+      /* top: 0; */
+      right: 6px;
+      bottom: 264%;
+    }
+  
+    .conteiner .AllWidth .content .left {
+      width: 93%;
+      height: 104%;
+      border: 1px solid #a8a8a8;
+      padding: 0px;
+    }
+  
+    .conteiner .AllWidth .content .right {
+      width: 94%;
+      height: 279px;
+      border: 1px solid #a8a8a8;
+      position: absolute;
+      top: 107%;
+    }
+  
+    .conteiner .AllWidth .content .left .item .delete .price {
+      font-size: 22px;
+      font-weight: 600;
+    }
+  
+    .conteiner .AllWidth .content .left .item .delete .discount {
+      font-size: 14px;
+      color: #969696;
+      padding-left: 17px;
+    }
+  
+    .conteiner .AllWidth .content .left .item .delete {
+      gap: 22px;
+      width: 186px;
+      top: 27px;
+      right: -43px;
+    }
+  
+    .conteiner .AllWidth .content .right .tovar {
+      width: 100%;
+      height: 153px;
+      background-color: #eeeeee;
+      border-radius: 15px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      position: absolute;
+      /* top: 0; */
+      right: 6px;
+      bottom: 271%;
+    }
+  
+    .conteiner .menu {
+      width: 100%;
+      height: 70px;
+      background-color: rgb(255, 255, 255);
+      position: fixed;
+      bottom: 10px;
+      margin-left: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: rgba(0, 0, 0, 0.2) 2px 20px 40px,
+        rgba(255, 255, 255, 0.5) 20px -20px 40px;
+      margin-bottom: -6px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .conteiner .navbar .katalog .flex input {
+      width: 237px;
+    }
+  
+    .conteiner .AllWidth .skidka .item {
+      width: 137px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .skidka .item .flex .otziv {
+      color: #ababab;
+      font-size: 7px;
+    }
+    .conteiner .AllWidth .flo .item {
+      width: 137px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .flo .item .flex .otziv {
+      color: #ababab;
+      font-size: 7px;
+    }
+    .conteiner .AllWidth .rekomenduyem .item {
+      width: 137px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .rekomenduyem .item .flex .otziv {
+      color: #ababab;
+      font-size: 7px;
+    }
+    .conteiner .AllWidth .elektronika .item {
+      width: 137px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .elektronika .item .flex .otziv {
+      color: #ababab;
+      font-size: 7px;
+    }
+    .conteiner .AllWidth .rasrochka2 .item {
+      width: 137px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .rasrochka2 .item .flex .otziv {
+      color: #ababab;
+      font-size: 7px;
+    }
+    .conteiner .AllWidth .texnika .item {
+      width: 137px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .texnika .item .flex .otziv {
+      color: #ababab;
+      font-size: 7px;
+    }
+    .conteiner .AllWidth .vozdux .item {
+      width: 137px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .vozdux .item .flex .otziv {
+      color: #ababab;
+      font-size: 7px;
+    }
+    .conteiner .AllWidth .uxod .item {
+      width: 137px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .uxod .item .flex .otziv {
+      color: #ababab;
+      font-size: 7px;
+    }
+    .conteiner .AllWidth .family .item {
+      width: 137px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .family .item .flex .otziv {
+      color: #ababab;
+      font-size: 7px;
+    }
+    .conteiner .AllWidth .beauty .item {
+      width: 137px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .beauty .item .flex .otziv {
+      color: #ababab;
+      font-size: 7px;
+    }
+    .conteiner .AllWidth .bozor .item {
+      width: 137px;
+      height: 350px;
+    }
+  
+    .conteiner .AllWidth .bozor .item .flex .otziv {
+      color: #ababab;
+      font-size: 7px;
+    }
+  
+    .conteiner .navbar .btn {
+      gap: 0px;
+    }
+  
+    .conteiner #kar {
+      display: block;
+      font-size: 13px;
+    }
+  
+    .conteiner .AllWidth .kategori .right .item {
+      width: 194px;
+      height: 584px;
+    }
+  
+    .conteiner .AllWidth .kategori .left {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+    }
+  
+    .conteiner .AllWidth .kategori .left .item {
+      width: 83px;
+    }
+  
+    .conteiner .AllWidth .content .kategori2 .dob .korzina {
+      font-size: 18px;
+      position: fixed;
+      bottom: 0;
+      right: 20px;
+      width: 136px;
+      font-size: 15px;
+    }
+  
+    .conteiner .AllWidth .content .right .tovar {
+      width: 96%;
+      height: 128px;
+      background-color: #eeeeee;
+      border-radius: 15px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      position: absolute;
+      top: 91px;
+      right: 5px;
+    }
+  
+    .conteiner .AllWidth .content .right .tovar {
+      width: 87%;
+      height: 128px;
+      background-color: #eeeeee;
+      border-radius: 15px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      position: absolute;
+      top: -454px;
+      right: 53px;
+    }
+  
+    .conteiner .AllWidth .content {
+      display: grid;
+      gap: 70px;
+      position: absolute;
+      top: 255px;
+    }
+  
+    .conteiner .AllWidth .content .right .tovar {
+      width: 87%;
+      height: 128px;
+      background-color: #eeeeee;
+      border-radius: 15px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      position: absolute;
+      top: -558px;
+      right: 53px;
+    }
+  
+    .conteiner .AllWidth h1 {
+      font-size: 23px;
+      font-weight: 550;
+      position: relative;
+      top: 128px;
+    }
+  
+    .conteiner .AllWidth .content .left .date .a input {
+      width: 15px;
+      height: 31px;
+    }
+  
+    /* .conteiner .AllWidth .content .left .date .a label {
+    font-size: 8px;
+  } */
+  
+    .conteiner .AllWidth .content .left .date p {
+      font-size: 13px;
+      color: #969696;
+    }
+  
+    .conteiner .AllWidth .content .left .date p .tomorrow {
+      width: 120px;
+      height: 60px;
+      border: 1px solid rgb(89, 0, 255);
+      color: rgb(89, 0, 255);
+      margin-right: 69px;
+    }
+  
+    .conteiner .AllWidth .content .left {
+      width: 87%;
+      height: 104%;
+      border: 1px solid #a8a8a8;
+      padding: 0px;
+    }
+  
+    .conteiner .AllWidth .content .left .item .salesman .kol {
+      display: flex;
+      width: 118px;
+      height: 43px;
+      border: 1px solid #ccc;
+    }
+  
+    .conteiner .AllWidth .content .left .item .salesman .k {
+      position: relative;
+      top: 92px;
+      right: 210px;
+    }
+  
+    .conteiner .AllWidth .content .left .item .delete .price {
+      font-size: 19px;
+      font-weight: 600;
+    }
+  
+    .conteiner .AllWidth .content .left .item .delete .flex i {
+      font-size: 21px;
+      color: #989898;
+    }
+  
+    .conteiner .AllWidth .content .left .item .delete .discount {
+      font-size: 13px;
+      color: #969696;
+      padding-left: 17px;
+    }
+  
+    .conteiner .AllWidth .content .right {
+      width: 87%;
+      height: 279px;
+      border: 1px solid #a8a8a8;
+      position: absolute;
+      top: 107%;
+    }
+  
+    .conteiner .AllWidth .content .right .tovar {
+      width: 100%;
+      height: 128px;
+      background-color: #eeeeee;
+      border-radius: 15px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      position: absolute;
+      top: -558px;
+      right: 3px;
+    }
+  
+    .conteiner .AllWidth .content .left .item .delete {
+      gap: 22px;
+      width: 186px;
+      top: 27px;
+      right: -62px;
+    }
+  
+    .conteiner .menu {
+      width: 100%;
+      height: 70px;
+      background-color: rgb(255, 255, 255);
+      position: fixed;
+      bottom: 10px;
+      margin-left: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: rgba(0, 0, 0, 0.2) 2px 20px 40px,
+        rgba(255, 255, 255, 0.5) 20px -20px 40px;
+      margin-bottom: -6px;
+    }
+}

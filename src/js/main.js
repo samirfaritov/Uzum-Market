@@ -1014,4 +1014,5 @@ export function getProducts() {
   //   rax8.style.right = "-338px";
   //   rax8.style.width = "90px";
   // });
+  
 }
