@@ -272,9 +272,8 @@ window.addEventListener("click", (e) => {
     console.log(wishes.children);
 
     for (let i = 0; i < wishes.children.length; i++) {
-      wishes.children[i].remove();
+      wishes.children[i].remove(a);
     }
-
-    kashtan();
+    kashtan()
   }
 });
