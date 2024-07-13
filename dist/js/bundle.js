@@ -998,20 +998,13 @@ function getProducts() {
           price: item.querySelector(".price").innerHTML,
           review: item.querySelector(".otziv").innerHTML,
           discount: item.querySelector(".price2").innerHTML,
-          count1: parseInt(item.dataset.count)
+          count1: parseInt(item.dataset.count),
         };
 
         localStorage.setItem("item", JSON.stringify(obj));
         location.href = "http://127.0.0.1:5500/src/html/categories.html";
 
         console.log(obj);
-
-        // let response = await axios.post(`http://localhost:5055/korzina`, {
-        //   img: item.querySelector("img").getAttribute("src"),
-        //   name: item.querySelector(".name").innerHTML,
-        //   discount: item.querySelector(".price2").innerHTML,
-        //   price:  item.querySelector(".price").innerHTML
-        // });
       }
 
       if (e.target.closest(".basket")) {
@@ -1022,23 +1015,6 @@ function getProducts() {
           name: item.querySelector(".name").innerHTML,
         };
         localStorage.setItem("korzina", JSON.stringify(obj));
-
-        // let state = {
-        //   products: [],
-        // };
-
-        // interval = setInterval(() => {
-        //   const getTodo = async () => {
-        //     let response = await axios.get("http://localhost:5055/korzina");
-
-        //     return (state.products = response.data);
-        //   };
-
-        //   getTodo();
-
-        // })
-
-        // console.log(state);
 
         let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
 
@@ -1107,12 +1083,6 @@ function getProducts() {
 
   let elec2 = document.querySelector(".elec");
   let bit = document.querySelector(".bit");
-  // let od = document.querySelector(".od");
-  // let ob = document.querySelector(".ob");
-  // let ak = document.querySelector(".ak");
-  // let kr = document.querySelector(".kr");
-  // let zd = document.querySelector(".zd");
-  // let tov = document.querySelector(".tov");
 
   let rax = document.querySelector(".rax");
   elec2.addEventListener("mouseenter", () => {
@@ -1121,57 +1091,12 @@ function getProducts() {
     rax.style.width = "90px";
   });
 
-
   let rax2 = document.querySelector(".rax2");
   bit.addEventListener("mouseenter", () => {
     rax2.style.positionAbsolute;
 
     rax2.style.width = "112px";
   });
-
-
-  // let rax3 = document.querySelector(".rax3");
-  // od.addEventListener("mouseenter", () => {
-  //   rax3.style.positionAbsolute;
-
-  //   rax3.style.right = "-338px";
-  //   rax3.style.width = "90px";
-  // });
-  // let rax4 = document.querySelector(".rax4");
-  // ob.addEventListener("mouseenter", () => {
-  //   rax4.style.positionAbsolute;
-
-  //   rax4.style.right = "-338px";
-  //   rax4.style.width = "90px";
-  // });
-  // let rax5 = document.querySelector(".rax5");
-  // ak.addEventListener("mouseenter", () => {
-  //   rax5.style.positionAbsolute;
-
-  //   rax5.style.right = "-338px";
-  //   rax5.style.width = "90px";
-  // });
-  // let rax6 = document.querySelector(".rax6");
-  // kr.addEventListener("mouseenter", () => {
-  //   rax6.style.positionAbsolute;
-
-  //   rax6.style.right = "-338px";
-  //   rax6.style.width = "90px";
-  // });
-  // let rax7 = document.querySelector(".rax7");
-  // zd.addEventListener("mouseenter", () => {
-  //   rax7.style.positionAbsolute;
-
-  //   rax7.style.right = "-338px";
-  //   rax7.style.width = "90px";
-  // });
-  // let rax8 = document.querySelector(".rax8");
-  // tov.addEventListener("mouseenter", () => {
-  //   rax8.style.positionAbsolute;
-
-  //   rax8.style.right = "-338px";
-  //   rax8.style.width = "90px";
-  // });
 }
 
 

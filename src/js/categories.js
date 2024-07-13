@@ -187,6 +187,7 @@ window.addEventListener("click", (event) => {
       review: content.querySelector(".otziv").innerHTML,
       discount: parseInt(content.querySelector(".price2").innerHTML),
       count: parseInt(content.querySelector(".count").innerHTML),
+      total: parseInt(content.querySelector(".price2").innerHTML),
     };
 
     a.push(local);
@@ -253,3 +254,14 @@ const kar = document.querySelector(".kar");
 kar.addEventListener("click", () => {
   location.href = "http://127.0.0.1:5500/src/html/cart.html";
 });
+
+const logo = document.querySelector("svg")
+
+logo.addEventListener("click", () => {
+  location.href = "http://127.0.0.1:5500/src/html/index.html"
+  logo.style.cursor = "pointer"
+})
+
+logo.addEventListener("mouseenter", () => {
+  logo.style.cursor = "pointer"
+})
