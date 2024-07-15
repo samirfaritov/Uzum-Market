@@ -41,7 +41,7 @@ for (let i = 0; i < korzina.arr.length; i++) {
   </div>
   <div class="katta">
   <p class="price">${korzina.arr[i].total} сум</p>
-  <del class="discount">${korzina.arr[i].price}</del>
+  <del class="discount">${korzina.arr[i].total2} сум</del>
   </div>
   </div>
   </div>
@@ -59,19 +59,27 @@ window.addEventListener("click", (event) => {
     const counter = counterWrapper.querySelector(".count");
     const price = counterWrapper.querySelector(".price");
     const minus = counterWrapper.querySelector(".minus");
+    const discount = counterWrapper.querySelector(".discount");
     counter.innerHTML++;
-
+    
     let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
-
+    
+    // parseInt(discount.innerHTML *= 2)
     let total = 0;
+    let total2 = 0;
     for (let item of a) {
-      if (item.id == counterWrapper.id) {
+      if (item.id == counterWrapper.dataset.id) {
         let p = parseInt(item.discount);
+        let d = parseInt(item.price);
         total = p * counter.innerHTML;
+        total2 = d * counter.innerHTML;
         price.innerHTML = `${total} сум`;
+        discount.innerHTML = `${total2} сум`;
         minus.style.color = "#000";
         item.total = total;
+        item.total2 = total2;
         item.count = counter.innerHTML;
+        // console.log(parseFloat(discount.innerHTML += item.price));
       }
     }
 
@@ -85,6 +93,7 @@ window.addEventListener("click", (event) => {
     const counter = counterWrapper.querySelector(".count");
     const price = counterWrapper.querySelector(".price");
     const minus = counterWrapper.querySelector(".minus");
+    const discount = counterWrapper.querySelector(".discount");
     counter.innerHTML--;
 
     if (counter.innerHTML <= 1) {
@@ -95,43 +104,43 @@ window.addEventListener("click", (event) => {
     let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
 
     for (let item of a) {
-      if (item.id == counterWrapper.id) {
+      if (item.id == counterWrapper.dataset.id) {
         let total = item.total;
+        let total2 = item.total2;
         let p = parseInt(item.discount);
+        let d = parseInt(item.price);
         total = total - p;
+        total2 = total2 - d;
         price.innerHTML = `${total} сум`;
+        discount.innerHTML = `${total2} сум`;
         minus.style.color = "#000";
         item.total = total;
+        item.total2 = total2;
         item.count = counter.innerHTML;
       }
     }
 
     localStorage.setItem("korzina2", JSON.stringify(a));
 
-
     localStorage.setItem("korzina2", JSON.stringify(a));
-    
+
     totalPrice();
   }
-  
-  if (event.target.closest("#deleteBox")) {
 
-    
-    let deleteBox = event.target.closest("#deleteBox")
-    
-    let item = deleteBox.closest(".item").remove()
-    let item2 = deleteBox.closest(".item")
-    
+  if (event.target.closest("#deleteBox")) {
+    let deleteBox = event.target.closest("#deleteBox");
+
+    let item = deleteBox.closest(".item").remove();
+    let item2 = deleteBox.closest(".item");
+
     let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
-    
-    let delet = a.filter((i) => i.id !== parseInt(item2.dataset.id))
+
+    let delet = a.filter((i) => i.id !== parseInt(item2.dataset.id));
     console.log(delet);
 
     localStorage.setItem("korzina2", JSON.stringify(delet));
-    // console.log(item);
 
-    // deleteBox.remove()
-    totalPrice()
+    totalPrice();
   }
 });
 
@@ -142,18 +151,24 @@ for (let i = 0; i < date.length; i++) {
 }
 let item = document.querySelectorAll(".item");
 let tovar = document.querySelector(".tovar");
+let tovar2 = document.querySelector(".tovar2");
 
 tovar.innerHTML = item.length;
+tovar2.innerHTML = item.length;
 
 let conteiner = document.querySelector(".conteiner");
 let price = conteiner.querySelectorAll(".price");
 let itogo = conteiner.querySelector(".itogo");
+let ekonom = conteiner.querySelector(".ekonom");
 
 function totalPrice() {
   let itogo = conteiner.querySelector(".itogo");
+  let ekonom = conteiner.querySelector(".ekonom");
+  let totalPrice2 = conteiner.querySelector(".total-price2");
   let products = JSON.parse(localStorage.getItem("korzina2") || "[]");
 
   let total = 0;
+  let total2 = 0;
 
   for (let i = 0; i < products.length; i++) {
     // console.log(products[i]);
@@ -164,9 +179,20 @@ function totalPrice() {
     let t = price * count;
 
     total += t;
+
+    let discount = parseFloat(products[i].price);
+
+    let ek = parseFloat(discount -= total)
+
+    console.log(ek);
+    // total2 += ek;
   }
 
   itogo.innerHTML = `${total} сум`;
+  ekonom.innerHTML = total2;
+  let TotalPrices = parseFloat((total += total2));
+
+  totalPrice2.innerHTML = TotalPrices;
 }
 
 totalPrice();
@@ -182,15 +208,14 @@ logo.addEventListener("mouseenter", () => {
   logo.style.cursor = "pointer";
 });
 
-let count2 = document.querySelectorAll(".count")
+let count2 = document.querySelectorAll(".count");
 
-const of = document.querySelector(".of")
-const of2 = document.querySelector(".of2")
+const of = document.querySelector(".of");
+const of2 = document.querySelector(".of2");
 
 for (let i = 0; i < count2.length; i++) {
   if (count2[i].innerHTML <= 1) {
-    of.style.backgroundColor = "#7000ff"
-    of2.style.color = "#fff"
+    of.style.backgroundColor = "#7000ff";
+    of2.style.color = "#fff";
   }
 }
-

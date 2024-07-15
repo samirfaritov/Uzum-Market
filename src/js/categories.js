@@ -188,6 +188,7 @@ window.addEventListener("click", (event) => {
       discount: parseInt(content.querySelector(".price2").innerHTML),
       count: parseInt(content.querySelector(".count").innerHTML),
       total: parseInt(content.querySelector(".price2").innerHTML),
+      total2: parseInt(content.querySelector(".price").innerHTML),
     };
 
     a.push(local);
