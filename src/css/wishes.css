@@ -427,3 +427,182 @@
   font-weight: 600;
 }
 
+
+conteiner .AllWidth footer .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conteiner .AllWidth footer .footer .o {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conteiner .AllWidth footer .footer .pol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conteiner .AllWidth footer .footer .dlya {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conteiner .AllWidth footer .footer .katta_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conteiner .AllWidth footer .footer .katta_flex .app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.conteiner .AllWidth footer .footer .katta_flex .app .flex a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.conteiner .AllWidth footer .footer .katta_flex .app .flex {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.conteiner .AllWidth footer .footer .katta_flex .app .flex i {
+  font-size: 31px;
+}
+
+.conteiner .AllWidth footer .uzum p {
+  padding-right: 60px;
+}
+
+.conteiner .AllWidth footer .uzum {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  gap: 20px;
+  margin-right: 70px;
+}
+
+.conteiner .AllWidth footer .uzum .set {
+  display: flex;
+  gap: 15px;
+}
+
+.conteiner .AllWidth footer .uzum .set svg {
+  cursor: pointer;
+}
+
+.conteiner .AllWidth footer .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conteiner .AllWidth footer .footer .o {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conteiner .AllWidth footer .footer .pol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conteiner .AllWidth footer .footer .dlya {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conteiner .AllWidth footer .footer .katta_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conteiner .AllWidth footer .footer .katta_flex .app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.conteiner .AllWidth footer .footer .katta_flex .app .flex a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.conteiner .AllWidth footer .footer .katta_flex .app .flex {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.conteiner .AllWidth footer .footer .katta_flex .app .flex i {
+  font-size: 31px;
+}
+
+.conteiner .AllWidth footer .uzum p {
+  padding-right: 60px;
+}
+
+.conteiner .AllWidth footer .uzum {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  gap: 20px;
+  margin-right: 70px;
+}
+
+.conteiner .AllWidth footer .uzum .set {
+  display: flex;
+  gap: 15px;
+}
+
+.conteiner .AllWidth footer .uzum .set svg {
+  cursor: pointer;
+}
+
+.box {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.conteiner .AllWidth footer .sog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.conteiner .AllWidth footer .sog .flex {
+  display: flex;
+  gap: 15px;
+}
+
+.conteiner .AllWidth footer .sog b {
+  font-size: 15px;
+  color: #454545;
+}
+
+.conteiner .AllWidth footer .sog p {
+  color: #808080;
+  font-size: 13px;
+}
+
