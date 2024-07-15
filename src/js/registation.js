@@ -50,6 +50,7 @@ export function registation() {
   voytiBtn.addEventListener("click", () => {
     reg.style.display = "block";
     regis.style.display = "none";
+    
   });
 }
 

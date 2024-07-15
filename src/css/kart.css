@@ -22,7 +22,6 @@
   display: none;
 }
 
-
 .AllWidth {
   padding: 0 62px;
 }
@@ -364,10 +363,10 @@
 }
 
 .conteiner .AllWidth .content .left .item {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    position: relative;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  position: relative;
 }
 
 .conteiner .AllWidth .content .left .item .name {
@@ -375,33 +374,33 @@
 }
 
 .conteiner .AllWidth .content .left .item input {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 .conteiner .AllWidth .content .left .item .salesman {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .conteiner .AllWidth .content .left .item .salesman img {
-    width: 110px;
-    height: 150px;
+  width: 110px;
+  height: 150px;
 }
 
 .conteiner .AllWidth .content .left .item .salesman .k {
-    position: relative;
-    top: 89px;
-    right: -50px
+  position: relative;
+  top: 89px;
+  right: -50px;
 }
 
 .conteiner .AllWidth .content .left .item .delete {
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;  
-    position: absolute;
-    right: 0;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  position: absolute;
+  right: 0;
 }
 
 .conteiner .AllWidth .content .left .item .delete .delet {
@@ -409,10 +408,10 @@
 }
 
 .conteiner .AllWidth .content .left .item .delete .flex {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 }
 
 .conteiner .AllWidth .content .left .item .delete .flex i {
@@ -421,14 +420,14 @@
 }
 
 .conteiner .AllWidth .content .left .item .delete .price {
-    font-size: 25px;
-    font-weight: 600;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .conteiner .AllWidth .content .left .item .delete .discount {
-    font-size: 17px;
-    color: #969696;
-    padding-left: 17px;
+  font-size: 17px;
+  color: #969696;
+  padding-left: 17px;
 }
 
 .conteiner .AllWidth .content .right {
@@ -452,7 +451,6 @@
   font-weight: 500;
   color: #666666;
 }
-
 
 .conteiner .AllWidth .content .right .dos p {
   font-size: 15px;
@@ -558,4 +556,12 @@
 .conteiner .AllWidth .content .right .tovar .zakaz {
   display: flex;
   justify-content: space-between;
+}
+
+.conteiner .AllWidth .content .left .item .delete .delet:hover {
+  color: #000;
+}
+
+.conteiner .AllWidth .content .left .item .delete .flex i:hover {
+  color: #000;
 }

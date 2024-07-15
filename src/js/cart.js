@@ -16,7 +16,7 @@ for (let i = 0; i < korzina.arr.length; i++) {
   <br />
   <div class="box"></div>
   <br />
-  <div class="item" id="${korzina.arr[i].id}">
+  <div class="item" data-id="${korzina.arr[i].id}">
   <input type="checkbox" />
   <div class="salesman">
   <img
@@ -110,8 +110,28 @@ window.addEventListener("click", (event) => {
 
 
     localStorage.setItem("korzina2", JSON.stringify(a));
-
+    
     totalPrice();
+  }
+  
+  if (event.target.closest("#deleteBox")) {
+
+    
+    let deleteBox = event.target.closest("#deleteBox")
+    
+    let item = deleteBox.closest(".item").remove()
+    let item2 = deleteBox.closest(".item")
+    
+    let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
+    
+    let delet = a.filter((i) => i.id !== parseInt(item2.dataset.id))
+    console.log(delet);
+
+    localStorage.setItem("korzina2", JSON.stringify(delet));
+    // console.log(item);
+
+    // deleteBox.remove()
+    totalPrice()
   }
 });
 
@@ -161,3 +181,16 @@ logo.addEventListener("click", () => {
 logo.addEventListener("mouseenter", () => {
   logo.style.cursor = "pointer";
 });
+
+let count2 = document.querySelectorAll(".count")
+
+const of = document.querySelector(".of")
+const of2 = document.querySelector(".of2")
+
+for (let i = 0; i < count2.length; i++) {
+  if (count2[i].innerHTML <= 1) {
+    of.style.backgroundColor = "#7000ff"
+    of2.style.color = "#fff"
+  }
+}
+

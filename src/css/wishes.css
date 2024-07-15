@@ -315,7 +315,6 @@
 .conteiner .AllWidth .skidka {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -604,5 +603,23 @@ conteiner .AllWidth footer .footer {
 .conteiner .AllWidth footer .sog p {
   color: #808080;
   font-size: 13px;
+}
+
+
+
+.conteiner #uzum {
+  display: none;
+}
+
+.conteiner #kar {
+  display: none;
+}
+
+.conteiner .poisk {
+  display: none;
+}
+
+.conteiner .menu {
+  display: none;
 }
 
