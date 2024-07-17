@@ -14,7 +14,7 @@ const left = document.querySelector(".left");
 for (let i = 0; i < korzina.arr.length; i++) {
   let todoHtml = `
   <br />
-  <div class="box"></div>
+  <div class="box boxx"></div>
   <br />
   <div class="item" data-id="${korzina.arr[i].id}">
   <input type="checkbox" />
@@ -96,8 +96,12 @@ window.addEventListener("click", (event) => {
     const discount = counterWrapper.querySelector(".discount");
     counter.innerHTML--;
 
+    if (counter.innerHTML <= 0) {
+      counter.innerHTML = 0;
+      minus.style.color = "#ccc";
+    }
+
     if (counter.innerHTML <= 1) {
-      counter.innerHTML = 1;
       minus.style.color = "#ccc";
     }
 
@@ -127,7 +131,13 @@ window.addEventListener("click", (event) => {
     totalPrice();
   }
 
+  
   if (event.target.closest("#deleteBox")) {
+    let box = document.querySelectorAll(".boxx")
+    box.forEach((item) => {
+      item.remove()
+    })
+
     let deleteBox = event.target.closest("#deleteBox");
 
     let item = deleteBox.closest(".item").remove();
@@ -136,8 +146,6 @@ window.addEventListener("click", (event) => {
     let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
 
     let delet = a.filter((i) => i.id !== parseInt(item2.dataset.id));
-    console.log(delet);
-
     localStorage.setItem("korzina2", JSON.stringify(delet));
 
     totalPrice();
@@ -182,17 +190,16 @@ function totalPrice() {
 
     let discount = parseFloat(products[i].price);
 
-    let ek = parseFloat(discount -= total)
+    let d = discount * count
 
-    console.log(ek);
-    // total2 += ek;
+    total2 += d
   }
 
   itogo.innerHTML = `${total} сум`;
-  ekonom.innerHTML = total2;
-  let TotalPrices = parseFloat((total += total2));
+  totalPrice2.innerHTML = total2;
+  let ek = parseFloat((total2 -= total));
 
-  totalPrice2.innerHTML = TotalPrices;
+  ekonom.innerHTML = ek;
 }
 
 totalPrice();

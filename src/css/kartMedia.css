@@ -923,9 +923,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2), 20px -20px 40px rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.2),
+      20px -20px 40px rgba(255, 255, 255, 0.5);
     margin-bottom: -6px;
     z-index: 1000;
+  }
+
+  .conteiner .AllWidth .content .left {
+    width: 101%;
+    height: 105%;
+    border: 1px solid #a8a8a8;
+    padding: 0px;
+  }
+
+  .conteiner .AllWidth .content .right {
+    width: 96%;
+    height: 279px;
+    border: 1px solid #a8a8a8;
+    position: absolute;
+    top: 109%;
 }
 }
 
@@ -1478,5 +1494,5 @@
     position: absolute;
     /* top: -1234px; */
     right: 3px;
-}
+  }
 }
