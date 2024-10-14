@@ -61,10 +61,7 @@ window.addEventListener("click", (event) => {
     const minus = counterWrapper.querySelector(".minus");
     const discount = counterWrapper.querySelector(".discount");
     counter.innerHTML++;
-    
     let a = JSON.parse(localStorage.getItem("korzina2") || "[]");
-    
-    // parseInt(discount.innerHTML *= 2)
     let total = 0;
     let total2 = 0;
     for (let item of a) {
@@ -79,12 +76,9 @@ window.addEventListener("click", (event) => {
         item.total = total;
         item.total2 = total2;
         item.count = counter.innerHTML;
-        // console.log(parseFloat(discount.innerHTML += item.price));
       }
     }
-
     localStorage.setItem("korzina2", JSON.stringify(a));
-
     totalPrice();
   }
 
@@ -133,10 +127,10 @@ window.addEventListener("click", (event) => {
 
   
   if (event.target.closest("#deleteBox")) {
-    let box = document.querySelectorAll(".boxx")
-    box.forEach((item) => {
-      item.remove()
-    })
+    // let box = document.querySelectorAll(".boxx")
+    // box.forEach((item) => {
+    //   item.remove()
+    // })
 
     let deleteBox = event.target.closest("#deleteBox");
 
@@ -170,13 +164,13 @@ let itogo = conteiner.querySelector(".itogo");
 let ekonom = conteiner.querySelector(".ekonom");
 
 function totalPrice() {
-  let itogo = conteiner.querySelector(".itogo");
-  let ekonom = conteiner.querySelector(".ekonom");
-  let totalPrice2 = conteiner.querySelector(".total-price2");
+  // let itogo = conteiner.querySelector(".itogo");
+  // let ekonom = conteiner.querySelector(".ekonom");
+  // let totalPrice2 = conteiner.querySelector(".total-price2");
   let products = JSON.parse(localStorage.getItem("korzina2") || "[]");
 
   let total = 0;
-  let total2 = 0;
+  // let total2 = 0;
 
   for (let i = 0; i < products.length; i++) {
     // console.log(products[i]);
@@ -188,18 +182,18 @@ function totalPrice() {
 
     total += t;
 
-    let discount = parseFloat(products[i].price);
+    // let discount = parseFloat(products[i].price);
 
-    let d = discount * count
+    // let d = discount * count
 
-    total2 += d
+    // total2 += d
   }
 
   itogo.innerHTML = `${total} сум`;
-  totalPrice2.innerHTML = total2;
-  let ek = parseFloat((total2 -= total));
+  // totalPrice2.innerHTML = total2;
+  // let ek = parseFloat((total2 -= total));
 
-  ekonom.innerHTML = ek;
+  // ekonom.innerHTML = ek;
 }
 
 totalPrice();

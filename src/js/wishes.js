@@ -258,8 +258,6 @@ window.addEventListener("click", (e) => {
   if (e.target.closest(".heart")) {
     let heart = JSON.parse(localStorage.getItem("arr") || "[]");
 
-    // console.log(heart);
-
     let item = e.target.closest(".item");
 
     let id = item.dataset.id;
